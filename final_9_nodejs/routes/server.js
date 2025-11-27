@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const User = require('./models/User'); // file User.js bạn gửi
 const cors = require('cors');
 const app = express();
-
+const ratingRouter = require('./routes/rating'); 
 app.use(cors());
 app.use(express.json());
 
@@ -25,5 +25,5 @@ app.get('/api/user/:email', async (req, res) => {
         res.status(500).json({ message: err.message });
     }
 });
-
+app.use('/api/rating', ratingRouter);
 app.listen(3000, () => console.log('Server running on port 3000'));
