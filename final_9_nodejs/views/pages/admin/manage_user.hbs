@@ -1,0 +1,128 @@
+<div>
+  <div class="page-breadcrumb d-none d-sm-flex align-items-center mb-3">
+    <div class="ps-3">
+      <h5 class="mb-0 text-uppercase">Danh sách khách hàng</h5>
+    </div>
+  </div>
+  <hr />
+  <div class="row">
+    <div class="col">
+      <div class="card border-primary border-bottom border-3 border-0">
+        <div class="card-header">
+          <div class="card-body">
+            <div class="table-responsive">
+              <table class="table table-bordered">
+                <thead>
+                  <tr>
+                    <th class="text-center">#</th>
+                    <th class="text-center">Họ và Tên</th>
+                    <th class="text-center">Email</th>
+                    <th class="text-center">Số Điện Thoại</th>
+                    <th class="text-center">Ngày Sinh</th>
+                    <th class="text-center">Kích hoạt</th>
+                    <th class="text-center">Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {{#each users}}
+                  <tr class="align-middle">
+                    <td class="text-center">{{incremented @index}}</td>
+                    <td> {{last_name}} {{first_name}}</td>
+                    <td class="text-center"> {{email}} </td>
+                    <td class="text-center"> {{phonenumber}} </td>
+                    <td class="text-center"> {{format_date dob}} </td>
+                    <td class="text-center">
+                      {{#if verified}}
+                        <button class="status btn btn-success verifyButton" data-id="{{_id}}">Đã kích hoạt</button>
+                      {{else}}
+                        <button class="status btn btn-danger verifyButton" data-id="{{_id}}">Chưa kích hoạt</button>
+                      {{/if}}
+                    </td>
+                    <td class="text-center">
+                      <button data-bs-toggle="modal" data-bs-target=".editModal" data-id="{{_id}}" type="button" class="edit btn btn-info updateUser"><i class="fa-solid fa-gear text-white" style="margin-left: 5px;"></i></button>
+                      <button data-bs-toggle="modal" data-bs-target=".deleteModal" data-id="{{_id}}" type="button" class="del btn btn-danger deleteUser"><i class="fa-solid fa-trash" style="margin-left: 5px;"></i></button>
+                    </td>
+                  </tr>
+                  {{/each}}
+                </tbody>
+              </table>
+            </div>
+            <div class="modal fade deleteModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5">Xóa Khách Hàng</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="alert alert-warning border-0 bg-warning alert-dismissible fade show py-2">
+                      <div class="d-flex align-items-center">
+                        <div class="font-35 text-dark"><i class="bx bx-info-circle"></i>
+                        </div>
+                        <div class="ms-3">
+                          <input type="hidden" id="_id">
+                          <h6 class="mb-0 text-dark">CẢNH BÁO</h6>
+                          <div class="text-dark text-wrap">Bạn có chắc chắn muốn xóa khách hàng này?</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                    <button type="button" class="btn btn-primary confirmDelete" data-bs-dismiss="modal">Xác Nhận Xóa</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal fade editModal" tabindex="-1" aria-hidden="true">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Cập nhật thông tin khách hàng</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <input type="hidden" id="_id_update">
+                    <div class="row">
+                      <div class="col">
+                        <label class="mb-2">Email</label>
+                        <input id="email" type="email" class="form-control mb-2" />
+                      </div>
+                      <div class="col">
+                        <label class="mb-2">Số điện thoại</label>
+                        <input id="phonenumber" type="tel" class="form-control mb-2" />
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col">
+                        <label class="mb-2">Họ</label>
+                        <input id="last_name" type="text" class="form-control mb-2" />
+                      </div>
+                      <div class="col">
+                        <label class="mb-2">Tên</label>
+                        <input id="first_name" class="form-control mb-2" />
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col">
+                        <label class="mb-2">Ngày sinh</label>
+                        <input id="dob" type="date" class="form-control mb-2" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                    <button type="button" id="confirmUpdate" class="btn btn-primary" data-bs-dismiss="modal">Xác nhận</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{{#section 'js'}}
+<script src="../js/manage-users.js"></script>
+{{/section}}

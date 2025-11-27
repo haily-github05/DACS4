@@ -1,0 +1,287 @@
+<!-- Book-body -->
+<div class="container-fiuld mt-5" style="background: #fafafa;">
+    <!--  -->
+    <div class="container">
+        <div class="row p-3">
+            <div class="col-lg-8 col-sm-12 col-12 p-3 pe-4">
+                <!-- Row 1 -->
+                <div class="row p-4"
+                    style="background: #fff;box-shadow: 0px 4px 16px rgba(17, 34, 17, 0.05);border-radius: 12px;">
+                    <!-- Row 1 -->
+                    <div class="row mt-3">
+                        <div class="col-9 p-0">
+                            <h2>
+                                {{flightData.airlineInfo.airline_name}}
+                            </h2>
+                        </div>
+                        <div class="col-3"><strong class="fs-3" style="color: #ff8682;">
+                                {{!-- {{#compareStringValue flightData.type "Phổ Thông"}}
+                                    {{flightData.economy_price}}
+                                {{/compareStringValue}}
+                                {{#compareStringValue flightData.type "Thương gia"}}
+                                    {{flightData.business_price}}
+                                {{/compareStringValue}} --}}
+                                {{formatCurrency flightData.classPricing}}
+                            </strong></div>
+                    </div>
+                    <!-- Row 2 -->
+                    <div class="row mt-3">
+                        <div class="col-10 fw-bold p-0">
+                            <p>Departure on {{splitString flightData.departure_datetime " " 0}}</p>
+                        </div>
+                        <div class="col-2 fs-5">
+                            <p>
+                                {{calculateDuration flightData.departure_datetime flightData.arrival_datetime}}
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Row-3 -->
+                    <div class="row mt-3 d-flex justify-content-between align-items-center">
+                        <div class="col-md-4 col-sm-12 col-12">
+                            <div class="row pe-3 d-flex align-items-center"
+                                style="border: 0.5px solid #8DD3BB; border-radius: 8px;">
+                                <div class="col-md-4 col-sm-12 col-12 text-center">
+                                    <img class="" src="{{flightData.airlineInfo.airline_logo}}"
+                                        style="width: 80px; height: 65px" alt="">
+                                </div>
+                                <div class="col-md-8 col-sm-12 col-12 text-center">
+                                    <div class="row">
+                                        <h2 class="fs-4 pt-2 text-center">
+                                            {{flightData.airline_name}}
+                                        </h2>
+                                    </div>
+                                    <div class="row">
+                                        <p class="desc">Airbus A{{flightData.flight_id}}
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-8 col-sm-12 col-12 text-center">
+                            <img class="p-3" src="../../img/ticket_info/plane.svg" alt="Plane" />
+                            <img class="p-3" src="../../img/ticket_info/wifi.svg" alt="Wifi" />
+                            <img class="p-3" src="../../img/ticket_info/stopwatch.svg" alt="Watch" />
+                            <img class="p-3" src="../../img/ticket_info/fast-food.svg" alt="Food" />
+                            <img class="ps-3" src="../../img/ticket_info/round-seat.svg" alt="Seat" />
+                        </div>
+                    </div>
+                    <!-- Row 4 -->
+                    <div class="row mt-3 d-flex justify-content-between align-items-center px-5 py-4">
+                        <div class="col-4 text-center">
+                            <div class="row">
+                                <p class="fs-4 fw-bold">
+                                    {{splitString flightData.departure_datetime ' ' 1}}
+                                </p>
+                            </div>
+                            <div class="row">
+                                <p class="" style="opacity: 0.8;">
+                                    {{flightData.to.airport_name}}
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-4 text-center">
+                            <img src="../../img/ticket_info/plane.svg" alt="Plane" />
+                        </div>
+
+                        <div class="col-4 text-center">
+                            <div class="row">
+                                <p class="fs-4 fw-bold">
+                                    {{splitString flightData.arrival_datetime ' ' 1}}
+                                </p>
+                            </div>
+                            <div class="row">
+                                <p class="" style="opacity: 0.8;">
+                                    {{flightData.from.airport_name}}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Row 2 -->
+                <div class="row mt-5 p-4"
+                    style="background: #fff;box-shadow: 0px 4px 16px rgba(17, 34, 17, 0.05);border-radius: 12px;">
+                    <!-- php -->
+                    <div class="row p-4 mb-5 m-0 card-booking" style="background: #8DD3BB;border-radius: 12px;">
+                        <div class="col-md-1 col-12"><i class="fa-brands fa-cc-visa"></i></div>
+                        <div class="col-md-4 col-12"><span class="" name="carnumber">
+                               01234354
+                            </span></div>
+                        <div class="col-md-3 col-12"><span class="" name="nameoncard">
+                                Hoàng Quá đẹp trai 
+                            </span></div>
+                        <div class="col-md-3 col-12"><span class="" name="validation">
+                               
+                            </span></div>
+                        <div class="col-md-1 col-12"><input type="radio" name="check" id="" checked></div>
+                    </div>
+                    <a href="#!" class="bg-transparent border-0 text-decoration-none p-0" id="add-credit"
+                        data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <div class="container-card bg-light text-center align-items-center d-flex justify-content-center mb-2 mt-3"
+                            style="border-radius: 10px; height: 200px;width: 100%;border: 2px dashed #8DD3BB;">
+                            <button class="bg-transparent border-0" id="add-credit" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                                <div class="add-icon">
+                                    <i style="font-size: 30px;" class="fa fa-circle-plus" style="color: #8dd3bb"></i>
+                                    <div>Add a new card</div>
+                                </div>
+                            </button>
+                        </div>
+                    </a>
+                    <!-- Modal Add new Card-->
+                    <form action="" method="post">
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content pb-3" style="border-radius: 10px;">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col">
+                                                <div class="modal-header border-bottom-0">
+                                                    <div class="container">
+                                                        <div class="row">
+                                                            <div class="col-10">
+                                                                <h2 class="modal-title fw-bolder"
+                                                                    id="exampleModalLabel">Add a new Card</h2>
+                                                            </div>
+                                                            <div class="col-2 align-items-center text-center d-flex">
+                                                                <button type="button" class="btn-close"
+                                                                    data-bs-dismiss="modal" aria-label="Close"></button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-body border-bottom-0">
+                                                    <div class="container">
+                                                        <div class="row mb-3">
+                                                            <div class="col-md">
+                                                                <div class="form-floating">
+                                                                    <input type="number"
+                                                                        class="form-control border-dark"
+                                                                        id="floatingInputGrid" name="cardnum"
+                                                                        placeholder="" value="">
+                                                                    <label for="floatingInputGrid">Card Number</label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row g-2 mb-3">
+                                                            <div class="col">
+                                                                <div class="form-floating">
+                                                                    <input type="date" class="form-control border-dark"
+                                                                        id="floatingInputGrid" name="expdate"
+                                                                        min="<?php echo date('Y-m-d'); ?>"
+                                                                        placeholder="" value="">
+                                                                    <label for="floatingInputGrid">Exp. Date</label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row mb-3">
+                                                            <div class="col">
+                                                                <div class="form-floating">
+                                                                    <input type="namecard"
+                                                                        class="form-control border-dark"
+                                                                        id="floatingInputGrid" name="holdername"
+                                                                        placeholder="" value="">
+                                                                    <label for="floatingInputGrid">Name on Card</label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col">
+                                                                <input type="checkbox" name="" id=""> Securely save my
+                                                                information for 1-click checkout
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer border-bottom-0 border-top-0">
+                                                    <div class="container">
+                                                        <div class="row"></div>
+                                                        <div class="col mb-2">
+                                                            <button type="submit" name="addNewCard"
+                                                                class="btn btn-outline-success p-2"
+                                                                style="background-color:#8DD3BB; border: #8DD3BB; color: black;width: 100%;">Save
+                                                                changes</button>
+                                                        </div>
+                                                        <div class="col">
+                                                            <p class="text-center" style="font-size: 10px;">By
+                                                                confirming your subscription, you allow The Outdoor Inn
+                                                                Crowd Limited to charge your card for this payment and
+                                                                future payments in accordance with their terms. You can
+                                                                always cancel your subscription.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-12 col-12 p-3">
+                <div class="row p-4"
+                    style="background: #fff;box-shadow: 0px 4px 16px rgba(17, 34, 17, 0.05);border-radius: 12px;">
+                    <!-- Row 1 -->
+                    <div class="row d-flex align-items-center">
+                        <div class="col-lg-7 col-md-4 col-sm-4 col-6">
+                            <img src="../../img/ticket_info/ticket.svg" alt="Plane-ticket">
+                        </div>
+                        <div class="col-lg-5 col-md-8 col-sm-8 col-6">
+                            <div class="row"><span class="">
+                                    {{flightData.class}}
+                                </span></div>
+                            <div class="row fw-bold">
+                                <p class="col">
+                                    {{flightData.airlineInfo.airline_name}} <br>Airbus A{{flightData.flight_id}}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Row 2 -->
+                    <div class="row mt-3 pe-0">
+                        <hr />
+                        <h2 class="fs-4">Price Details</h2>
+                        <div class="row">
+                            <div class="col">
+                                <p class="">Ticket Fare</p>
+                            </div>
+                            <div class="col text-end">
+                                <span class="fw-bold">
+                                    {{formatCurrency flightData.classPricing}}
+                                </span>
+                            </div>
+                        </div>
+                        <hr />
+                        <div class="row">
+                            <div class="col">
+                                <p class="">Total</p>
+                            </div>
+                            <div class="col text-end">
+                                <span class="fw-bold">
+                                   {{formatCurrency flightData.classPricing}}
+                                </span>
+                            </div>
+                        </div>
+                        <div class="row px-2">
+                            <div class="col-6"></div>
+                            <div class="col-6 text-end">
+                                <form action="ticket-info" method="post">
+                                    <input type="hidden" name="flightData" value="{{JSONStringify flightData}}">
+                                    <input type="hidden" name="passengerInfo" value="{{JSONStringify passengerInfo}}">
+                                    <button type="submit" onclick="showModal(event)"
+                                        name="pay" class="fw-bold p-3" id="pay-button"
+                                        style="border: none;border-radius: 6px;background-color: #8DD3BB;color: black;font-size: 12px;">Thanh toán</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

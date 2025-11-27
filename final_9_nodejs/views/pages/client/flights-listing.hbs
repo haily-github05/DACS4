@@ -1,0 +1,156 @@
+<!-- search flight -->
+<div class="container justify-content-center d-flex mt-5">
+    <form class="g-4 bg-white z-1 p-5 rounded-3 m-auto mb-3 shadow-lg mt-4" style="width: 80vw;"> <!--- abc -->
+        {{!-- --}}
+        <div class="col-md-12">
+            <div class="row">
+                <div class="col-md-6">
+                    <select id="type" name="type" class="form-select form-select-lg mb-3"
+                        aria-label=".form-select-lg example" style="display: inline-block;" disabled>
+                        {{#if formData}}
+                            <option value="">{{formData.type}}</option>
+                         {{/if}}
+                    </select>
+                </div>
+
+                <div class="col-md-6">
+                    <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example"
+                        style="display: inline-block;" disabled>
+                         {{#if formData}}
+                            <option value="" selected>{{formData.class}}</option>
+                         {{/if}}
+                        
+                    </select>
+                </div>
+            </div>
+        </div>
+        {{!-- --}}
+        <div class="row ">
+            <div class="col-12 col-lg-3">
+                <div class="input-group">
+                    <span class="input-group-text mb-3 fs-5 bg-white fw-semibold">Từ</span>
+                    <select name="from" id="from" class="form-select form-select-lg mb-3"
+                        aria-label=".form-select-lg example" style="display: inline-block;" disabled>
+                        {{#if formData}}
+                            <option value="" selected>{{formData.from.airport_location}}</option>
+                         {{/if}}
+                    </select>
+                    <span class="fa-solid fa-arrow-right-arrow-left mb-3 mt-4 ms-3 d-none d-lg-block fa-lg"></span>
+                </div>
+            </div>
+
+
+            <div class="col-12 col-lg-3">
+                <div class="input-group">
+                    <span class="input-group-text mb-3 fs-5 bg-white fw-semibold">Đến</span>
+                    <select name="to" id="to" class="form-select form-select-lg mb-3"
+                        aria-label=".form-select-lg example" style="display: inline-block;" disabled>
+                        {{#if formData}}
+                            <option value="" selected>{{formData.to.airport_location}}</option>
+                         {{/if}}
+                    </select>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-6">
+                <div class="row">
+                    <div class="col input-group">
+                        <span id="khoiHanh" class="input-group-text fs-5 p-2 fw-semibold bg-white">Khởi Hành</span>
+                        <input type="date" class="form-control d-block m-auto p-2 fs-5" min="" max="" name="fromDate"
+                            value="{{formData.departure_datetime}}" id="fromDate" disabled>
+                    </div>
+                    <div class="col input-group" id="chuyenVe">
+                        <span id="chuyenVe" class="input-group-text fs-5 p-2 fw-semibold bg-white">Chuyến Về</span>
+                        <input type="date" class="form-control d-block m-auto p-2 fs-5" min="" max="" name="toDate"
+                            value="{{formData.toDate}}" id="toDate" disabled>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+
+<div class="container mt-5">
+    <div class="row">
+        <!-- Col trai -->
+        <div class="col-sm-4">
+            <form action="" method="post">
+                <h4>Filters</h4>
+                <hr>
+                <label for="customRange2" class="form-label fw-bolder">Airlines</label>
+                <!-- nodejs load hãng bay-->
+                 {{#each airlines}}
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="{{this.id}}" id="defaultCheck<{{this.id}}>" name="airlines[]" >
+                        <label class="form-check-label" for="defaultCheck<{{this.id}}>">
+                            {{this.airline_name}}
+                        </label>
+                    </div>
+                {{/each}}
+
+                <br>
+                <button type="submit" class="btn-filter btn btn-outline-dark">Lọc</button>
+            </form>
+        </div>
+        <!-- Col phai -->
+        <div class="col-sm-8">
+            {{#each flights}}
+            <form action="./select-flight/booking-seat" method="post">
+                <!-- Load chuyến bay -->
+               
+                    <button name="" value="" type="submit" class="text-decoration-none text-dark border-0 mt-2"
+                        style="width:100%; background-color: rgb(255, 255, 255)">
+                        <input type="hidden" name="flightData" value="{{JSONStringify this}}">
+                        <input type="hidden" name="inputData" value="{{JSONStringify ...formData}}">
+                        <div class="row rounded-5 bg-light">    
+                            <div class="col-4 col-lg-3">
+                                <div class="row">
+                                    <div class="col text-center"><img src="{{this.airlineInfo.airline_logo}}" alt="Logo"
+                                            style="width: 120px;height: 67px;"></div>
+                                </div>
+                                <div class="row pb-3">
+                                    <div class="col text-center fw-bold">{{this.airlineInfo.airline_name}}</div>
+                                </div>
+                            </div>
+                            <div class="col-8 col-lg-6 mt-4 align-items-center">
+                                <div class="row d-flex justify-content-space-between">
+                                    <div class="col-4 fw-bold text-start">{{splitString this.departure_datetime " " 1}}<br>{{this.from.airport_code}}</div>
+                                    <div class="col-4 text-center text-end">{{calculateDuration this.departure_datetime this.arrival_datetime}}<br> Bay thẳng</div>
+                                    <div class="col-4 fw-bold text-end">{{splitString this.arrival_datetime " " 1}}<br>{{this.to.airport_code}}</div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-3 mt-4 text-center">
+                                <div class="row">
+                                    <div class="col fw-bold">{{formatCurrency this.economy_price}}</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">1 hành khách</div>
+                                </div>
+                            </div>
+                        </div>
+                    </button>
+                    </form>
+                {{/each}}
+            
+            <!-- php load các chuyến bay -->
+
+            <div class="container mt-5">
+                <nav aria-label="Page navigation example ">
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item <?php echo $page == 1 ? 'disabled' : ''; ?>"><a
+                                class="page-link text-black"
+                                href="flight-listing.php?page=<?= $previous; ?>">Previous</a></li>
+                        <!---->
+
+                        <li class="page-item"><a class="page-link text-black"
+                                href="flight-listing.php?page=<?= $i; ?>"></a></li>
+                        </li>
+                        <li class="page-item <?php echo $page == $pages ? 'disabled' : ''; ?>"><a
+                                class="page-link text-black" href="flight-listing.php?page=<?= $next; ?>">Next</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#underline-navbar a {
+    box-sizing: border-box;
+    padding-bottom: 14px;
+    padding-right: 10px;
+    position: relative;
+}
+
+#underline-navbar a:hover::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    border-radius: 5px;
+    background: #8DD3BB;
+}
+
+/* Login */
+.navbar .login:hover {
+    background-color: rgba(0, 0, 0, 0.105);
+}
+
+.footer {
+    margin-top: 350px;
+    width: 100%;
+    height: max-content;
+    background-color: #8DD3BB;
+}
+
+.ftitle {
+    font-weight: 600;
+}
+
+@media screen and (max-width: 992px) {
+    .fix-navbar {
+        padding: 16px 0;
+    }
+}

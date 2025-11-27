@@ -1,0 +1,273 @@
+<!-- carousel -->
+<div id="search-info" class="row m-0">
+    <div id="carouselExampleSlidesOnly" class="carousel slide p-0" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./img/homepage/slideshow-1.jpeg" class="d-block w-100 object-fit-cover"
+                    style="aspect-ratio: 31/9;" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="./img/homepage/slideshow-2.jpg" class="d-block w-100 object-fit-cover"
+                    style="aspect-ratio: 31/9;" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="./img/homepage/slideshow-3.jpg" class="d-block w-100 object-fit-cover"
+                    style="aspect-ratio: 31/9;" alt="...">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- form -->
+<div class="row m-0">
+    <div class="container justify-content-center d-flex" style="margin-top: -15vh;">
+        <form class="g-4 bg-white z-1 p-5 position-relative rounded-3 m-auto mb-3 shadow-lg needs-validation"
+            style="width: 80vw;" method="post" action="select-flight">
+            <!--- abc -->
+            <!-- heading -->
+            <div class="row">
+                <h2>Bạn muốn đến nơi nào?</h2>
+            </div>
+            <!-- 1 -->
+            <div class="row">
+                <!-- Đi theo loại -->
+                <div class="col-md-6">
+                    <select id="type" name="type" class="form-select form-select-lg mb-3"
+                        aria-label=".form-select-lg example" style="display: inline-block;">
+                        <option value="Một chiều" selected>Một chiều</option>
+                        <option value="Khứ hồi">Khứ Hồi</option>
+                    </select>
+                </div>
+
+                <!-- Số lượng người -->
+
+                <!-- Hạng -->
+                <div class="col-md-6">
+                    <select name="class" class="form-select form-select-lg mb-3" aria-label=".form-select-lg example"
+                        style="display: inline-block;">
+                        <option value="Phổ Thông" selected>Phổ Thông</option>
+                        <option value="Thương Gia">Thương Gia</option>
+                    </select>
+                </div>
+            </div>
+            <!-- 2 -->
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                    <div class="input-group">
+                        <span class="input-group-text mb-3 fs-5 bg-white fw-semibold">Từ</span>
+                        <select name="departure_airport_id" id="departure_airport_id" class="form-select form-select-lg mb-3"
+                            aria-label=".form-select-lg example" style="display: inline-block;">
+                            {{#each airports}}
+                                <option value="{{this._id}}">{{this.airport_location}}</option>
+                            {{/each}}
+                        </select>
+                        <span class="fa-solid fa-arrow-right-arrow-left mb-3 mt-4 ms-3 d-none d-lg-block fa-lg"></span>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-6">
+                    <div class="input-group">
+                        <span class="input-group-text mb-3 fs-5 bg-white fw-semibold">Đến</span>
+                        <select name="arrival_airport_id" id="arrival_airport_id" class="form-select form-select-lg mb-3"
+                            aria-label=".form-select-lg example" style="display: inline-block;">
+                            {{#each airports}}
+                                <option value="{{this._id}}">{{this.airport_location}}</option>
+                            {{/each}}
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3 -->
+            <div class="row">
+                <div class="col">
+                    <div class="input-group">
+                        <span id="khoiHanh" class="input-group-text fs-5 p-2 fw-semibold bg-white">Khởi
+                            Hành</span>
+                        <input type="date" class="form-control d-block m-auto p-2 fs-5" min="" max="" name="departure_datetime"
+                            value="" id="departure_datetime" required>
+                        <div class="invalid-feedback">
+                            Vui lòng chọn ngày đi.
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="input-group" id="chuyenVe">
+                        <span id="chuyenVe" class="input-group-text fs-5 p-2 fw-semibold bg-white">Chuyến
+                            Về</span>
+                        <input type="date" class="form-control d-block m-auto p-2 fs-5" min="" max="" name="toDate"
+                            value="" id="toDate">
+                        <div class="invalid-feedback">
+                            Vui lòng chọn ngày về.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4 -->
+            <div class="row mt-3">
+                <div class="col-12">
+                    <button type="submit" class="btn btn-primary float-end rounded-5 p-3 fs-5 fw-semibold" type="button"
+                        style="background-color:  #51d4a6; border: none;">Tìm kiếm</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="container" style="position: relative; margin-top: 5vh;">
+    <h2 class="mb-4 text-center">🧭Khám phá các địa điểm nghỉ dưỡng cao cấp</h2>
+
+    <div class="row row-cols-1 row-cols-lg-4 row-cols-md-2 g-2 text-center">
+
+        <div class="col">
+            <div class="card shadow-lg">
+                <img src="./img/homepage/thu-do-Ha-Noi.jpg" class="card-img-top object-fit-fill" alt="..."
+                    style="aspect-ratio: 1/1;">
+                <div class="card-body">
+                    <h5 class="card-title">Thủ đô Hà Nội</h5>
+                    <a href="/discover/HaNoi" class="btn btn-primary border-0" style="background: #8DD3BB">Xem ngay</a>
+                </div>
+            </div>
+
+        </div>
+        <div class="col">
+            <div class="card shadow-lg">
+                <img src="./img/homepage/thanh-pho-Ho-Chi-Minh.jpg" class="card-img-top object-fit-fill"
+                    alt="..." style="aspect-ratio: 1/1;">
+                <div class="card-body">
+                    <h5 class="card-title">Thành phố Hồ Chí Minh</h5>
+                    <a href="/discover/HoChiMinh" class="btn btn-primary border-0" style="background: #8DD3BB">Xem ngay</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card shadow-lg">
+                <img src="./img/homepage/thanh-pho-Da-Nang.jpg" class="card-img-top object-fit-fill"
+                    alt="..." style="aspect-ratio: 1/1;">
+                <div class="card-body">
+                    <h5 class="card-title">Thành phố Đà Nẵng</h5>
+                    <a href="/discover/DaNang" class="btn btn-primary border-0" style="background: #8DD3BB">Xem ngay</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card shadow-lg">
+                <img src="./img/homepage/Hue.jpg" class="card-img-top object-fit-fill" alt="..."
+                    style="aspect-ratio: 1/1;">
+                <div class="card-body">
+                    <h5 class="card-title">Kinh Thành Huế</h5>
+                    <a href="/discover/Hue" class="btn btn-primary border-0" style="background: #8DD3BB">Xem ngay</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+{{!-- khám phá các vùng đất mới --}}
+
+<style>
+    .destinations-container h2 {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.destination-card {
+    position: relative;
+    width: 100%;
+    height: 320px;
+    border-radius: 12px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.destination-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.4s;
+}
+
+.destination-card:hover img {
+    transform: scale(1.05);
+}
+
+.destination-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 20px;
+    width: 100%;
+    color: white;
+    background: linear-gradient(to top, rgba(0,0,0,0.6), rgba(0,0,0,0));
+}
+.destination-info h5 {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.destination-info p {
+    font-size: 14px;
+    opacity: 0.9;
+    margin-top: 3px;
+}
+
+</style>
+<div class="container my-5 destinations-container">
+
+    <h2 class="mb-4 text-center">
+        🌍 Những chuyến đi quốc tế: hãy tìm hướng dẫn
+    </h2>
+
+    <div class="row g-4">
+
+        <!-- 1 -->
+        <div class="col-12 col-md-6 col-lg-3">
+            <div class="destination-card">
+                <img src="./img/homepage/bali.jpeg" alt="">
+                <div class="destination-info">
+                    <h5>Bali</h5>
+                    <p>Indonesia</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2 -->
+        <div class="col-12 col-md-6 col-lg-3">
+            <div class="destination-card">
+                <img src="./img/homepage/bang_coc.jpeg" alt="">
+                <div class="destination-info">
+                    <h5>Băng Cốc</h5>
+                    <p>Thái Lan</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 3 -->
+        <div class="col-12 col-md-6 col-lg-3">
+            <div class="destination-card">
+                <img src="./img/homepage/seoul.jpeg" alt="">
+                <div class="destination-info">
+                    <h5>Seoul</h5>
+                    <p>Hàn Quốc</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 4 -->
+        <div class="col-12 col-md-6 col-lg-3">
+            <div class="destination-card">
+                <img src="./img/homepage/istanbul.jpg" alt="">
+                <div class="destination-info">
+                    <h5>Istanbul</h5>
+                    <p>Thổ Nhĩ Kì</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

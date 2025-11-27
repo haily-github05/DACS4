@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimal Account App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #3ca375; /* Màu chính */
+            --secondary-color: #5bc697; /* Màu phụ */
+            --background-page: #f9f9f9;
+            --border-color: #e0e0e0;
+        }
+
+        body {
+            /* Giữ nguyên CSS body */
+            background-color: var(--background-page);
+            justify-content: center;
+            padding-top: 100px;
+            margin: 0; /* Đảm bảo không có margin mặc định */
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Ẩn/Hiện nội dung */
+        .page-content {
+            padding-bottom: 70px; /* Dành chỗ cho footer */
+            min-height: 100vh;
+            background-color: var(--background-page);
+            display: none; /* Mặc định ẩn */
+        }
+        .page-content.active {
+            display: block; /* Hiển thị trang đang hoạt động */
+        }
+
+        .profile-card {
+            background-color: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+            text-align: center;
+        }
+        .profile-info {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 15px;
+        }
+        .avatar {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: #e0e0e0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            color: #555;
+            font-size: 24px;
+            margin-right: 15px;
+        }
+        .user-details p {
+            margin: 0;
+            line-height: 1.4;
+        }
+        .user-details .name {
+            font-weight: bold;
+            font-size: 18px;
+            color: #333;
+        }
+        .user-details .login-status {
+            color: #8e8e93;
+            font-size: 14px;
+        }
+
+        .btn-account {
+            width: auto;
+            padding: 10px;
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.1s;
+        }
+
+        /* Danh sách Menu Tối giản */
+        .menu-list {
+            margin-top: 25px;
+            background-color: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+        }
+        .list-item-account {
+            display: flex;
+            align-items: center;
+padding: 15px 20px;
+            border-bottom: 1px solid #f2f2f7;
+            cursor: pointer;
+        }
+        .list-item-account:last-child {
+            border-bottom: none;
+        }
+        .icon-left {
+            font-size: 18px;
+            margin-right: 15px;
+            color: var(--primary-color);
+        }
+        .item-text {
+            flex-grow: 1;
+            font-weight: 500;
+        }
+        .fa-chevron-right {
+            color: #c7c7cc;
+            font-size: 12px;
+        }
+
+        /* ====================
+           2. PROFILE PAGE (TRANG HỒ SƠ CHI TIẾT)
+           ==================== */
+        .starline-header {
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+        .starline-header .logo {
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .starline-header button {
+            background: none;
+            border: none;
+            cursor: pointer;
+            color: white;
+            font-weight: bold;
+            padding: 0;
+            display: flex;
+            align-items: center;
+        }
+        .starline-header .fa-arrow-left {
+            font-size: 20px;
+            margin-right: 10px;
+        }
+
+        .profile-detail-card {
+            padding: 20px;
+        }
+        .profile-detail-card h3 {
+            color: var(--secondary-color);
+            margin-top: 0;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+        }
+        .input-group {
+            margin-bottom: 15px;
+        }
+        .input-group label {
+            display: block;
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 5px;
+        }
+        .input-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+        .btn-save {
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            float: right;
+            margin-top: 10px;
+        }
+
+        /* ====================
+           FOOTER NAVIGATION
+           ==================== */
+        .footer-nav {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            max-width: 450px;
+            display: flex;
+            justify-content: space-around;
+            background-color: #ffffff;
+            border-top: 1px solid var(--border-color);
+            padding: 5px 0;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.05);
+            z-index: 20;
+        }
+        .nav-item {
+display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 10px;
+            color: #8e8e93;
+            padding: 5px;
+            cursor: pointer;
+        }
+        .nav-item i {
+            font-size: 20px;
+            margin-bottom: 3px;
+        }
+        .nav-item.active {
+            color: var(--primary-color);
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <div>
+        <div id="accountPage" class="page-content active">
+            <div class="account-page-wrapper">
+                <div class="profile-card">
+                    <div class="profile-info">
+                        <div class="avatar"><img class="avt" src="./img/userlogo.png" alt="User" style="height: 60px; width:60px"></div>
+                        <div class="user-details">
+                            <p class="name">{{user.last_name}} {{user.first_name}}</p>
+                            <p class="login-status">Đã đăng nhập</p>
+                        </div>
+                    </div>
+                    {{!-- <button class="btn-account" onclick="loadProfile('{{ user.email }}'); showPage('profilePage')">
+                     Xem hồ sơ chi tiết
+                    </button> --}}
+                    <button class="btn-account" onclick="ProfilePage.loadProfile('{{ user.email }}'); ProfilePage.show()">
+    Xem hồ sơ chi tiết
+</button>
+
+
+                </div>
+                <div class="menu-list">
+                    <div class="list-item-account">
+                        <i class="fas fa-list-alt icon-left" style="color: var(--primary-color);"></i>
+                        <span class="item-text">Tất cả đơn đặt</span>
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+
+                    <div class="list-item-account">
+                        <i class="fas fa-eye icon-left" style="color: #007bff;"></i>
+                        <span class="item-text">Xem gần đây</span>
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+
+                    <div class="list-item-account">
+                        <i class="fas fa-bell icon-left" style="color: orange;"></i>
+                        <span class="item-text">Thông báo</span>
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+
+                    <form action="/logout" method="post" id="logoutForm" class="list-item-account" onclick="document.getElementById('logoutForm').submit()">
+                        <i class="fas fa-sign-out-alt icon-left" style="color: #ff3b30;"></i>
+                        <span class="item-text">Đăng xuất</span>
+                        <i class="fas fa-chevron-right"></i>
+                    </form>
+                </div>
+                <div class="menu-list">
+                    <div class="list-item-account">
+                        <i class="fas fa-info-circle icon-left" style="color: var(--primary-color);"></i>
+                        <span class="item-text">Giới thiệu về Star Line</span>
+<i class="fas fa-chevron-right"></i>
+                    </div>
+                    <div class="list-item-account">
+                        <i class="fas fa-star icon-left" style="color: #ffc107;"></i>
+                        <span class="item-text">Đánh giá</span>
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+
+                    <div class="list-item-account">
+                        <i class="fas fa-file-alt icon-left" style="color: var(--primary-color);"></i>
+                        <span class="item-text">Điều khoản, điều kiện</span>
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="profilePage" class="page-content">
+            <div class="starline-header">
+                <button onclick="showPage('accountPage')">
+                    <i class="fas fa-arrow-left"></i> Quay lại
+                </button>
+            </div>
+            <div class="profile-detail-card">
+                <h3><i class="fas fa-user-edit"></i> Chỉnh sửa Thông tin</h3>
+                <input type="hidden" id="_id_update" value="{{ user._id }}">
+                <div class="input-group">
+                    <label for="last_name">Họ</label>
+                    <input type="text" id="last_name" name="last_name" value="{{ user.last_name }}" >
+                </div>
+                <div class="input-group">
+                    <label for="first_name">Tên</label>
+                    <input type="text" id="first_name" name="first_name" value="{{ user.first_name }}" >
+                </div>
+                <div class="input-group">
+                    <label for="email">Địa chỉ Email</label>
+                    <input type="email" id="email" name="email" value="{{ user.email }}" readonly>
+                </div>
+                <div class="input-group">
+                    <label for="phone">Số điện thoại</label>
+                    <input type="tel" id="phone" name="phone" value="{{ user.phonenumber}}">
+                </div>
+                <div class="input-group">
+                    <label for="dob">Ngày sinh</label>
+                    <input type="date" id="dob" name="dob">
+                </div>
+                <button class="btn-save" onclick="saveProfile()">Lưu</button>
+            </div>
+        </div>
+    </div>
+    <script src="../js/admin-users.js"></script>
+</body>
+</html>

@@ -1,0 +1,263 @@
+<p class="mt-5"></p>
+<div class="container-fluid pt-5">
+    <h1 class="mb-4 p-3 text-center" style="background-color: #8DD3BB; color:#000">Quý khách vui lòng chọn chỗ ngồi</h1>
+    <div class="row">
+        <!-- cột trái -->
+        <div class="col-12 col-sm-12 col-md-12 col-lg-4 my-3">
+            <div class="container-fluid border shadow rounded py-4" style="background-color:#fff;">
+                <!-- chỗ ngồi loại rộng chân -->
+                <div class="row fw-bold ms-2"> Loại ghế</div>
+                <div class="row pt-2 justify-content-center">
+                    <div class="col-2 d-flex justify-content-center p-0">
+                        <div style="width:32px; height:32px; background-color:#6bc6d2;"></div>
+                    </div>
+                    <div class="col">
+                        <p class="fw-bold">Chỗ ngồi thương gia (A - D)</p>
+                    </div>
+                </div>
+                <div class="row pt-2 justify-content-center">
+                    <div class="col-2 d-flex justify-content-center p-0">
+                        <div style="width:32px; height:32px; background-color:#e059e7;"></div>
+                    </div>
+                    <div class="col">
+                        <p class="fw-bold">Chỗ ngồi phổ thông (E - J)</p>
+                    </div>
+                </div>
+                <div class="row fw-bold ms-2">Tình trạng</div>
+                <div class="row pt-2 justify-content-center">
+                    <div class="col-2 d-flex justify-content-center p-0">
+                        <div style="width:32px; height:32px; background-color:rgb(195, 195, 195);"></div>
+                    </div>
+                    <div class="col">
+                        <p class="fw-bold">Sẵn có</p>
+                    </div>
+                </div>
+                <!-- <div class="row pt-2 justify-content-center">
+                                    <div class="col-2 d-flex justify-content-center p-0">
+                                          <div style="width:32px; height:32px; background-color:red"></div>
+                                    </div>
+                                    <div class="col">
+                                          <p class="fw-bold">Đã được đặt</p>
+                                    </div>
+                              </div> -->
+            </div>
+        </div>
+
+        <!-- Cột giữa, các ghế ngồi -->
+        <div class="col-12 col-lg-5 my-3">
+            <div class="container border rounded shadow" id="seats" style="background-color:#fff;">
+                <div class="row mx-3 mt-3">
+                    <div class="col me-3">
+                        <div class="row">
+                            <div class="col-lg-4 p-0 me-auto">
+                                <div class="text-center mx-auto fw-bold"
+                                    style="width:100%; height:34px; background-color: #8DD3BB; color:#fff;">
+                                    <p class="p-1">Thoát</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col ms-3">
+                        <div class="row">
+                            <div class="col-lg-4 p-0 ms-auto">
+                                <div class="text-center mx-auto fw-bold"
+                                    style="width:100%; height:34px; background-color: #8DD3BB; color:#fff;">
+                                    <p class="p-1">Thoát</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div id="seating-chart"></div>
+
+                <script>
+                    const dec = 65;
+                    const busySeats = ["A1", "B2"]; // Thay thế mảng busy_seats bằng dữ liệu thực tế
+
+                    for (let i = 0; i < 10; i++) {
+                        const row = String.fromCharCode(dec + i);
+                        let col = 0;
+                        let s = "<div class='row mx-3 my-3'>";
+
+                        for (let j = 0; j < 2; j++) {
+                            col += j;
+                            const colClass = j === 0 ? "me-3" : "ms-3";
+                            s += `<div class='col ${colClass}'>
+              <div class='row'>`;
+
+                            for (let k = 1; k <= 3; k++) {
+                                const coe = row + (col + k);
+                                let seatHtml = "";
+
+                                if (busySeats.includes(coe)) {
+                                    // Chỗ ngồi đã được đặt
+                                    if (row <= 'D') {
+                                        seatHtml = `<div class='col-3 p-0 mx-auto seat'>
+                          <div class='Thương-Gia text-center seat fw-bold p-1' 
+                               style='width:100%; height:38px; background-color:#6bc6d2; color:#fff;'
+                               onclick='changeSeatState(this)'>
+                               ${coe}
+                          </div>
+                        </div>`;
+                                    } else {
+                                        seatHtml = `<div class='col-3 p-0 mx-auto seat'>
+                          <div class='Phổ-Thông text-center seat fw-bold p-1' 
+                               style='width:100%; height:38px; background-color:#e059e7; color:#fff;'
+                               onclick='changeSeatState(this)'>
+                               ${coe}
+                          </div>
+                        </div>`;
+                                    }
+                                } else {
+                                    // Chỗ sẵn có
+                                    if (row <= 'D') {
+                                        seatHtml = `<div class='col-3 p-0 mx-auto seat'>
+                          <div class='Thương-Gia available text-center seat fw-bold p-1' 
+                               style='width:100%; height:38px; background-color:rgb(195, 195, 195); color:#fff;'
+                               onclick='changeSeatState(this)'>
+                               ${coe}
+                          </div>
+                        </div>`;
+                                    } else {
+                                        seatHtml = `<div class='col-3 p-0 mx-auto seat'>
+                          <div class='Phổ-Thông available text-center seat fw-bold p-1' 
+                               style='width:100%; height:38px; background-color:rgb(195, 195, 195); color:#fff;'
+                               onclick='changeSeatState(this)'>
+                               ${coe}
+                          </div>
+                        </div>`;
+                                    }
+                                }
+                                s += seatHtml;
+                            }
+                            col = col + 2; // Chỗ này có vẻ không đúng trong đoạn mã PHP gốc
+                            s += `</div></div>`;
+                        }
+                        s += `</div>`;
+                        document.getElementById("seating-chart").innerHTML += s;
+
+                        if (row === 'D') {
+                            document.getElementById("seating-chart").innerHTML += `<div class='row m-0 align-items-end'>
+                                                              <div class='col'><hr></div>
+                                                            </div>`;
+                        }
+                    }
+                </script>
+                <style>
+                    .seat:hover {
+                        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                    }
+                </style>
+
+                <!-- Lối thoát -->
+                <div class="row mx-3 my-3">
+                    <div class="col me-3">
+                        <div class="row">
+                            <div class="col-lg-4 p-0 me-auto">
+                                <div class="text-center mx-auto fw-bold"
+                                    style="width:100%; height:34px; background-color: #8DD3BB; color:#fff;">
+                                    <p class="p-1">Thoát</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col ms-3">
+                        <div class="row">
+                            <div class="col-lg-4 p-0 ms-auto">
+                                <div class="text-center mx-auto fw-bold"
+                                    style="width:100%; height:34px; background-color: #8DD3BB; color:#fff;">
+                                    <p class="p-1">Thoát</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <button type="button" class="btn btn-warning accepted fw-bold fs-3" style="color:#fff;">Đặt</button>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <!-- form-->
+    <form id="form" method="post" action="./flight-detail-booking">
+        <input type="hidden" name="flightData" value="{{JSONStringify flightData}}">
+         <input type="hidden" name="class" value="{{class}}">
+    </from>
+</div>
+<script>
+    // lấy giá trị bên session['class']
+    //let class_seat = $('#hdnSession').attr('value');
+     
+    function changeSeatState(elem) {
+        var class_seat ="{{class}}".replace(" ", "-");  
+        let arrayClassName = elem.classList;
+        // console.log(arrayClassName);
+        if (arrayClassName.contains(class_seat)) {
+            if (arrayClassName.contains('available')) {
+                if (arrayClassName.contains("selected") == false) {
+
+                    let seats = document.querySelectorAll("#seats .selected");
+                    if (seats.length == 1) {
+                        alert("Chỉ được chọn một ghế");
+                    }
+                    else {
+                        $(elem).addClass('selected');
+                        // console.log(elem.classList);
+                        let coe = $.trim($(elem).text());
+                        if (coe[0] <= 'D') {
+                            $(elem).css({ 'background-color': '#6bc6d2', 'border': 'solid  #FF3131' });
+                        }
+                        else {
+                            $(elem).css({ 'background-color': '#e059e7', 'border': 'solid #FF3131' });
+                        }
+                        // console.log(coe[1] <= 'E');
+                    }
+                }
+                else {
+                    $(elem).removeClass('selected');
+                    $(elem).css({ 'background-color': 'rgb(195, 195, 195)', 'border': 'none' });
+
+                }
+            }
+            else {
+                alert('Ghế này đã được đặt');
+            }
+            // console.log(elem.classList.contains("selected"));
+        }
+        else {
+            let tmp = class_seat.replace("-", " ");
+            alert('Loại ghế không hợp lệ, loại ghế của quý khách là hạng ' + tmp);
+        }
+
+    }
+
+
+    //form
+    $('.accepted').on('click', function () {
+        let seats = document.querySelectorAll("#seats .selected");
+        if (seats.length == 0) {
+            alert("Không có ghế nào được chọn");
+        }
+        else {
+            let form = $("#form");
+            for (let seat of seats) {
+                let input = document.createElement("input");
+                input.type = "hidden";
+                input.name = "seat";
+                input.value = $.trim(seat.innerHTML);
+                form.append(input);
+
+            }
+            form.submit();
+        }
+    });
+</script>
