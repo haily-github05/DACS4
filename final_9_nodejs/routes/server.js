@@ -7,6 +7,7 @@ const ratingRouter = require('./routes/rating');
 app.use(cors());
 app.use(express.json());
 
+
 // Kết nối MongoDB
 mongoose.connect('mongodb://127.0.0.1:27017/yourdbname', {
     useNewUrlParser: true,
@@ -25,5 +26,7 @@ app.get('/api/user/:email', async (req, res) => {
         res.status(500).json({ message: err.message });
     }
 });
-app.use('/api/rating', ratingRouter);
+
+app.use("/rating", ratingRouter);
+
 app.listen(3000, () => console.log('Server running on port 3000'));

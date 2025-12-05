@@ -10,7 +10,6 @@ const initializeGooglePassport = require('./config/oauth2');
 const initializePassport = require('./config/passport-config');
 // config gg passport
 
-
 require('dotenv').config({path: './config/.env'});
 
 // Connect to Database
@@ -93,9 +92,14 @@ app.engine('hbs', hbs({
           
             return `${day}-${month}-${year}`;
         },
-        format_currency: function(amount) {
-            return amount.toLocaleString('vi-VN');
+        format_currency: function (amount) {
+            if (amount == null || amount === "") return "0 ₫";
+            return Number(amount).toLocaleString("vi-VN", {
+                style: "currency",
+                currency: "VND"
+            });
         },
+
         convertMap: function (map) {
             let object = {};
             map.forEach((value, key) => {
@@ -145,6 +149,13 @@ app.use(
 // init Route middle
 const initRoute = require('./routes');
 initRoute(app);
+
+const ratingRouter = require('./routes/rating');
+app.use('/rating', ratingRouter);
+
+const clientRouter = require('./routes/search');
+app.use('/search', clientRouter);
+
 
 
 app.listen(port, ()=> console.log(`Server listening on port: ${port}`));
