@@ -187,54 +187,42 @@
         </div>
 
         <div class="container mt-5">
-            <div class="row">
-                <h2>Terms and Conditions</h2>
-            </div>
-            <div class="row mt-5">
-                <h3>Payments</h3>
-                <ul class="ps-5">
-                    <li>If you are purchasing your ticket using a debit or credit card via the Website, we will process
-                        these payments via the automated secure common payment gateway which will be subject to fraud
-                        screening purposes. </li>
-                    <li>If you do not supply the correct card billing address and/or cardholder information, your
-                        booking will not be confirmed and the overall cost may increase. We reserve the right to cancel
-                        your booking if payment is declined for any reason or if you have supplied incorrect card
-                        information. If we become aware of, or is notified of, any fraud or illegal activity associated
-                        with the payment for the booking, the booking will be cancelled and you will be liable for all
-                        costs and expenses arising from such cancellation, without prejudice to any action that may be
-                        taken against us.</li>
-                    <li>Golobe may require the card holder to provide additional payment verification upon request by
-                        either submitting an online form or visiting the nearest Golobe office, or at the airport at the
-                        time of check-in. Golobe reserves the right to deny boarding or to collect a guarantee payment
-                        (in cash or from another credit card) if the card originally used for the purchase cannot be
-                        presented by the cardholder at check-in or when collecting the tickets, or in the case the
-                        original payment has been withheld or disputed by the card issuing bank. Credit card details are
-                        held in a secured environment and transferred through an internationally accepted system.</li>
-                </ul>
-            </div>
-            <div class="row mt-5">
-                <h3>Contact Us</h3>
-                <p>If you have any questions about our Website or our Terms of Use, please contact:</p>
-                <p>Golobe Group Q.C.S.C</p>
-                <p>Golobe Tower</p>
-                <p>P.O. Box: 22550</p>
-                <p>Doha, State of Qatar</p>
-            </div>
-            <div class="row"></div>
-        </div>
+    <div class="row">
+        <h2>Điều khoản và Điều kiện</h2>
+    </div>
 
+    <div class="row mt-5">
+        <h3>Thanh toán</h3>
+        <ul class="ps-5">
+            <li>Nếu bạn mua vé bằng thẻ ghi nợ hoặc thẻ tín dụng qua Website, chúng tôi sẽ xử lý các khoản thanh toán này thông qua cổng thanh toán an toàn tự động, có áp dụng quy trình kiểm tra gian lận.</li>
 
-        <!-- Book-body -->
+            <li>Nếu bạn cung cấp sai địa chỉ thanh toán hoặc thông tin chủ thẻ, đặt vé của bạn sẽ không được xác nhận và tổng chi phí có thể tăng lên. Chúng tôi có quyền hủy đặt vé nếu thanh toán bị từ chối vì bất kỳ lý do gì hoặc nếu bạn đã cung cấp thông tin thẻ không chính xác. Nếu chúng tôi phát hiện hoặc được thông báo về hoạt động gian lận hay bất hợp pháp liên quan đến việc thanh toán, đặt vé sẽ bị hủy và bạn phải chịu toàn bộ chi phí phát sinh từ việc hủy này, đồng thời không loại trừ các hành động pháp lý có thể được áp dụng.</li>
 
+            <li>Golobe có thể yêu cầu chủ thẻ cung cấp thêm thông tin xác minh thanh toán, bằng cách điền biểu mẫu trực tuyến, đến văn phòng Golobe gần nhất hoặc tại sân bay khi làm thủ tục. Golobe có quyền từ chối vận chuyển hoặc yêu cầu thanh toán đảm bảo (bằng tiền mặt hoặc thẻ khác) nếu thẻ đã dùng để mua vé không được chủ thẻ xuất trình khi làm thủ tục hoặc khi nhận vé, hoặc trong trường hợp khoản thanh toán ban đầu bị tranh chấp hoặc bị ngân hàng từ chối. Thông tin thẻ tín dụng được lưu giữ trong môi trường bảo mật và truyền tải qua hệ thống đạt tiêu chuẩn quốc tế.</li>
+        </ul>
+    </div>
+
+    <div class="row mt-5">
+        <h3>Liên hệ</h3>
+        <p>Nếu bạn có bất kỳ câu hỏi nào về Website hoặc Điều khoản Sử dụng, vui lòng liên hệ:</p>
+        <p>Gmail: StarLine@gmail.com</p>
+        <p></p>
+    </div>
+
+    <div class="row"></div>
+</div>
+
+<!-- Book-body -->
 
 </main>
+
 <script>
 document.getElementById("download-tc").addEventListener("click", async () => {
-    const ticketElement = document.getElementById("ticket-plane"); // vé
+    const ticketElement = document.getElementById("ticket-plane");
 
     html2canvas(ticketElement).then(canvas => {
         const link = document.createElement("a");
-        link.download = "ticket.png"; // tên file tải về
+        link.download = "ticket.png";
         link.href = canvas.toDataURL("image/png");
         link.click();
     });
