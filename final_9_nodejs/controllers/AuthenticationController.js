@@ -1,4 +1,4 @@
-const bcrypt = require("bcrypt");
+const bcrypt = require("bcryptjs");
 const userVerification = require("../services/UserVerificationService");
 const userService = require("../services/UserService");
 const userVerificationService = require("../services/UserVerificationService");
@@ -56,13 +56,21 @@ class Authentication {
   //     }
 
   // }
-
-  checkNotAuthenticated(req, res, next) {
+checkNotAuthenticated(req, res, next) {
     if (req.isAuthenticated()) {
-      req.user = req.user
-    } 
+        req.user = req.user || req.session.passport.user;
+    } else {
+        req.user = null;
+    }
     next();
-  }
+}
+
+  // checkNotAuthenticated(req, res, next) {
+  //   if (req.isAuthenticated()) {
+  //     req.user = req.user
+  //   } 
+  //   next();
+  // }
 
   logout(req, res, next) {
     req.logOut(function (err) {

@@ -8,6 +8,12 @@ const Ticket = new Schema({
     seat: String,
     passenger_info: {type: Map, of: String},
     refund: {type: Boolean, default: false},
+    status: {
+    type: String,
+    enum: ["unpaid", "paid"],
+    default: "unpaid"
+},
+
     ticket_class: String
 }, {  timestamps: true  });
 

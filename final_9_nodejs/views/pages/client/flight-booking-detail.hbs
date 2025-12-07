@@ -1,8 +1,11 @@
 <!-- body -->
 <div class="container mt-5 pt-5">
     <form id="formBookNow" action="" method="post">
-        <input type="hidden" name="flightData" value="{{JSONStringify flightData}}">
-        <input type="hidden" name="seatNo" value="{{JSONStringify seatNo}}">
+    <input type="hidden" name="flightData" value="{{JSONStringify flightData}}">
+    <input type="hidden" name="seatNo" value="{{seatNo}}">
+    <input type="hidden" name="classPricing" value="{{flightData.classPricing}}">
+    <input type="hidden" name="classValue" value="{{flightData.classValue}}">
+
         <div class="row mb-3">
             <!-- col left -->
             <div class="col-12 col-sm-12 col-md-12 col-lg-6 mb-3">
@@ -280,7 +283,11 @@
     if ("{{user}}") {
         $("#bookFlight").attr("data-bs-toggle", "");
         $("#bookFlight").attr("type", "submit");
-        $("#formBookNow").attr("action", "../payment-booking");
+        $("#formBookNow").attr("action", "/payment/create-ticket");
 
     }
+    
 </script>
+
+//hàm thay đổi
+   {{!-- $("#formBookNow").attr("action", "../payment-booking"); --}}

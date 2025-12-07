@@ -25,6 +25,8 @@
                     <th class="text-center">Ghế</th>
                     <th class="text-center">Khách hàng</th>
                     <th class="text-center">Action</th>
+                    <th class="text-center">Trạng thái</th>
+                    <th class="text-center">Xác nhận</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -37,6 +39,7 @@
                           <td class="text-center"> {{format_datetime flight_id.arrival_datetime}}</td>
                           <td class="text-center"> {{airline_id.airline_name}}</td>
                           <td class="text-center"> {{ticket_class}}</td>
+
                           {{#ifCond ticket_class '===' 'Phổ Thông'}}
                               <td class="text-center"> {{format_currency flight_id.economy_price}} VNĐ</td>
                           {{else}}
@@ -64,8 +67,26 @@
                           <td class="text-center">
                             <button data-bs-toggle="modal" data-bs-target=".deleteModal" data-id="{{_id}}" class="del btn btn-danger deleteTicket"><i class="fa-solid fa-trash" style="margin-left: 5px;"></i></button>
                           </td>
-                        </tr>
+                          <td class="text-center">
+                              {{#ifCond status '===' 'paid'}}
+                                  <span class="badge bg-success">Đã thanh toán</span>
+                              {{else}}
+                                  <span class="badge bg-warning text-dark">Chưa thanh toán</span>
+                              {{/ifCond}}
+                          </td>
+
+                          <td class="text-center">
+                              {{#ifCond status '===' 'paid'}}
+                                  <button disabled class="btn btn-secondary">Đã xác nhận</button>
+                              {{else}}
+                                  <button class="btn btn-success confirm-btn" data-id="{{_id}}">
+                                      Xác nhận
+                                  </button>
+                              {{/ifCond}}
+                          </td>
+                                                  </tr>
                   {{/each}}
+                  
                 </tbody>
               </table>
             </div>
@@ -129,3 +150,50 @@
 {{#section 'js'}}
 <script src="../js/manage-tickets.js"></script>
 {{/section}}
+{{!-- <script>
+
+  document.querySelectorAll(".confirm-btn").forEach(btn => {
+
+    btn.addEventListener("click", async function () {
+
+        const ticketId = this.dataset.id;
+
+        const res = await fetch("/admin/confirm", {
+            method: "POST",
+            headers: {"Content-Type": "application/json"},
+            body: JSON.stringify({ ticketId })
+        });
+
+        const data = await res.json();
+
+        if (data.success) {
+            alert("✔ Vé đã được xác nhận!");
+            location.reload();
+        }
+    });
+
+});
+
+</script> --}}
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll(".confirm-btn").forEach(btn => {
+        btn.addEventListener("click", async function () {
+            const ticketId = this.dataset.id;
+
+            const res = await fetch("/admin/confirm", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ ticketId })
+            });
+
+            const data = await res.json();
+
+            if (data.success) {
+                location.reload(); // reload trang -> hiện ĐÃ XÁC NHẬN
+            }
+        });
+    });
+});
+</script>
+

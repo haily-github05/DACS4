@@ -1,6 +1,6 @@
 const GoogleStrategy = require('passport-google-oauth2').Strategy;
 const userController = require('../services/UserService');
-const bcrypt = require('bcrypt');
+const bcrypt = require('bcryptjs');
 
 async function initializeGooglePassport(passport) {
     passport.use(new GoogleStrategy({

@@ -73,79 +73,95 @@
                 </div>
                 <div id="seating-chart"></div>
 
-                <script>
-                    const dec = 65;
-                    const busySeats = ["A1", "B2"]; // Thay thế mảng busy_seats bằng dữ liệu thực tế
+{{#if bookedSeats}}
+<script>
+    var busySeats = {{{JSONStringify bookedSeats}}};
+</script>
+{{else}}
+<script>
+    var busySeats = [];
+</script>
+{{/if}}
 
-                    for (let i = 0; i < 10; i++) {
-                        const row = String.fromCharCode(dec + i);
-                        let col = 0;
-                        let s = "<div class='row mx-3 my-3'>";
+<script>
+document.addEventListener("DOMContentLoaded", function () {
 
-                        for (let j = 0; j < 2; j++) {
-                            col += j;
-                            const colClass = j === 0 ? "me-3" : "ms-3";
-                            s += `<div class='col ${colClass}'>
-              <div class='row'>`;
+    console.log("Busy seats:", busySeats);
 
-                            for (let k = 1; k <= 3; k++) {
-                                const coe = row + (col + k);
-                                let seatHtml = "";
+    var dec = 65;
+    var seatingChart = document.getElementById("seating-chart");
 
-                                if (busySeats.includes(coe)) {
-                                    // Chỗ ngồi đã được đặt
-                                    if (row <= 'D') {
-                                        seatHtml = `<div class='col-3 p-0 mx-auto seat'>
-                          <div class='Thương-Gia text-center seat fw-bold p-1' 
-                               style='width:100%; height:38px; background-color:#6bc6d2; color:#fff;'
-                               onclick='changeSeatState(this)'>
-                               ${coe}
-                          </div>
-                        </div>`;
-                                    } else {
-                                        seatHtml = `<div class='col-3 p-0 mx-auto seat'>
-                          <div class='Phổ-Thông text-center seat fw-bold p-1' 
-                               style='width:100%; height:38px; background-color:#e059e7; color:#fff;'
-                               onclick='changeSeatState(this)'>
-                               ${coe}
-                          </div>
-                        </div>`;
-                                    }
-                                } else {
-                                    // Chỗ sẵn có
-                                    if (row <= 'D') {
-                                        seatHtml = `<div class='col-3 p-0 mx-auto seat'>
-                          <div class='Thương-Gia available text-center seat fw-bold p-1' 
-                               style='width:100%; height:38px; background-color:rgb(195, 195, 195); color:#fff;'
-                               onclick='changeSeatState(this)'>
-                               ${coe}
-                          </div>
-                        </div>`;
-                                    } else {
-                                        seatHtml = `<div class='col-3 p-0 mx-auto seat'>
-                          <div class='Phổ-Thông available text-center seat fw-bold p-1' 
-                               style='width:100%; height:38px; background-color:rgb(195, 195, 195); color:#fff;'
-                               onclick='changeSeatState(this)'>
-                               ${coe}
-                          </div>
-                        </div>`;
-                                    }
-                                }
-                                s += seatHtml;
-                            }
-                            col = col + 2; // Chỗ này có vẻ không đúng trong đoạn mã PHP gốc
-                            s += `</div></div>`;
-                        }
-                        s += `</div>`;
-                        document.getElementById("seating-chart").innerHTML += s;
+    for (var i = 0; i < 10; i++) {
 
-                        if (row === 'D') {
-                            document.getElementById("seating-chart").innerHTML += `<div class='row m-0 align-items-end'>
-                                                              <div class='col'><hr></div>
-                                                            </div>`;
-                        }
+        var row = String.fromCharCode(dec + i);
+        var col = 0;
+        var s = "<div class='row mx-3 my-3'>";
+
+        for (var j = 0; j < 2; j++) {
+            col += j;
+            var colClass = (j === 0 ? "me-3" : "ms-3");
+
+            s += "<div class='col " + colClass + "'><div class='row'>";
+
+            for (var k = 1; k <= 3; k++) {
+
+                var coe = row + (col + k);
+                var seatHtml = "";
+
+                // GHẾ ĐÃ ĐẶT
+                if (busySeats.includes(coe)) {
+
+                    if (row <= 'D') {
+                        // Thương gia đã đặt
+                        seatHtml =
+                            "<div class='col-3 p-0 mx-auto'>" +
+                                "<div class='seat booked text-center fw-bold p-1' " +
+                                "style='width:100%; height:38px; background-color:#6bc6d2; color:white; cursor:not-allowed;'>" +
+                                coe +
+                                "</div>" +
+                            "</div>";
+                    } else {
+                        // Phổ thông đã đặt
+                        seatHtml =
+                            "<div class='col-3 p-0 mx-auto'>" +
+                                "<div class='seat booked text-center fw-bold p-1' " +
+                                "style='width:100%; height:38px; background-color:#e059e7; color:white; cursor:not-allowed;'>" +
+                                coe +
+                                "</div>" +
+                            "</div>";
                     }
-                </script>
+
+                } else {
+                    // GHẾ TRỐNG
+                    seatHtml =
+                        "<div class='col-3 p-0 mx-auto'>" +
+                            "<div class='seat available text-center fw-bold p-1' " +
+                            "style='width:100%; height:38px; background-color:rgb(195,195,195); color:white;' " +
+                            "onclick='changeSeatState(this)'>" +
+                            coe +
+                            "</div>" +
+                        "</div>";
+                }
+
+                s += seatHtml;
+            }
+
+            col += 2;
+            s += "</div></div>";
+        }
+
+        s += "</div>";
+        seatingChart.innerHTML += s;
+
+        if (row === "D") {
+            seatingChart.innerHTML += "<div class='row m-0'><div class='col'><hr></div></div>";
+        }
+    }
+    console.log("busySeats =", busySeats, typeof busySeats)
+
+});
+</script>
+
                 <style>
                     .seat:hover {
                         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -198,48 +214,53 @@
     //let class_seat = $('#hdnSession').attr('value');
      
     function changeSeatState(elem) {
-        var class_seat ="{{class}}".replace(" ", "-");  
-        let arrayClassName = elem.classList;
-        // console.log(arrayClassName);
-        if (arrayClassName.contains(class_seat)) {
-            if (arrayClassName.contains('available')) {
-                if (arrayClassName.contains("selected") == false) {
+    // Hạng ghế mà khách đã chọn ở màn trước: "Phổ Thông" hoặc "Thương Gia"
+    var bookingClass = "{{class}}";
 
-                    let seats = document.querySelectorAll("#seats .selected");
-                    if (seats.length == 1) {
-                        alert("Chỉ được chọn một ghế");
-                    }
-                    else {
-                        $(elem).addClass('selected');
-                        // console.log(elem.classList);
-                        let coe = $.trim($(elem).text());
-                        if (coe[0] <= 'D') {
-                            $(elem).css({ 'background-color': '#6bc6d2', 'border': 'solid  #FF3131' });
-                        }
-                        else {
-                            $(elem).css({ 'background-color': '#e059e7', 'border': 'solid #FF3131' });
-                        }
-                        // console.log(coe[1] <= 'E');
-                    }
-                }
-                else {
-                    $(elem).removeClass('selected');
-                    $(elem).css({ 'background-color': 'rgb(195, 195, 195)', 'border': 'none' });
+    // Lấy mã ghế, ví dụ "A1", "E5"
+    var code = elem.textContent.trim();
+    var row = code.charAt(0); // 'A', 'B', ...
 
-                }
-            }
-            else {
-                alert('Ghế này đã được đặt');
-            }
-            // console.log(elem.classList.contains("selected"));
-        }
-        else {
-            let tmp = class_seat.replace("-", " ");
-            alert('Loại ghế không hợp lệ, loại ghế của quý khách là hạng ' + tmp);
-        }
+    // Suy ra hạng ghế theo hàng
+    var seatClass = (row <= 'D') ? "Thương Gia" : "Phổ Thông";
 
+    // Nếu ghế không đúng hạng đã đặt -> chặn
+    if (seatClass !== bookingClass) {
+        alert("Bạn không thể chọn ghế ngoài hạng đã đặt");
+        return;
     }
 
+    // Nếu ghế không phải trạng thái 'available' (đã đặt) -> chặn
+    if (!elem.classList.contains("available")) {
+        alert("Ghế này đã được đặt");
+        return;
+    }
+
+    // Chỉ cho chọn 1 ghế: bỏ chọn ghế cũ (nếu có)
+    var current = document.querySelector("#seats .selected");
+    if (current && current !== elem) {
+        current.classList.remove("selected");
+        current.style.border = "none";
+        current.style.backgroundColor = "rgb(195,195,195)";
+    }
+
+    // Toggle chọn / bỏ chọn ghế hiện tại
+    if (!elem.classList.contains("selected")) {
+        elem.classList.add("selected");
+        elem.style.border = "2px solid #FF3131";
+
+        // Đổi màu theo hạng
+        if (seatClass === "Thương Gia") {
+            elem.style.backgroundColor = "#6bc6d2"; // xanh
+        } else {
+            elem.style.backgroundColor = "#e059e7"; // tím
+        }
+    } else {
+        elem.classList.remove("selected");
+        elem.style.border = "none";
+        elem.style.backgroundColor = "rgb(195,195,195)";
+    }
+}
 
     //form
     $('.accepted').on('click', function () {

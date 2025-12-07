@@ -10,6 +10,7 @@ const initializeGooglePassport = require('./config/oauth2');
 const initializePassport = require('./config/passport-config');
 // config gg passport
 
+
 require('dotenv').config({path: './config/.env'});
 
 // Connect to Database
@@ -42,6 +43,10 @@ initializePassport(passport);
 app.engine('hbs', hbs({
     defaultLayout: 'main',
     extname: '.hbs',
+    runtimeOptions: {
+        allowProtoPropertiesByDefault: true,
+        allowProtoMethodsByDefault: true
+    },
     helpers: {
         ...customHelpers.helpers,
         // Helper so sánh bằng (==)
@@ -92,14 +97,9 @@ app.engine('hbs', hbs({
           
             return `${day}-${month}-${year}`;
         },
-        format_currency: function (amount) {
-            if (amount == null || amount === "") return "0 ₫";
-            return Number(amount).toLocaleString("vi-VN", {
-                style: "currency",
-                currency: "VND"
-            });
+        format_currency: function(amount) {
+            return amount.toLocaleString('vi-VN');
         },
-
         convertMap: function (map) {
             let object = {};
             map.forEach((value, key) => {
@@ -134,7 +134,7 @@ app.engine('hbs', hbs({
                     return options.inverse(this);
             }
         }
-    }
+    } 
 }))
 app.set('view engine', 'hbs')
 app.set('views', './views');
@@ -146,7 +146,6 @@ app.use(
     }),
 );
 
-// init Route middle
 const initRoute = require('./routes');
 initRoute(app);
 
@@ -156,6 +155,7 @@ app.use('/rating', ratingRouter);
 const clientRouter = require('./routes/search');
 app.use('/search', clientRouter);
 
+// init Route middle
 
 
 app.listen(port, ()=> console.log(`Server listening on port: ${port}`));

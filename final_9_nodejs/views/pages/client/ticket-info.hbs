@@ -1,15 +1,7 @@
+<script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
 <main style="background: #FAFAFA; mt-5">
     <!--  -->
     <div class="container-fluid pt-5 mt-5">
-        <!-- <div class="hero-head mt-lg-4">
-                    <a class="turkey" href="#!">Turkey</a>
-                    <i class="fa-solid fa-greater-than"></i>
-                    <a class="Istanbul" href="#!">Istanbul</a>
-                    <i class="fa-solid fa-greater-than"></i>
-                    <a class="CVK" href="#!"
-                        >CVK Park Bosphorus Hotel Istanbul</a
-                    >
-                </div> -->
 
         <div class="container">
             <!-- row 1 -->
@@ -27,11 +19,11 @@
                 </div>
                 <!-- col 2 -->
                 <div class="col-6 col-lg-4 col-md-4 text-end">
-                    <div class="row mb-3 p-0">
+                    {{!-- <div class="row mb-3 p-0">
                         <span class="fw-bold fs-5 p-0">
                            {{formatCurrency flightData.classPricing}}
                         </span>
-                    </div>
+                    </div> --}}
                     <div class="row">
                         <div class="col col-lg-4 col-md-3 col-sm-4"></div>
                         <div class="col col-lg-4 col-md-3 col-sm-4 text-end">
@@ -66,7 +58,7 @@
                             </span>
                         </div>
                         <div class="row">
-                            <img style="width: 60px;" src="./img/ticket_info/arrow-bottom.svg" alt="Arrow-bottom">
+                            <img style="width: 60px;" src="/img/ticket_info/arrow-bottom.svg" alt="Arrow-bottom">
                         </div>
                         <div class="row">
                             <span class="time-end fw-bold fs-2">
@@ -84,9 +76,7 @@
                             style="background: #8DD3BB;border-radius: 0 8px 8px 0;">
                             <div class="col-7 col-lg-6 col-md-6">
                                 <div class="row d-flex align-items-center">
-                                    <!-- <div class="col-3 col-md-4 col-sm-6">
-                                            <img src="../../images/final-card/avatar.svg" alt="Avatar">
-                                        </div> -->
+                            
                                     <div class="col-12 col-md-8 col-sm-6 text-start">
                                         <h3>
                                             {{#if passengerInfo}}
@@ -113,7 +103,7 @@
                             <div class="col-6 col-md-3">
                                 <div class="row">
                                     <div class="col-3">
-                                        <img src="./img/ticket_info/date.png" alt="Date">
+                                        <img src="/img/ticket_info/date.png" alt="Date">
                                     </div>
                                     <!-- php -->
                                     <div class="col ms-1">
@@ -128,7 +118,7 @@
                             <div class="col-2 col-md-3">
                                 <div class="row">
                                     <div class="col-3">
-                                        <img src="../img/ticket_info/time.png" alt="Time">
+                                        <img src="/img/ticket_info/time.png" alt="Time">
                                     </div>
                                     <!-- php -->
                                     <div class="col ms-1">
@@ -143,7 +133,7 @@
                             <div class="col-2 col-md-3">
                                 <div class="row">
                                     <div class="col-3">
-                                        <img src="./img/ticket_info/gate.png" alt="Gate">
+                                        <img src="/img/ticket_info/gate.png" alt="Gate">
                                     </div>
                                     <!-- php -->
                                     <div class="col ms-1">
@@ -157,7 +147,7 @@
                             <div class="col-2 col-md-3">
                                 <div class="row">
                                     <div class="col-3">
-                                        <img src="./img/ticket_info/seat.png" alt="Seat">
+                                        <img src="/img/ticket_info/seat.png" alt="Seat">
                                     </div>
                                     <!-- php -->
                                     <div class="col ms-1">
@@ -187,7 +177,7 @@
                                 </div>
                             </div>
                             <div class="col-12 col-sm-6 text-sm-end p-0">
-                                <img src="./img/ticket_info/maQR.svg" alt="QR">
+                                <img src="/img/ticket_info/maQR.svg" alt="QR">
                             </div>
                         </div>
                     </div>
@@ -238,3 +228,15 @@
 
 
 </main>
+<script>
+document.getElementById("download-tc").addEventListener("click", async () => {
+    const ticketElement = document.getElementById("ticket-plane"); // vé
+
+    html2canvas(ticketElement).then(canvas => {
+        const link = document.createElement("a");
+        link.download = "ticket.png"; // tên file tải về
+        link.href = canvas.toDataURL("image/png");
+        link.click();
+    });
+});
+</script>

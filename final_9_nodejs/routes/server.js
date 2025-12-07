@@ -3,10 +3,10 @@ const mongoose = require('mongoose');
 const User = require('./models/User'); // file User.js bạn gửi
 const cors = require('cors');
 const app = express();
-const ratingRouter = require('./routes/rating'); 
+const adminRoute = require("./routes/admin");
+
 app.use(cors());
 app.use(express.json());
-
 
 // Kết nối MongoDB
 mongoose.connect('mongodb://127.0.0.1:27017/yourdbname', {
@@ -27,6 +27,9 @@ app.get('/api/user/:email', async (req, res) => {
     }
 });
 
-app.use("/rating", ratingRouter);
+
+//
+app.use("/admin", adminRoute);
+
 
 app.listen(3000, () => console.log('Server running on port 3000'));

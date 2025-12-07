@@ -2,6 +2,7 @@ const flightServices = require('../services/FlightService')
 const airlineService = require('../services/AirlineService');
 const airportService = require('../services/AirportService');
 const {mongooseToObject} = require('../util/mongoose');
+const Ticket = require("../models/Ticket");
 
 class FlightController {
     async getFlightsBySearch(req, res, next) {
@@ -30,10 +31,41 @@ class FlightController {
             throw error; 
         }
     };
+    // async showSeats(req, res, next) {
+    //     const user = await req.user;
+    //     res.render('pages/client/booking-seat',{flightData: JSON.parse(req.body.flightData), class: JSON.parse(req.body.inputData).class, user: mongooseToObject(user)});
+    // }
     async showSeats(req, res, next) {
+    try {
+        console.log("---- SHOW SEATS ----");
+        console.log("req.body.flightData =", req.body.flightData);
+        console.log("req.body.inputData =", req.body.inputData);
         const user = await req.user;
-        res.render('pages/client/booking-seat',{flightData: JSON.parse(req.body.flightData), class: JSON.parse(req.body.inputData).class, user: mongooseToObject(user)});
+
+        const flightData = JSON.parse(req.body.flightData);
+        const inputData = JSON.parse(req.body.inputData);
+
+        // ⭐ Lấy tất cả ghế đã đặt của chuyến bay
+        const tickets = await Ticket.find({ flight_id: flightData._id });
+
+        // ⭐ Trích ra danh sách mã ghế: ["A1", "A2", "B3", ...]
+        const bookedSeats = tickets.map(t => t.seat);
+
+        console.log("BOOKED SEATS:", bookedSeats);
+
+        res.render("pages/client/booking-seat", {
+            flightData,
+            class: inputData.class,
+            bookedSeats,  // ⭐ TRUYỀN BIẾN NÀY SANG VIEW
+            user: mongooseToObject(user)
+        });
+
+    } catch (err) {
+        console.error("ERROR showSeats:", err);
+        next(err);
     }
+}
+
     async showDetailFlightBooking(req,res,next){
         const seat = req.body.seat;
         const classPricing = req.body.class;

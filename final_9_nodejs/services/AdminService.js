@@ -80,6 +80,20 @@ class AdminService {
             throw error
         }
     }
+
+
+    updateStatus = async (ticketId, status) => {
+    try {
+        return ticketModel.findByIdAndUpdate(
+            ticketId,
+            { status: status },
+            { new: true }
+        )
+    } catch (error) {
+        throw error;
+    }
+}
+
 }
 
 module.exports = new AdminService;
