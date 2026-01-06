@@ -27,6 +27,8 @@ function initRoute(app) {
     }).catch(err => res.send('Lỗi load user'));
 });
 
+    
+
     app.use("/payment", require("./payment"));
     //app.use("/booking-detail", require("./payment"));
 

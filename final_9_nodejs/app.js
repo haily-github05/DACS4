@@ -18,6 +18,8 @@ const server = http.createServer(app); // Tạo server từ app express
 const { Server } = require("socket.io");
 const io = new Server(server); // KHỞI TẠO BIẾN io TẠI ĐÂY
 const chatController = require('./controllers/ChatController');
+const { getGeminiReply } = require('./services/geminiService');
+const geminiTimeouts = {};
 
 require('dotenv').config({path: './config/.env'});
 
@@ -51,9 +53,9 @@ initializePassport(passport);
 io.on('connection', (socket) => {
     console.log('Có kết nối mới:', socket.id);
 
-    // 1. Join phòng chat để nhận tin nhắn real-time
+    // 1. Join phòng chat
     socket.on('join_chat', async (userId) => {
-        socket.join(userId); // Cả Admin và User đều vào phòng có tên là userId
+        socket.join(userId);
         try {
             const history = await Message.find({ user_id: userId }).sort({ createdAt: 1 }).lean();
             socket.emit('load_history', history);
@@ -70,16 +72,40 @@ io.on('connection', (socket) => {
             const userDoc = await User.findById(userId).lean();
             const displayUserEmail = userDoc ? userDoc.email : "No email";
 
-            // Cập nhật Sidebar cho Admin
             io.emit('admin_receive_new_message', {
                 userId: userId,
                 userEmail: displayUserEmail, 
                 content: content,
                 createdAt: savedMsg.createdAt
             });
-
-            // Gửi tin nhắn vào phòng để Admin đang mở chat thấy ngay
             io.to(userId).emit('receive_message', savedMsg);
+
+            // --- LOGIC GEMINI MỚI ---
+            // Nếu khách gửi thêm tin nhắn mới, hủy Timer cũ (nếu có) và đặt Timer mới
+            if (geminiTimeouts[userId]) {
+                clearTimeout(geminiTimeouts[userId]);
+            }
+
+            geminiTimeouts[userId] = setTimeout(async () => {
+                const lastMsg = await Message.findOne({ user_id: userId }).sort({ createdAt: -1 }).lean();
+                
+                // Chỉ phản hồi nếu tin nhắn cuối cùng vẫn là của người dùng (Admin chưa trả lời)
+                if (lastMsg && lastMsg.sender === 'user') {
+                    console.log(`🤖 Gemini đang trả lời cho user: ${userId}`);
+                    const aiContent = await getGeminiReply(content);
+                    const savedAiMsg = await chatController.saveMessage(userId, 'admin', aiContent);
+
+                    io.to(userId).emit('receive_message', savedAiMsg);
+                    io.emit('admin_receive_new_message', {
+                        userId: userId,
+                        content: "Bot: " + aiContent,
+                        sender: 'admin'
+                    });
+                }
+                // Sau khi chạy xong, xóa tham chiếu trong object
+                delete geminiTimeouts[userId];
+            }, 10000); 
+
         } catch (error) {
             console.error("Lỗi socket khách gửi:", error.message);
         }
@@ -89,12 +115,16 @@ io.on('connection', (socket) => {
     socket.on('admin_send_message', async (data) => {
         const { userId, content } = data;
         try {
+            // --- QUAN TRỌNG: Hủy bỏ Gemini Timer ngay khi Admin trả lời ---
+            if (geminiTimeouts[userId]) {
+                console.log(`✅ Admin đã trả lời. Hủy lệnh chờ Gemini cho user: ${userId}`);
+                clearTimeout(geminiTimeouts[userId]);
+                delete geminiTimeouts[userId];
+            }
+
             const savedMsg = await chatController.saveMessage(userId, 'admin', content);
 
-            // Gửi tin nhắn đến phòng của khách hàng
             io.to(userId).emit('receive_message', savedMsg);
-            
-            // Cập nhật lại Sidebar cho Admin (nếu có nhiều admin)
             io.emit('admin_receive_new_message', {
                 userId: userId,
                 content: "Bạn: " + content,
@@ -104,7 +134,7 @@ io.on('connection', (socket) => {
             console.error("Lỗi socket admin gửi:", error.message);
         }
     });
-}); 
+});
 
 app.engine('hbs', hbs({
     defaultLayout: 'main',

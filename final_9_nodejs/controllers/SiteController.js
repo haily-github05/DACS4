@@ -40,62 +40,44 @@ class SiteController {
         res.render("pages/client/booking-detail", {flightData, passengerInfo, user: mongooseToObject(user)});
     }
 
-    //hiển thị thông tin vé
-    // async showTicket(req,res,next){
-    //   const flightData = JSON.parse(req.body.flightData);
-    //     let passengerInfo;
-    //     if(req.body.passengerInfo){
-    //       passengerInfo = JSON.parse(req.body.passengerInfo);
-    //     }
-    //     else{
-    //       passengerInfo = null
-    //     }
-        
-    //   const user = await req.user;
-    //   let ticket
-    //   if (passengerInfo != null) {
-    //       ticket = {
-    //         airline_id: flightData.airline_id,
-    //         flight_id:  flightData._id,
-    //         user_id:    null,
-    //         seat:       passengerInfo.seatNo,
-    //         passenger_info: passengerInfo,
-    //         ticket_class: flightData.classValue
-    //       }
-    //       await ticketService.createTicket(ticket)
-    //   } else {
-    //       ticket = {
-    //         airline_id: flightData.airline_id,
-    //         flight_id:  flightData._id,
-    //         user_id:    user._id,
-    //         seat:       flightData.seatNo,
-    //         passenger_info: null,
-    //         ticket_class: flightData.classValue
-    //       }
-    //       await ticketService.createTicket(ticket)
-    //   }
-    //   res.render('pages/client/ticket-info', {flightData, passengerInfo, user: mongooseToObject(user)});
-    // }
-    // GET /ticket-info/:ticketId
 async showTicket(req, res) {
     try {
         const ticketId = req.params.ticketId;
 
         const ticket = await ticketService.getTicketById(ticketId);
-
         if (!ticket) {
             return res.send("Không tìm thấy vé!");
         }
 
-        const flightData = ticket.flight_id;
+        const flightData = ticket.flight_id.toObject ? ticket.flight_id.toObject() : ticket.flight_id;
         const user = ticket.user_id;
         const passengerInfo = ticket.passenger_info;
+
+        // Tạo seatNo hiển thị
+        let seatNoValue;
+        if (passengerInfo && passengerInfo.seatNo) {
+            seatNoValue = passengerInfo.seatNo;
+        } else if (ticket.seat) {
+            seatNoValue = ticket.seat;
+        } else {
+            seatNoValue = "Chưa có ghế";
+        }
+
+        // Gán seatNo + departureDate + departureTime vào flightData
+        flightData.seatNo = seatNoValue;
+
+        const dt = new Date(flightData.departure_datetime);
+        flightData.departureDate = dt.toLocaleDateString("vi-VN");
+        flightData.departureTime = dt.toLocaleTimeString("vi-VN", {
+            hour: '2-digit',
+            minute: '2-digit'
+        });
 
         res.render("pages/client/ticket-info", {
             ticket,
             flightData,
             passengerInfo,
-            user
+            user: mongooseToObject(user)
         });
 
     } catch (error) {
@@ -103,6 +85,7 @@ async showTicket(req, res) {
         res.send("Lỗi hiển thị vé!");
     }
 }
+
 
 
     async ticketList(req, res, next) {

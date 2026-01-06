@@ -1,4 +1,17 @@
-<!-- body -->
+<style>
+body {
+    margin: 0;
+    min-height: 100vh;
+    margin-top: 50px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background:
+        linear-gradient(rgba(255,255,255,0.85), rgba(255,255,255,0.85)),
+        url("https://images.unsplash.com/photo-1506744038136-46273834b3fb");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+</style>
 <div class="container mt-5 pt-5">
     <form id="formBookNow" action="" method="post">
     <input type="hidden" name="flightData" value="{{JSONStringify flightData}}">
@@ -18,7 +31,9 @@
                     --
                     <br>
                     {{flightData.to.airport_location}}_{{flightData.to.airport_name}}
-                    <br>SeatNo: {{seatNo}}, FlightNo: VN{{flightData.flight_id}}, Airbus: A{{flightData.flight_id}}
+                    <br>SeatNo: {{seatNo}}
+                    <br> FlightNo: VN{{flightData.flight_id}}
+                    <br>Airbus: A{{flightData.flight_id}}
                 </div>
             </div>
 
@@ -39,7 +54,7 @@
                                     border: #8DD3BB; 
                                     color:black;
                                     width:100%;">
-                            Book now
+                            Đặt ngay
                         </button>
                     </div>
                 </div>
@@ -51,7 +66,7 @@
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content pb-3" style="border-radius: 10px;">
                 <div class="container">
-                    <div class="row">
+<div class="row">
                         <!-- <form action="../booking-dt/booking-dt.php" method="POST" class="needs-validation" novalidate> -->
                         <div class="col">
                             <form action="../passenger" method="POST" class="needs-validation">
@@ -91,7 +106,7 @@
                                         </div>
                                         <div class="row mb-3">
                                             <div class="col">
-                                                <div class="form-floating">
+<div class="form-floating">
                                                     <input type="number" class="form-control border-dark" required
                                                         id="phoneNumber" name="phoneNumber" placeholder="" value="">
                                                     <label for="phoneNumber">SĐT</label>
@@ -131,7 +146,7 @@
                                         <div class="col mb-2">
                                             <!-- <form action="../booking-dt/booking-dt.php" method="post"> -->
                                             <button type="submit" id="" class="btn btn-outline-success p-2"
-                                                style="background-color:#8DD3BB; border: #8DD3BB; color: black;width: 100%;">Lưu
+style="background-color:#8DD3BB; border: #8DD3BB; color: black;width: 100%;">Lưu
                                                 thông tin</button>
                                             <!-- <script src="functions.js"></script> -->
                                         </div>
@@ -185,7 +200,7 @@
         <img src="../../images/flight-detail/window-plane.png" alt="" class="col-2 rounded">
         <img src="../../images/flight-detail/family-plane.png" alt="" class="col-2 rounded">
         <img src="../../images/flight-detail/inside-plane.png" alt="" class="col-2 rounded">
-        <img src="../../images/flight-detail/family-plane.png" alt="" class="col-2 rounded">
+<img src="../../images/flight-detail/family-plane.png" alt="" class="col-2 rounded">
         <img src="../../images/flight-detail/window-plane.png" alt="" class="col-2 rounded">
         <img src="../../images/flight-detail/family-plane.png" alt="" class="col-2 rounded">
     </div>
@@ -211,7 +226,7 @@
     </div>
 
     <!-- Hiển thị các chuyến return -->
-    <div class="row mb-3">
+    {{!-- <div class="row mb-3">
         <!--mỗi thẻ container này chứa các thông tin chuyến return -->
         <div class="container-fluid border shadow mb-5" style="border-radius: 12px;">
             <!-- 1 -->
@@ -248,7 +263,7 @@
                             <!-- icon-in-return la class tu them --->
                             <div class="col-1 border-end text-center align-middle"><i
                                     class="fa-sharp fa-solid fa-plane fs-3"></i></div>
-                            <div class="col-1 border-end text-center"><i class="fa-solid fa-wifi fs-3"></i></div>
+<div class="col-1 border-end text-center"><i class="fa-solid fa-wifi fs-3"></i></div>
                             <div class="col-1 border-end text-center"><i class="fa-solid fa-stopwatch fs-3"></i></div>
                             <div class="col-1 border-end text-center"><i class="fa-solid fa-burger fs-3"></i></div>
                             <div class="col-1 text-center"><i class="fa-solid fa-person-running fs-3"></i></div>
@@ -277,7 +292,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
 </div>
 <script>
     if ("{{user}}") {

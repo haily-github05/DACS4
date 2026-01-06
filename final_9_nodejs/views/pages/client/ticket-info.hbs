@@ -1,219 +1,210 @@
 <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
-<main style="background: #FAFAFA; mt-5">
-    <!--  -->
-    <div class="container-fluid pt-5 mt-5">
 
-        <div class="container">
-            <!-- row 1 -->
-            <div class="row">
-                <!-- col 1 -->
-                <div class="col-6 col-lg-8 col-md-8 col-sm ">
-                    <h2 class="mb-3">
-                        {{flightData.airlineInfo.airline_name}} A{{flightData.flight_id}} Airbus
-                    </h2>
-                    <i class="fa-solid fa-location-dot"></i>
-                    <span>
-                        {{flightData.from.airport_location}} --
-                        {{flightData.to.airport_location}} . No: Airbus A{{flightData.flight_id}}
-                    </span>
-                </div>
-                <!-- col 2 -->
-                <div class="col-6 col-lg-4 col-md-4 text-end">
-                    {{!-- <div class="row mb-3 p-0">
-                        <span class="fw-bold fs-5 p-0">
-                           {{formatCurrency flightData.classPricing}}
-                        </span>
-                    </div> --}}
-                    <div class="row">
-                        <div class="col col-lg-4 col-md-3 col-sm-4"></div>
-                        <div class="col col-lg-4 col-md-3 col-sm-4 text-end">
-                            <button type="button" class="btn btn-outline-secondary"><i
-                                    class="fa-sharp fa fa-share-nodes"></i></button>
-                        </div>
-                        <div class="col col-lg-4 col-md-6 col-sm-4 text-end p-0">
-                            <div class="btn-download" id="download-tc" style="height: 100%;">
-                                <button type="button" class="btn btn-outline-success" style="
-                                            background-color:#8DD3BB; border: #8DD3BB; color: 
-                                            black;">Download
-                                </button>
-                            </div>
-                        </div>
+<style>
+body{
+    background: linear-gradient(
+        rgba(255,255,255,0.88),
+        rgba(255,255,255,0.88)
+    ),
+    url("https://images.unsplash.com/photo-1506744038136-46273834b3fb");
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: "Segoe UI", Roboto, sans-serif;
+}
+
+/* ===== HEADER ===== */
+.page-title{
+    font-weight: 800;
+    letter-spacing: 0.5px;
+}
+
+/* ===== TICKET ===== */
+#ticket-plane{
+    background:#fff;
+    border-radius:18px;
+    box-shadow:0 15px 40px rgba(0,0,0,0.15);
+    overflow:hidden;
+}
+
+/* LEFT TIME COLUMN */
+.ticket-time{
+    background:#EBF6F2;
+    height:100%;
+}
+
+/* RIGHT CONTENT */
+.ticket-main{
+    background:#8DD3BB;
+    color:#000;
+}
+
+/* PASSENGER BAR */
+.passenger-bar{
+    background:rgba(255,255,255,0.25);
+    border-radius:14px;
+}
+
+/* INFO ICON BOX */
+.info-box img{
+    width:26px;
+}
+
+/* QR */
+.qr-box img{
+    width:90px;
+}
+
+/* DOWNLOAD BUTTON */
+.btn-download button{
+    border-radius:30px;
+    font-weight:700;
+    padding:8px 18px;
+}
+
+/* TERMS */
+.terms{
+    background:#fff;
+    border-radius:14px;
+    box-shadow:0 8px 30px rgba(0,0,0,0.1);
+}
+</style>
+
+<main class="pt-5 mt-5">
+
+<div class="container">
+
+    <!-- HEADER -->
+    <div class="row align-items-center mb-4">
+        <div class="col-md-8">
+            <h2 class="page-title">
+                {{flightData.airlineInfo.airline_name}} ✈️ Airbus A{{flightData.flight_id}}
+            </h2>
+            <p class="text-muted mb-0">
+                <i class="fa-solid fa-plane-departure me-1"></i>
+                {{flightData.departure_airport_id.airport_location}}
+                ({{flightData.departure_airport_id.airport_name}})
+                <br>
+                <i class="fa-solid fa-arrow-down-long my-1"></i>
+                <br>
+                <i class="fa-solid fa-plane-arrival me-1"></i>
+                {{flightData.arrival_airport_id.airport_location}}
+                ({{flightData.arrival_airport_id.airport_name}})
+            </p>
+
+        </div>
+        <div class="col-md-4 text-end">
+            <div class="btn-download" id="download-tc">
+                <button class="btn btn-success">
+                    <i class="fa fa-download"></i> Download vé
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- TICKET -->
+    <div id="ticket-plane">
+
+        <div class="row g-0">
+
+            <!-- LEFT -->
+            <div class="col-lg-3 p-4 ticket-time text-center">
+                <div class="mb-4">
+                    <div class="fs-2 fw-bold">
+                        {{splitString flightData.departure_datetime " " 1}}
                     </div>
+                    <div>{{flightData.from.airport_location}}</div>
                 </div>
 
+                <img src="/img/ticket_info/arrow-bottom.svg" width="50">
+
+                <div class="mt-4">
+<div class="fs-2 fw-bold">
+                        {{splitString flightData.arrival_datetime " " 1}}
+                    </div>
+                    <div>{{flightData.to.airport_location}}</div>
+                </div>
             </div>
 
-            <div class="container mt-3" id="ticket-plane">
-                <!-- row 1 -->
-                <div class="row">
-                    <!-- col 1 -->
-                    <div class="col-12 col-lg-3 col-sm-4 p-4"
-                        style="background-color: #EBF6F2;border-radius: 8px 0 0 8px;">
-                        <div class="row">
-                            <span class="time-start fw-bold fs-2">
-                                {{splitString flightData.departure_datetime " " 1}}
-                            </span>
-                            <span class="depart-start">
-                                {{flightData.from.airport_location}}
-                            </span>
-                        </div>
-                        <div class="row">
-                            <img style="width: 60px;" src="/img/ticket_info/arrow-bottom.svg" alt="Arrow-bottom">
-                        </div>
-                        <div class="row">
-                            <span class="time-end fw-bold fs-2">
-                                 {{splitString flightData.arrival_datetime " " 1}}
-                            </span>
-                            <span class="depart-end">
-                               {{flightData.to.airport_location}}
-                            </span>
-                        </div>
+            <!-- RIGHT -->
+            <div class="col-lg-9 p-4 ticket-main">
+
+                <!-- PASSENGER -->
+                <div class="row passenger-bar p-3 mb-4 align-items-center">
+                    <div class="col-md-8">
+                        <h4 class="fw-bold mb-0">
+                            {{#if passengerInfo}}
+                                {{passengerInfo.firstName}} {{passengerInfo.lastName}}
+                            {{else}}
+                                {{user.first_name}} {{user.last_name}}
+                            {{/if}}
+                        </h4>
+                        <small>Boarding Pass</small>
                     </div>
-                    <!-- col 2 -->
-                    <div class="col-12 col-lg-9 col-sm-8 pl-2 pe-0">
-                        <!-- row 1 -->
-                        <div class="row p-4 d-flex justify-content-center align-items-center"
-                            style="background: #8DD3BB;border-radius: 0 8px 8px 0;">
-                            <div class="col-7 col-lg-6 col-md-6">
-                                <div class="row d-flex align-items-center">
-                            
-                                    <div class="col-12 col-md-8 col-sm-6 text-start">
-                                        <h3>
-                                            {{#if passengerInfo}}
-                                                {{passengerInfo.firstName}} {{passengerInfo.lastName}}
-                                                {{else}}
-                                                    {{user.first_name}} {{user.last_name}}
-                                            {{/if}}
-
-                                        </h3>
-                                        <!-- <span>Boarding Pass N’123</span> -->
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-5 col-lg-6 col-md-6 text-end">
-                                <span class="fw-bold">
-                                    {{flightData.classValue}}
-                                </span>
-                            </div>
-                        </div>
-
-                        <div class="row mt-3 p-3">
-                            <!-- Date -->
-                            <div class="col-6 col-md-3">
-                                <div class="row">
-                                    <div class="col-3">
-                                        <img src="/img/ticket_info/date.png" alt="Date">
-                                    </div>
-                                    <!-- php -->
-                                    <div class="col ms-1">
-                                        <div class="date-info fw-bold" style="opacity: 0.6;">Date</div>
-                                        <div id="date">
-                                            {{splitString flightData.departure_datetime " " 0}}
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Flight time -->
-                            <div class="col-2 col-md-3">
-                                <div class="row">
-                                    <div class="col-3">
-                                        <img src="/img/ticket_info/time.png" alt="Time">
-                                    </div>
-                                    <!-- php -->
-                                    <div class="col ms-1">
-                                        <div class="flight-info fw-bold" style="opacity: 0.6;">Flight time</div>
-                                        <div id="flight-time">
-                                             {{splitString flightData.departure_datetime " " 1}}
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Gate -->
-                            <div class="col-2 col-md-3">
-                                <div class="row">
-                                    <div class="col-3">
-                                        <img src="/img/ticket_info/gate.png" alt="Gate">
-                                    </div>
-                                    <!-- php -->
-                                    <div class="col ms-1">
-                                        <div class="gate-info fw-bold" style="opacity: 0.6;">Gate</div>
-                                        <div id="gatenum">A7
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Seat -->
-                            <div class="col-2 col-md-3">
-                                <div class="row">
-                                    <div class="col-3">
-                                        <img src="/img/ticket_info/seat.png" alt="Seat">
-                                    </div>
-                                    <!-- php -->
-                                    <div class="col ms-1">
-                                        <div class="seat-info fw-bold" style="opacity: 0.6;">Seat</div>
-                                        <div id="seatnum">
-                                            {{#if passengerInfo}}
-                                                {{passengerInfo.seatNo}}
-                                                {{else}}
-                                                      {{flightData.seatNo}}
-                                            {{/if}}
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="row p-4">
-                            <div class="col-12 col-sm-6">
-                                <div class="row">
-                                    <h2>
-                                        {{!-- gia tri nay se tinh sau --}}
-                                        VJ012148274242  
-                                    </h2>
-                                </div>
-                                <div class="row ms-1">
-                                    {{flightData.airlineInfo.airline_name}} A{{flightData.flight_id}} Airbus
-                                </div>
-                            </div>
-                            <div class="col-12 col-sm-6 text-sm-end p-0">
-                                <img src="/img/ticket_info/maQR.svg" alt="QR">
-                            </div>
-                        </div>
+                    <div class="col-md-4 text-end fw-bold">
+                        {{flightData.classValue}}
                     </div>
                 </div>
+
+                <!-- INFO -->
+                <div class="row text-dark bg-white rounded-4 p-3">
+
+                    <div class="col-md-3 info-box">
+                    <img src="/img/ticket_info/date.png" />
+                    <div class="fw-bold">Date</div>
+                    <div>{{flightData.departureDate}}</div>
+                    </div>
+
+                    <div class="col-md-3 info-box">
+                    <img src="/img/ticket_info/time.png" />
+                    <div class="fw-bold">Time</div>
+                    <div>{{flightData.departureTime}}</div>
+                    </div>
+
+                    <div class="col-md-3 info-box">
+                    <img src="/img/ticket_info/gate.png" />
+                    <div class="fw-bold">Gate</div>
+                    <div>A{{flightData.flight_id}}</div>
+                    </div>
+
+                    <div class="col-md-3 info-box">
+                        <img src="/img/ticket_info/seat.png">
+                        <div class="fw-bold">Seat</div>
+                        <div>
+                        <div>{{flightData.seatNo}}</div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- FOOTER -->
+                <div class="row mt-4 align-items-center">
+                    <div class="col-md-6">
+                        <h5 class="fw-bold">Mã vé: {{ticket._id}}</h5>
+                        <small>{{flightData.airlineInfo.airline_name}} Airbus</small>
+                    </div>
+                    <div class="col-md-6 text-end qr-box">
+                        <img src="/img/ticket_info/maQR.svg">
+                    </div>
+</div>
 
             </div>
         </div>
-
-        <div class="container mt-5">
-    <div class="row">
-        <h2>Điều khoản và Điều kiện</h2>
     </div>
 
-    <div class="row mt-5">
-        <h3>Thanh toán</h3>
-        <ul class="ps-5">
-            <li>Nếu bạn mua vé bằng thẻ ghi nợ hoặc thẻ tín dụng qua Website, chúng tôi sẽ xử lý các khoản thanh toán này thông qua cổng thanh toán an toàn tự động, có áp dụng quy trình kiểm tra gian lận.</li>
-
-            <li>Nếu bạn cung cấp sai địa chỉ thanh toán hoặc thông tin chủ thẻ, đặt vé của bạn sẽ không được xác nhận và tổng chi phí có thể tăng lên. Chúng tôi có quyền hủy đặt vé nếu thanh toán bị từ chối vì bất kỳ lý do gì hoặc nếu bạn đã cung cấp thông tin thẻ không chính xác. Nếu chúng tôi phát hiện hoặc được thông báo về hoạt động gian lận hay bất hợp pháp liên quan đến việc thanh toán, đặt vé sẽ bị hủy và bạn phải chịu toàn bộ chi phí phát sinh từ việc hủy này, đồng thời không loại trừ các hành động pháp lý có thể được áp dụng.</li>
-
-            <li>Golobe có thể yêu cầu chủ thẻ cung cấp thêm thông tin xác minh thanh toán, bằng cách điền biểu mẫu trực tuyến, đến văn phòng Golobe gần nhất hoặc tại sân bay khi làm thủ tục. Golobe có quyền từ chối vận chuyển hoặc yêu cầu thanh toán đảm bảo (bằng tiền mặt hoặc thẻ khác) nếu thẻ đã dùng để mua vé không được chủ thẻ xuất trình khi làm thủ tục hoặc khi nhận vé, hoặc trong trường hợp khoản thanh toán ban đầu bị tranh chấp hoặc bị ngân hàng từ chối. Thông tin thẻ tín dụng được lưu giữ trong môi trường bảo mật và truyền tải qua hệ thống đạt tiêu chuẩn quốc tế.</li>
+    <!-- TERMS -->
+    <div class="terms mt-5 p-4">
+        <h4>📜 Điều khoản & Điều kiện</h4>
+        <ul class="mt-3">
+            <li>Thanh toán qua cổng an toàn, có kiểm tra gian lận.</li>
+            <li>Thông tin sai có thể khiến vé bị hủy.</li>
+            <li>Golobe có quyền yêu cầu xác minh thanh toán.</li>
         </ul>
+
+        <h5 class="mt-4">📞 Liên hệ</h5>
+        <p>Email: <b>StarLine@gmail.com</b></p>
     </div>
 
-    <div class="row mt-5">
-        <h3>Liên hệ</h3>
-        <p>Nếu bạn có bất kỳ câu hỏi nào về Website hoặc Điều khoản Sử dụng, vui lòng liên hệ:</p>
-        <p>Gmail: StarLine@gmail.com</p>
-        <p></p>
-    </div>
-
-    <div class="row"></div>
 </div>
-
-<!-- Book-body -->
-
 </main>
 
 <script>

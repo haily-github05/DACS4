@@ -1,6 +1,90 @@
-<p class="mt-5"></p>
+<style>
+body {
+    margin: 0;
+    min-height: 100vh;
+    margin-top: 50px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background:
+        linear-gradient(rgba(255,255,255,0.85), rgba(255,255,255,0.85)),
+        url("https://images.unsplash.com/photo-1506744038136-46273834b3fb");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* ================= TITLE ================= */
+.page-title {
+    background: rgba(141, 211, 187, 0.95);
+    backdrop-filter: blur(6px);
+    border-radius: 16px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.18);
+    font-weight: 700;
+}
+
+/* ================= BOX ================= */
+.info-box,
+.seat-container {
+    background: rgba(255,255,255,0.95);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+}
+
+/* ================= SEAT ================= */
+.seat {
+    border-radius: 8px;
+    font-size: 14px;
+    transition: all 0.25s ease;
+    cursor: pointer;
+}
+
+.seat.available {
+    background-color: rgb(195,195,195);
+}
+
+.seat.booked {
+    cursor: not-allowed;
+    opacity: 0.9;
+}
+
+.seat:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+}
+
+.seat.selected {
+    border: 2px solid #FF3131;
+    box-shadow: 0 0 12px rgba(255,49,49,0.6);
+}
+
+/* ================= EXIT ================= */
+.exit-box {
+    background-color: #8DD3BB;
+    color: #fff;
+    border-radius: 12px;
+    font-weight: 700;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.18);
+}
+
+/* ================= BUTTON ================= */
+.accepted {
+    border-radius: 40px;
+    padding: 14px;
+    box-shadow: 0 10px 25px rgba(255,193,7,0.45);
+    transition: 0.3s ease;
+}
+
+.accepted:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 16px 35px rgba(255,193,7,0.65);
+}
+</style>
 <div class="container-fluid pt-5">
-    <h1 class="mb-4 p-3 text-center" style="background-color: #8DD3BB; color:#000">Quý khách vui lòng chọn chỗ ngồi</h1>
+
+    <!-- TITLE -->
+    <h1 class="mb-5 p-3 text-center page-title">
+        ✈️ Quý khách vui lòng chọn chỗ ngồi
+    </h1>
     <div class="row">
         <!-- cột trái -->
         <div class="col-12 col-sm-12 col-md-12 col-lg-4 my-3">
@@ -17,7 +101,7 @@
                 </div>
                 <div class="row pt-2 justify-content-center">
                     <div class="col-2 d-flex justify-content-center p-0">
-                        <div style="width:32px; height:32px; background-color:#e059e7;"></div>
+<div style="width:32px; height:32px; background-color:#e059e7;"></div>
                     </div>
                     <div class="col">
                         <p class="fw-bold">Chỗ ngồi phổ thông (E - J)</p>
@@ -89,7 +173,7 @@ document.addEventListener("DOMContentLoaded", function () {
     console.log("Busy seats:", busySeats);
 
     var dec = 65;
-    var seatingChart = document.getElementById("seating-chart");
+var seatingChart = document.getElementById("seating-chart");
 
     for (var i = 0; i < 10; i++) {
 
@@ -171,7 +255,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 <!-- Lối thoát -->
                 <div class="row mx-3 my-3">
                     <div class="col me-3">
-                        <div class="row">
+<div class="row">
                             <div class="col-lg-4 p-0 me-auto">
                                 <div class="text-center mx-auto fw-bold"
                                     style="width:100%; height:34px; background-color: #8DD3BB; color:#fff;">
@@ -251,7 +335,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Đổi màu theo hạng
         if (seatClass === "Thương Gia") {
-            elem.style.backgroundColor = "#6bc6d2"; // xanh
+elem.style.backgroundColor = "#6bc6d2"; // xanh
         } else {
             elem.style.backgroundColor = "#e059e7"; // tím
         }

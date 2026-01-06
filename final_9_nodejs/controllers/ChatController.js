@@ -13,11 +13,12 @@ class ChatController {
         }
     }
     // Lưu tin nhắn
-    async saveMessage(userId, sender, content) {
+    // controllers/ChatController.js
+    async saveMessage(userId, sender, content, fileUrl = null, fileType = null) {
         try {
             const newMessage = new Message({
                 user_id: userId,
-                sender: sender, // 'user' hoặc 'admin'
+                sender: sender, 
                 content: content,
                 createdAt: new Date()
             });
@@ -41,26 +42,18 @@ async getChatUsers(req, res) {
 
         const usersWithLastMsg = await Promise.all(users.map(async (u) => {
             const lastMsg = await Message.findOne({ user_id: u._id })
-                                         .sort({ createdAt: -1 })
+                                         .sort({ createdAt: -1 }) // Lấy tin nhắn mới nhất
                                          .lean();
             
-            let displayContent = "Nhấn để xem...";
-            let lastTime = 0; // Thêm biến thời gian để sắp xếp
-
-            if (lastMsg) {
-                displayContent = (lastMsg.sender === 'admin' ? "Bạn: " : "") + lastMsg.content;
-                lastTime = lastMsg.createdAt; 
-            }
-
             return {
                 _id: u._id,
                 email: u.email,
-                lastMessage: displayContent,
-                lastTime: lastTime // Dùng để sort danh sách
+                lastMessage: lastMsg ? (lastMsg.sender === 'admin' ? "Bạn: " : "") + lastMsg.content : "Nhấn để xem...",
+                lastTime: lastMsg ? lastMsg.createdAt : 0
             };
         }));
 
-        // QUAN TRỌNG: Sắp xếp khách hàng có tin nhắn mới nhất lên đầu khi load trang
+        // Sắp xếp: Ai vừa nhắn tin xong sẽ nhảy lên đầu danh sách
         usersWithLastMsg.sort((a, b) => b.lastTime - a.lastTime);
 
         res.render('pages/admin/chat-management', {
@@ -68,7 +61,6 @@ async getChatUsers(req, res) {
             users: usersWithLastMsg
         });
     } catch (error) {
-        console.error(error);
         res.status(500).send("Lỗi nạp danh sách");
     }
 }

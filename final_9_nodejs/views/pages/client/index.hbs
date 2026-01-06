@@ -417,6 +417,18 @@
 
 
 <style>
+    body {
+    background:
+        linear-gradient(
+            rgba(255,255,255,0.85),
+            rgba(255,255,255,0.85)
+        ),
+        url("/img/anhtet1.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
     .accordion-content {
     max-height: 0;
     overflow: hidden;
@@ -798,7 +810,60 @@ body {
     transition: 0.2s;
 }
 
+/* ICON GỢI Ý */
+.suggestion-toggle {
+    position: absolute;
+    left: 10px;
+    bottom: 60px;
+    background: #234bc4;
+    color: #fff;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+/* KHUNG GỢI Ý */
+.quick-replies {
+    position: absolute;
+    bottom: 110px;
+    left: 10px;
+    width: calc(100% - 20px);
+    background: #fff;
+    border-radius: 14px;
+    padding: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+
+    max-height: 240px;     /* ~ 5 gợi ý */
+    overflow-y: auto;      /* ⭐ VUỐT */
+}
+
+/* ẨN */
+.hidden {
+    display: none;
+}
+
+/* NÚT GỢI Ý */
+.quick-replies button {
+    width: 100%;
+    text-align: left;
+    background: #fff;
+    border: none;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.quick-replies button:hover {
+    background: #f5f5f5;
+}
+
 #send-btn:hover { background-color: #2549cc; }
+
 </style>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
@@ -817,6 +882,21 @@ body {
     
     <div id="message-container">
         </div>
+    <!-- ICON GỢI Ý -->
+    <div class="suggestion-toggle" onclick="toggleSuggestions()">
+        <i class="fas fa-lightbulb"></i>
+    </div>
+
+    <!-- DANH SÁCH GỢI Ý -->
+    <div id="quick-replies" class="quick-replies hidden">
+        <button onclick="sendQuick('Đặt chuyến bay')">Đặt chuyến bay</button>
+        <button onclick="sendQuick('Mua hành lý, suất ăn, chọn chỗ')">Mua hành lý, suất ăn, chọn chỗ</button>
+        <button onclick="sendQuick('Ưu tiên làm thủ tục nhanh')">Ưu tiên làm thủ tục nhanh</button>
+        <button onclick="sendQuick('Hàng miễn thuế')">Hàng miễn thuế</button>
+        <button onclick="sendQuick('Bảo hiểm')">Bảo hiểm</button>
+        <button onclick="sendQuick('Yêu cầu hoàn huỷ')">Yêu cầu hoàn huỷ</button>
+        <button onclick="sendQuick('Tra cứu vé')">Tra cứu vé</button>
+    </div>
 
     <div class="chat-input-area">
         <input type="text" id="chat-input" placeholder="Nhập tin nhắn..." autocomplete="off">
@@ -897,7 +977,16 @@ function sendMessage() {
 
     container.appendChild(div);
     container.scrollTop = container.scrollHeight; 
-}
+    }
+    function toggleSuggestions() {
+        document.getElementById("quick-replies").classList.toggle("hidden");
+    }
+
+    function sendQuick(text) {
+        document.getElementById("chat-input").value = text;
+        document.getElementById("quick-replies").classList.add("hidden");
+        sendMessage(); // hàm gửi tin hiện tại của bạn
+    }
 </script>
 
 </div>
