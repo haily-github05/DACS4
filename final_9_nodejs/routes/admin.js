@@ -4,6 +4,7 @@ const route = express.Router();
 const AdminController = require("../controllers/AdminController");
 const TicketService = require("../services/TicketService");
 const MailService = require("../services/MailService");
+const chatController = require('../controllers/ChatController');
 
 
 route.get("/manage-flights", AdminController.manageFlight);
@@ -60,6 +61,7 @@ route.post("/confirm", async (req, res) => {
     }
 });
 
+route.get('/chat-management', chatController.getChatUsers);
 
 // trả về trạng thái đã thanh toán
 route.get("/status/:ticketId", async (req, res) => {

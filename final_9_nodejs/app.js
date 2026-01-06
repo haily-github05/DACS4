@@ -10,6 +10,14 @@ const initializeGooglePassport = require('./config/oauth2');
 const initializePassport = require('./config/passport-config');
 // config gg passport
 
+//chat
+const Message = require('./models/Message'); 
+const User = require('./models/User'); 
+const http = require('http');
+const server = http.createServer(app); // Tạo server từ app express
+const { Server } = require("socket.io");
+const io = new Server(server); // KHỞI TẠO BIẾN io TẠI ĐÂY
+const chatController = require('./controllers/ChatController');
 
 require('dotenv').config({path: './config/.env'});
 
@@ -39,6 +47,64 @@ initializeGooglePassport(passport);
 
 // // innitalizepassport config
 initializePassport(passport);
+
+io.on('connection', (socket) => {
+    console.log('Có kết nối mới:', socket.id);
+
+    // 1. Join phòng chat để nhận tin nhắn real-time
+    socket.on('join_chat', async (userId) => {
+        socket.join(userId); // Cả Admin và User đều vào phòng có tên là userId
+        try {
+            const history = await Message.find({ user_id: userId }).sort({ createdAt: 1 }).lean();
+            socket.emit('load_history', history);
+        } catch (err) {
+            console.error("Lỗi nạp lịch sử:", err);
+        }
+    });
+
+    // 2. Người dùng gửi tin nhắn
+    socket.on('send_message', async (data) => {
+        let { userId, userName, content } = data;
+        try {
+            const savedMsg = await chatController.saveMessage(userId, 'user', content);
+            const userDoc = await User.findById(userId).lean();
+            const displayUserEmail = userDoc ? userDoc.email : "No email";
+
+            // Cập nhật Sidebar cho Admin
+            io.emit('admin_receive_new_message', {
+                userId: userId,
+                userEmail: displayUserEmail, 
+                content: content,
+                createdAt: savedMsg.createdAt
+            });
+
+            // Gửi tin nhắn vào phòng để Admin đang mở chat thấy ngay
+            io.to(userId).emit('receive_message', savedMsg);
+        } catch (error) {
+            console.error("Lỗi socket khách gửi:", error.message);
+        }
+    });
+
+    // 3. Admin trả lời tin nhắn
+    socket.on('admin_send_message', async (data) => {
+        const { userId, content } = data;
+        try {
+            const savedMsg = await chatController.saveMessage(userId, 'admin', content);
+
+            // Gửi tin nhắn đến phòng của khách hàng
+            io.to(userId).emit('receive_message', savedMsg);
+            
+            // Cập nhật lại Sidebar cho Admin (nếu có nhiều admin)
+            io.emit('admin_receive_new_message', {
+                userId: userId,
+                content: "Bạn: " + content,
+                sender: 'admin'
+            });
+        } catch (error) {
+            console.error("Lỗi socket admin gửi:", error.message);
+        }
+    });
+}); 
 
 app.engine('hbs', hbs({
     defaultLayout: 'main',
@@ -158,4 +224,7 @@ app.use('/search', clientRouter);
 // init Route middle
 
 
-app.listen(port, ()=> console.log(`Server listening on port: ${port}`));
+//app.listen(port, ()=> console.log(`Server listening on port: ${port}`));
+server.listen(port, () => {
+    console.log(`Server & Chat đang chạy tại: http://localhost:${port}`);
+});

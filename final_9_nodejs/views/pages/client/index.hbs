@@ -59,7 +59,7 @@
                             aria-label=".form-select-lg example" style="display: inline-block;">
                             {{#each airports}}
                                 <option value="{{this._id}}">{{this.airport_location}}</option>
-                            {{/each}}
+{{/each}}
                         </select>
                         <span class="fa-solid fa-arrow-right-arrow-left mb-3 mt-4 ms-3 d-none d-lg-block fa-lg"></span>
                     </div>
@@ -122,7 +122,7 @@
 
         <div class="col">
             <div class="card shadow-lg">
-                <img src="./img/homepage/thu-do-Ha-Noi.jpg" class="card-img-top object-fit-fill" alt="..."
+<img src="./img/homepage/thu-do-Ha-Noi.jpg" class="card-img-top object-fit-fill" alt="..."
                     style="aspect-ratio: 1/1;">
                 <div class="card-body">
                     <h5 class="card-title">Thủ đô Hà Nội</h5>
@@ -163,6 +163,144 @@
         </div>
     </div>
 </div>
+
+
+<style>
+    :root {
+        --sl-primary: #006ce4;
+        --sl-dark: #002d63;
+        --sl-text: #333333;
+        --sl-text-light: #666666;
+        --sl-border: #e6e9ed;
+        --sl-white: #ffffff;
+    }
+
+    .sl-container {
+        max-width: 1100px;
+        margin: 40px auto;
+        padding: 0 20px;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    }
+
+    .sl-trust-section {
+        margin-bottom: 30px;
+    }
+
+    .sl-trust-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 25px;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .sl-trust-header h2 {
+        font-size: 24px;
+        color: var(--sl-text);
+        margin: 0;
+        font-weight: 500;
+    }
+
+    .sl-trust-header h2 span {
+        color: var(--sl-primary);
+        font-weight: bold;
+    }
+
+    .sl-register-link {
+        color: var(--sl-text);
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 14px;
+    }
+
+    .sl-trust-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 16px;
+    }
+
+    .sl-trust-card {
+        border: 1px solid var(--sl-border);
+        border-radius: 12px;
+        padding: 24px;
+        background-color: var(--sl-white);
+        transition: box-shadow 0.3s ease;
+    }
+
+    .sl-trust-card:hover {
+        box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    }
+
+    .sl-icon-box {
+        font-size: 32px;
+        margin-bottom: 15px;
+        display: block;
+    }
+
+    .sl-card-title {
+        font-size: 17px;
+        font-weight: 700;
+        margin: 0 0 12px 0;
+        color: var(--sl-dark);
+    }
+
+    .sl-card-desc {
+        font-size: 14px;
+        color: var(--sl-text-light);
+        line-height: 1.5;
+        margin: 0;
+    }
+
+    .sl-app-link {
+        display: inline-block;
+        margin-top: 12px;
+        color: var(--sl-primary);
+        text-decoration: none;
+        font-size: 13px;
+        font-weight: 500;
+    }
+
+    @media (max-width: 600px) {
+        .sl-trust-header h2 { font-size: 20px; }
+        .sl-trust-grid { grid-template-columns: 1fr; }
+    }
+</style>
+
+<div class="sl-container">
+    
+    <section class="sl-trust-section">
+        <div class="sl-trust-header">
+            <h2><span>StarLine</span> người bạn đường đáng tin cậy của bạn</h2>
+            <a href="#" class="sl-register-link">Đăng ký ngay &rsaquo;</a>
+        </div>
+        <div class="sl-trust-grid">
+            <div class="sl-trust-card">
+                <div class="sl-icon-box">⭐</div>
+                <h3 class="sl-card-title">Tiết Kiệm & Nhận Thưởng</h3>
+                <p class="sl-card-desc">Đăng ký thành viên để hưởng các ưu đãi độc quyền và tích lũy Star Points.</p>
+            </div>
+            <div class="sl-trust-card">
+                <div class="sl-icon-box">🌍</div>
+                <h3 class="sl-card-title">Hỗ Trợ Toàn Cầu</h3>
+                <p class="sl-card-desc">Hợp tác với hơn 600 hãng hàng không quốc tế trên toàn thế giới.</p>
+            </div>
+            <div class="sl-trust-card">
+                <div class="sl-icon-box">⚡</div>
+                <h3 class="sl-card-title">Phản Hồi Sau 30 Giây</h3>
+                <p class="sl-card-desc">Chúng tôi cam kết hỗ trợ khách hàng nhanh chóng qua mọi kênh liên lạc.</p>
+            </div>
+            <div class="sl-trust-card">
+                <div class="sl-icon-box">📱</div>
+                <h3 class="sl-card-title">Ưu Đãi Trên Ứng Dụng</h3>
+                <p class="sl-card-desc">Đặt bằng ứng dụng StarLine để nhận thêm mã giảm giá tức thì.</p>
+                <a href="#" class="sl-app-link">Tải ứng dụng StarLine</a>
+            </div>
+        </div>
+    </section>
+</div>
+
+
 
 <style>
     .destinations-container h2 {
@@ -213,6 +351,7 @@
 }
 
 </style>
+
 <div class="container my-5 destinations-container">
 
     <h2 class="mb-4 text-center">
@@ -222,7 +361,7 @@
     <div class="row g-4">
 
         <!-- 1 -->
-        <div class="col-12 col-md-6 col-lg-3">
+<div class="col-12 col-md-6 col-lg-3">
             <a href="https://www.etrip4u.com/du-lich/du-lich-dao-bali-thien-duong-du-lich-indonesia" target="_blank" style="text-decoration:none; color:inherit;">
                 <div class="destination-card">
                     <img src="./img/homepage/bali.jpeg" alt="">
@@ -274,4 +413,491 @@
         </div>
 
     </div>
+</div>
+
+
+<style>
+    .accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    padding: 0 20px;
+    background-color: #fcfcfc;
+}
+
+.accordion-item.active .accordion-content {
+    max-height: 200px; /* Độ cao tối đa tùy chỉnh theo nội dung */
+    padding: 15px 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.arrow {
+    width: 8px;
+    height: 8px;
+    border-right: 2px solid #333;
+    border-bottom: 2px solid #333;
+    transform: rotate(45deg);
+    transition: 0.3s;
+}
+
+.accordion-item.active .arrow {
+    transform: rotate(-135deg);
+}
+
+.accordion-header {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px;
+    border-bottom: 1px solid #eee;
+    font-size: 16px;
+    color: #002d63;
+}
+    :root {
+    --primary-color: #003580; /* Màu xanh đậm StarLine */
+    --text-color: #333;
+    --bg-light: #f5f7fa;
+    --border-color: #e6e9ed;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fff;
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.starline-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+/* Tiêu đề mục */
+.section-title {
+    color: var(--primary-color);
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+/* Thẻ tính năng */
+.feature-card {
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    margin-bottom: 40px;
+}
+
+.feature-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.feature-text {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.see-more {
+    color: #006ce4;
+    text-decoration: none;
+    font-size: 14px;
+    float: right;
+}
+
+/* Danh sách mẹo (Accordion Style) */
+.accordion-list {
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.accordion-item {
+    border-bottom: 1px solid var(--border-color);
+}
+
+.accordion-item:last-child {
+    border-bottom: none;
+}
+
+.accordion-header {
+    padding: 18px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.3s;
+}
+
+.accordion-header:hover {
+    background-color: var(--bg-light);
+}
+
+/* Icon mũi tên xuống (giả lập) */
+.icon-chevron-down::after {
+    content: '';
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-right: 2px solid #666;
+    border-bottom: 2px solid #666;
+    transform: rotate(45deg);
+}
+</style>
+<script>
+    function toggleAccordion(element) {
+    const parent = element.parentElement;
+    const isAlreadyActive = parent.classList.contains('active');
+
+    // Đóng tất cả các mục đang mở khác
+    document.querySelectorAll('.accordion-item').forEach(item => {
+        item.classList.remove('active');
+    });
+
+    // Nếu mục vừa nhấn chưa mở thì mới mở nó ra
+    if (!isAlreadyActive) {
+        parent.classList.add('active');
+    }
+}
+</script>
+<div class="starline-container">
+    <section class="info-section">
+        <h2 class="section-title">Tại Sao Nên Đặt Vé Máy Bay Với StarLine?</h2>
+        <div class="feature-card">
+            <h3 class="feature-title">Hành trình phù hợp riêng cho bạn</h3>
+            <p class="feature-text">
+                Bạn đã sẵn sàng cho chuyến hành trình vươn tới những vì sao? StarLine giúp việc tìm kiếm chuyến bay trở nên cá nhân hóa và đơn giản hơn bao giờ hết. Chúng tôi kết nối bạn với hàng ngàn đường bay tối ưu với mức giá minh bạch nhất.
+            </p>
+            <a href="#" class="see-more">Xem thêm</a>
+        </div>
+    </section>
+
+    <section class="tips-section">
+    <h2 class="section-title">Mẹo Đặt Chuyến Bay Giá Rẻ</h2>
+    <div class="accordion-list">
+        
+        <div class="accordion-item">
+            <div class="accordion-header" onclick="toggleAccordion(this)">
+                <span>Bay trong tuần làm việc</span>
+                <span class="arrow"></span>
+            </div>
+            <div class="accordion-content">
+                <p>Chọn bay vào ngày trong tuần có thể giúp bạn tiết kiệm chi phí. Các chuyến bay khởi hành trong tuần, đặc biệt là vào thứ 5, thường sẽ rẻ hơn do ít người du lịch vào những ngày này.</p>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <div class="accordion-header" onclick="toggleAccordion(this)">
+                <span>Tham khảo ưu tiên từ hãng StarLine</span>
+                <span class="arrow"></span>
+            </div>
+            <div class="accordion-content">
+                <p>Hệ thống của StarLine hiển thị "chế độ lịch" giúp bạn dễ dàng so sánh giá vé giữa các ngày. Việc xem lướt khoảng giá giúp bạn chọn được ngày khởi hành rẻ nhất trong tháng.</p>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <div class="accordion-header" onclick="toggleAccordion(this)">
+                <span>Cân nhắc khung giờ vàng khi đặt vé</span>
+                <span class="arrow"></span>
+            </div>
+            <div class="accordion-content">
+                <p>Các chuyến bay vào sáng sớm hoặc đêm muộn thường có giá thấp hơn đáng kể so với các khung giờ cao điểm (9h sáng - 18h tối).</p>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <div class="accordion-header" onclick="toggleAccordion(this)">
+                <span>Đặt vé trực tiếp qua ứng dụng StarLine</span>
+                <span class="arrow"></span>
+            </div>
+            <div class="accordion-content">
+                <p>Sử dụng App StarLine thường có các mã giảm giá độc quyền dành cho thiết bị di động và tính năng thông báo khi giá vé giảm (Price Alerts).</p>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <div class="accordion-header" onclick="toggleAccordion(this)">
+                <span>Ưu đãi phút chót không phải lúc nào cũng rẻ hơn</span>
+                <span class="arrow"></span>
+            </div>
+            <div class="accordion-content">
+                <p>Đừng đợi đến sát ngày mới đặt. Thông thường, đặt vé trước ít nhất 3-6 tuần sẽ giúp bạn có mức giá ổn định và nhiều lựa chọn chỗ ngồi hơn.</p>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <div class="accordion-header" onclick="toggleAccordion(this)">
+                <span>Chọn chuyến bay có nối chuyến (Transit)</span>
+                <span class="arrow"></span>
+            </div>
+            <div class="accordion-content">
+                <p>Các chuyến bay thẳng thường đắt hơn. Nếu bạn không quá vội, chọn một chuyến bay dừng tại một điểm trung chuyển có thể giảm giá vé từ 20% đến 40%.</p>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <div class="accordion-header" onclick="toggleAccordion(this)">
+                <span>Thanh toán bằng thẻ tín dụng để nhận ưu đãi</span>
+                <span class="arrow"></span>
+            </div>
+            <div class="accordion-content">
+                <p>StarLine liên kết với nhiều ngân hàng để hoàn tiền (cashback) hoặc tích điểm dặm bay khi bạn thanh toán bằng thẻ tín dụng liên kết.</p>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <div class="accordion-header" onclick="toggleAccordion(this)">
+                <span>Cảnh giác với chi phí ẩn</span>
+                <span class="arrow"></span>
+            </div>
+            <div class="accordion-content">
+                <p>Luôn kiểm tra xem giá cuối cùng đã bao gồm thuế, phí sân bay và hành lý ký gửi chưa để tránh bất ngờ khi đến bước thanh toán.</p>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <div class="accordion-header" onclick="toggleAccordion(this)">
+                <span>Kỳ nghỉ trọn gói (Combo Vé + Khách sạn)</span>
+                <span class="arrow"></span>
+            </div>
+            <div class="accordion-content">
+                <p>Đặt combo vé máy bay và khách sạn cùng lúc trên StarLine thường giúp bạn tiết kiệm hơn so với việc đặt riêng lẻ từng dịch vụ.</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<style>
+/* Nút tròn nổi */
+.floating-chat-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #3867ff; /* Màu xanh đồng bộ */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    z-index: 999;
+}
+
+/* Khung Chat chính */
+.chat-popup {
+    position: fixed;
+    bottom: 95px;
+    right: 30px;
+    width: 350px;
+    height: 500px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    display: none; /* Mặc định ẩn */
+    flex-direction: column;
+    z-index: 1000;
+    overflow: hidden;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: all 0.3s ease;
+}
+
+/* Thanh tiêu đề */
+.chat-header {
+    background: linear-gradient(135deg, #3867ff, #2549cc);
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+}
+
+.close-btn {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    line-height: 1;
+}
+
+/* Vùng chứa tin nhắn */
+#message-container {
+    flex: 1;
+    padding: 15px;
+    overflow-y: auto;
+    background-color: #f8f9fa;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Bong bóng tin nhắn */
+.msg-item {
+    max-width: 80%;
+    padding: 10px 14px;
+    border-radius: 18px;
+    font-size: 14px;
+    line-height: 1.4;
+    word-wrap: break-word;
+}
+
+.msg-right {
+    align-self: flex-end;
+    background-color: #3867ff;
+    color: white;
+    border-bottom-right-radius: 2px;
+}
+
+.msg-left {
+    align-self: flex-start;
+    background-color: #ffffff;
+    color: #333;
+    border-bottom-left-radius: 2px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+/* Vùng nhập liệu */
+.chat-input-area {
+    padding: 12px;
+    background: white;
+    border-top: 1px solid #eee;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+#chat-input {
+    flex: 1;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    padding: 8px 15px;
+    outline: none;
+}
+
+#send-btn {
+    background-color: #3867ff;
+    color: white;
+    border: none;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#send-btn:hover { background-color: #2549cc; }
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+<div class="floating-chat-icon" onclick="toggleChat()">
+    <i class="fas fa-headset"></i>
+</div>
+
+<div id="chat-box" class="chat-popup">
+    <div class="chat-header">
+        <div class="header-info">
+            <i class="fas fa-circle" style="color: #2ecc71; font-size: 10px; margin-right: 5px;"></i>
+            <span>Hỗ trợ trực tuyến</span>
+        </div>
+        <button class="close-btn" onclick="toggleChat()">&times;</button>
+    </div>
+    
+    <div id="message-container">
+        </div>
+
+    <div class="chat-input-area">
+        <input type="text" id="chat-input" placeholder="Nhập tin nhắn..." autocomplete="off">
+        <button id="send-btn" onclick="sendMessage()">
+            <i class="fas fa-paper-plane"></i>
+        </button>
+    </div>
+</div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script>
+    const socket = io();
+    const userId = "{{user._id}}";
+    let isHistoryLoaded = false; // Biến kiểm soát để tránh nạp lịch sử nhiều lần
+
+    // Trong file script của người dùng
+function toggleChat() {
+    const chatBox = document.getElementById('chat-box');
+    
+    if (chatBox.style.display === 'none' || chatBox.style.display === '') {
+        chatBox.style.display = 'flex';
+        
+        if (userId) {
+            // Luôn gọi join_chat khi mở để đảm bảo socket đang ở đúng phòng nếu bị reconnect
+            socket.emit('join_chat', userId);
+            
+            if (!isHistoryLoaded) {
+                // Nếu bạn có hàm riêng để lấy lịch sử thì gọi ở đây
+                // socket.emit('get_history', userId); 
+                isHistoryLoaded = true;
+            }
+        }
+    } else {
+        chatBox.style.display = 'none';
+    }
+}
+
+function sendMessage() {
+    const input = document.getElementById('chat-input');
+    const content = input.value.trim();
+    
+    // Thử lấy trực tiếp từ biến toàn cục nếu có, hoặc ID
+    const userName = document.getElementById('user-display-name')?.innerText || "{{user.name}}"; 
+
+    if (content !== "" && userId) {
+        // Log trực tiếp vào một khung thông báo trên giao diện nếu console lỗi
+        // alert("Đang gửi tên: " + userName); 
+
+        socket.emit('send_message', { 
+            userId: userId, 
+            userName: userName, 
+            content: content 
+        });
+        input.value = '';
+    }
+}
+
+    socket.on('load_history', (history) => {
+        const container = document.getElementById('message-container');
+        container.innerHTML = ''; 
+        history.forEach(msg => appendMessageToUI(msg));
+    });
+
+    socket.on('receive_message', (data) => {
+        appendMessageToUI(data);
+    });
+
+    function appendMessageToUI(data) {
+    const container = document.getElementById('message-container');
+    if(!container) return;
+
+    const div = document.createElement('div');
+    // Chỉ cần 2 class: 'msg-item' (chung) và 'msg-right'/'msg-left' (riêng)
+    div.classList.add('msg-item');
+    div.classList.add(data.sender === 'user' ? 'msg-right' : 'msg-left');
+    
+    div.innerText = data.content;
+
+    container.appendChild(div);
+    container.scrollTop = container.scrollHeight; 
+}
+</script>
+
 </div>

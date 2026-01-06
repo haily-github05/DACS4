@@ -4,6 +4,7 @@ const User = require('./models/User'); // file User.js bạn gửi
 const cors = require('cors');
 const app = express();
 const adminRoute = require("./routes/admin");
+const chatController = require('./controllers/ChatController');
 
 app.use(cors());
 app.use(express.json());
@@ -27,6 +28,33 @@ app.get('/api/user/:email', async (req, res) => {
     }
 });
 
+//Chat
+io.on('connection', (socket) => {
+    // Khi khách hàng bắt đầu kết nối chat qua mạng
+    socket.on('join_chat', async (userId) => {
+        socket.join(userId);
+        
+        // Gọi Controller để lấy lịch sử cũ
+        const history = await chatController.getChatHistory(userId);
+        socket.emit('load_history', history);
+    });
+
+    // Khi có tin nhắn mới gửi lên từ Client
+    socket.on('send_message', async (data) => {
+        // Gọi Controller để lưu tin nhắn vào MongoDB
+        const savedMsg = await chatController.saveMessage(data);
+
+        // Phát tín hiệu (Emit) lại cho đúng phòng của người dùng đó
+        if (savedMsg) {
+            io.to(data.userId).emit('receive_message', savedMsg);
+        }
+    });
+});
+
+router.get('/chat-management', (req, res) => {
+    // chatController.getChatUsers là hàm lấy danh sách user bạn đã viết ở bước trước
+    chatController.getChatUsers(req, res); 
+});
 
 //
 app.use("/admin", adminRoute);
