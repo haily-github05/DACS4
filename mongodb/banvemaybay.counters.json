@@ -1,0 +1,16 @@
+[{
+  "_id": {
+    "$oid": "68752f92c54fea0700ab6ae6"
+  },
+  "id": "user_id",
+  "reference_value": null,
+  "seq": 11
+},
+{
+  "_id": {
+    "$oid": "68c6f09db34e2e8652abb036"
+  },
+  "id": "flight_id",
+  "reference_value": null,
+  "seq": 28
+}]

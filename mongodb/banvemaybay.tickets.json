@@ -1,0 +1,2223 @@
+[{
+  "_id": {
+    "$oid": "692c6681efe540dc192b0eb5"
+  },
+  "airline_id": {
+    "$oid": "51908cc42f9fa364220cb649"
+  },
+  "flight_id": {
+    "$oid": "6921786d2dacb0b0a04447ed"
+  },
+  "user_id": {
+    "$oid": "692856b11683030b1a773f2d"
+  },
+  "seat": "E3",
+  "refund": false,
+  "status": "unpaid",
+  "ticket_class": "Phổ Thông",
+  "createdAt": {
+    "$date": "2025-11-30T15:45:05.537Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-30T15:45:05.537Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "692c6683efe540dc192b0eb7"
+  },
+  "airline_id": {
+    "$oid": "51908cc42f9fa364220cb649"
+  },
+  "flight_id": {
+    "$oid": "6921786d2dacb0b0a04447ed"
+  },
+  "user_id": {
+    "$oid": "692856b11683030b1a773f2d"
+  },
+  "seat": "E3",
+  "refund": false,
+  "status": "unpaid",
+  "ticket_class": "Phổ Thông",
+  "createdAt": {
+    "$date": "2025-11-30T15:45:07.950Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-30T15:45:07.950Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "693002bb3f9bda434a5810e4"
+  },
+  "airline_id": {
+    "$oid": "51908cc42f9fa364220cb649"
+  },
+  "flight_id": {
+    "$oid": "6921786d2dacb0b0a04447ed"
+  },
+  "user_id": {
+    "$oid": "692856b11683030b1a773f2d"
+  },
+  "seat": "E2",
+  "refund": false,
+  "status": "unpaid",
+  "ticket_class": "Phổ Thông",
+  "createdAt": {
+    "$date": "2025-12-03T09:28:27.945Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-03T09:28:27.945Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "693043523f9bda434a5810e6"
+  },
+  "airline_id": {
+    "$oid": "51908cc42f9fa364220cb649"
+  },
+  "flight_id": {
+    "$oid": "6921786d2dacb0b0a04447ed"
+  },
+  "user_id": {
+    "$oid": "692856b11683030b1a773f2d"
+  },
+  "seat": "E2",
+  "refund": false,
+  "status": "unpaid",
+  "ticket_class": "Phổ Thông",
+  "createdAt": {
+    "$date": "2025-12-03T14:04:02.478Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-03T14:04:02.478Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69305292d024ebb9267ff3ab"
+  },
+  "airline_id": {
+    "$oid": "51908cc42f9fa364220cb649"
+  },
+  "flight_id": {
+    "$oid": "69304bf63d9acf5879d6f694"
+  },
+  "user_id": {
+    "$oid": "692856b11683030b1a773f2d"
+  },
+  "seat": "E2",
+  "refund": false,
+  "status": "unpaid",
+  "ticket_class": "Phổ Thông",
+  "createdAt": {
+    "$date": "2025-12-03T15:09:06.777Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-03T15:09:06.777Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69305bc7427b3e6ab6f07f84"
+  },
+  "airline_id": {
+    "$oid": "d83aa0756732d975dffbc109"
+  },
+  "flight_id": {
+    "$oid": "69304c163d9acf5879d6f69e"
+  },
+  "user_id": {
+    "$oid": "692856b11683030b1a773f2d"
+  },
+  "seat": "E3",
+  "refund": false,
+  "status": "unpaid",
+  "ticket_class": "Phổ Thông",
+  "createdAt": {
+    "$date": "2025-12-03T15:48:23.576Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-03T15:48:23.576Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69305ca7b82d4fb6d8c0c241"
+  },
+  "airline_id": {
+    "$oid": "51908cc42f9fa364220cb649"
+  },
+  "flight_id": {
+    "$oid": "69304bf63d9acf5879d6f694"
+  },
+  "user_id": {
+    "$oid": "692856b11683030b1a773f2d"
+  },
+  "seat": "E3",
+  "refund": false,
+  "status": "unpaid",
+  "ticket_class": "Phổ Thông",
+  "createdAt": {
+    "$date": "2025-12-03T15:52:07.963Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-03T15:52:07.963Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69310170ef84f7eac619a9c8"
+  },
+  "airline_id": {
+    "$oid": "d83aa0756732d975dffbc109"
+  },
+  "flight_id": {
+    "$oid": "69304c163d9acf5879d6f69e"
+  },
+  "user_id": {
+    "$oid": "692856b11683030b1a773f2d"
+  },
+  "seat": "E4",
+  "refund": false,
+  "status": "unpaid",
+  "ticket_class": "Phổ Thông",
+  "createdAt": {
+    "$date": "2025-12-04T03:35:12.855Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-04T03:35:12.855Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "693104157894e38d36981a9b"
+  },
+  "airline_id": {
+    "$oid": "d83aa0756732d975dffbc109"
+  },
+  "flight_id": {
+    "$oid": "69304c163d9acf5879d6f69e"
+  },
+  "user_id": null,
+  "seat": "E4",
+  "refund": false,
+  "status": "unpaid",
+  "ticket_class": "Phổ Thông",
+  "createdAt": {
+    "$date": "2025-12-04T03:46:29.455Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-04T03:46:29.455Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "693104187894e38d36981a9d"
+  },
+  "airline_id": {
+    "$oid": "d83aa0756732d975dffbc109"
+  },
+  "flight_id": {
+    "$oid": "69304c163d9acf5879d6f69e"
+  },
+  "user_id": null,
+  "seat": "E4",
+  "refund": false,
+  "status": "unpaid",
+  "ticket_class": "Phổ Thông",
+  "createdAt": {
+    "$date": "2025-12-04T03:46:32.265Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-04T03:46:32.265Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "693104477894e38d36981aa8"
+  },
+  "airline_id": {
+    "$oid": "d83aa0756732d975dffbc109"
+  },
+  "flight_id": {
+    "$oid": "69304c163d9acf5879d6f69e"
+  },
+  "user_id": null,
+  "seat": "E2",
+  "refund": false,
+  "status": "unpaid",
+  "ticket_class": "Phổ Thông",
+  "createdAt": {
+    "$date": "2025-12-04T03:47:19.161Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-04T03:47:19.161Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "693105226e6b5bcfa1b59c9f"
+  },
+  "airline_id": {
+    "$oid": "d83aa0756732d975dffbc109"
+  },
+  "flight_id": {
+    "$oid": "69304c163d9acf5879d6f69e"
+  },
+  "user_id": null,
+  "seat": "E2",
+  "refund": false,
+  "status": "unpaid",
+  "ticket_class": "Phổ Thông",
+  "createdAt": {
+    "$date": "2025-12-04T03:50:58.836Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-04T03:50:58.836Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69310806a59872f854554151"
+  },
+  "airline_id": {
+    "$oid": "d83aa0756732d975dffbc109"
+  },
+  "flight_id": {
+    "$oid": "69304c163d9acf5879d6f69e"
+  },
+  "user_id": null,
+  "seat": "E3",
+  "refund": false,
+  "status": "paid",
+  "ticket_class": "Phổ Thông",
+  "createdAt": {
+    "$date": "2025-12-04T04:03:18.406Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-04T04:16:44.647Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69310d1571bdb41118d61fa1"
+  },
+  "airline_id": {
+    "$oid": "51908cc42f9fa364220cb649"
+  },
+  "flight_id": {
+    "$oid": "69304bf63d9acf5879d6f694"
+  },
+  "user_id": null,
+  "seat": "E2",
+  "refund": false,
+  "status": "unpaid",
+  "ticket_class": "Phổ Thông",
+  "createdAt": {
+    "$date": "2025-12-04T04:24:53.988Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-04T04:24:53.988Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69310e583f1e24a63e4c73e8"
+  },
+  "airline_id": {
+    "$oid": "d83aa0756732d975dffbc109"
+  },
+  "flight_id": {
+    "$oid": "69304c163d9acf5879d6f69e"
+  },
+  "user_id": null,
+  "seat": "F4",
+  "refund": false,
+  "status": "unpaid",
+  "ticket_class": "Phổ Thông",
+  "createdAt": {
+    "$date": "2025-12-04T04:30:16.596Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-04T04:30:16.596Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69311c2fc4a80cd37ae0d928"
+  },
+  "airline_id": {
+    "$oid": "51908cc42f9fa364220cb649"
+  },
+  "flight_id": {
+    "$oid": "69304bf63d9acf5879d6f694"
+  },
+  "user_id": null,
+  "seat": "E3",
+  "refund": false,
+  "status": "unpaid",
+  "ticket_class": "Phổ Thông",
+  "createdAt": {
+    "$date": "2025-12-04T05:29:19.210Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-04T05:29:19.210Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69317acc40b398190820e3fe"
+  },
+  "airline_id": {
+    "$oid": "d83aa0756732d975dffbc109"
+  },
+  "flight_id": {
+    "$oid": "69304c163d9acf5879d6f69e"
+  },
+  "user_id": null,
+  "seat": "E1",
+  "refund": false,
+  "status": "unpaid",
+  "ticket_class": "Phổ Thông",
+  "createdAt": {
+    "$date": "2025-12-04T12:13:00.282Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-04T12:13:00.282Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6931ac63ec37776600a86dec"
+  },
+  "airline_id": {
+    "$oid": "d83aa0756732d975dffbc109"
+  },
+  "flight_id": {
+    "$oid": "69304c163d9acf5879d6f69e"
+  },
+  "user_id": {
+    "$oid": "692856b11683030b1a773f2d"
+  },
+  "seat": "F5",
+  "refund": false,
+  "status": "unpaid",
+  "ticket_class": "Phổ Thông",
+  "createdAt": {
+    "$date": "2025-12-04T15:44:35.623Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-04T15:44:35.623Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6931ad389a9a93af250c8941"
+  },
+  "airline_id": {
+    "$oid": "d83aa0756732d975dffbc109"
+  },
+  "flight_id": {
+    "$oid": "69304c163d9acf5879d6f69e"
+  },
+  "user_id": null,
+  "seat": "G2",
+  "refund": false,
+  "status": "unpaid",
+  "ticket_class": "Phổ Thông",
+  "createdAt": {
+    "$date": "2025-12-04T15:48:08.132Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-04T15:48:08.132Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6931b1789a9a93af250c894f"
+  },
+  "airline_id": {
+    "$oid": "d83aa0756732d975dffbc109"
+  },
+  "flight_id": {
+    "$oid": "69304c163d9acf5879d6f69e"
+  },
+  "user_id": null,
+  "seat": "E3",
+  "refund": false,
+  "status": "unpaid",
+  "ticket_class": "Phổ Thông",
+  "createdAt": {
+    "$date": "2025-12-04T16:06:16.784Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-04T16:06:16.784Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6931b26832d0b9a020f2d869"
+  },
+  "airline_id": {
+    "$oid": "d83aa0756732d975dffbc109"
+  },
+  "flight_id": {
+    "$oid": "69304c163d9acf5879d6f69e"
+  },
+  "user_id": null,
+  "seat": "E3",
+  "refund": false,
+  "status": "unpaid",
+  "ticket_class": "Phổ Thông",
+  "createdAt": {
+    "$date": "2025-12-04T16:10:16.272Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-04T16:10:16.272Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6931b3ec1ee4a0d0af6ef269"
+  },
+  "airline_id": {
+    "$oid": "d83aa0756732d975dffbc109"
+  },
+  "flight_id": {
+    "$oid": "69304c163d9acf5879d6f69e"
+  },
+  "user_id": null,
+  "seat": "B3",
+  "refund": false,
+  "status": "unpaid",
+  "ticket_class": "Thương Gia",
+  "createdAt": {
+    "$date": "2025-12-04T16:16:44.725Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-04T16:16:44.725Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6931bf2e6b5a506886ba2d47"
+  },
+  "airline_id": {
+    "$oid": "d83aa0756732d975dffbc109"
+  },
+  "flight_id": {
+    "$oid": "69304c163d9acf5879d6f69e"
+  },
+  "user_id": null,
+  "seat": "J3",
+  "refund": false,
+  "status": "unpaid",
+  "ticket_class": "Phổ Thông",
+  "createdAt": {
+    "$date": "2025-12-04T17:04:46.658Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-04T17:04:46.658Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6931c6ff28d2e5e6044135a3"
+  },
+  "airline_id": {
+    "$oid": "51908cc42f9fa364220cb649"
+  },
+  "flight_id": {
+    "$oid": "69304bf63d9acf5879d6f694"
+  },
+  "user_id": 5,
+  "seat": "E4",
+  "refund": false,
+  "status": "unpaid",
+  "ticket_class": "Phổ Thông",
+  "createdAt": {
+    "$date": "2025-12-04T17:38:07.381Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-04T17:38:07.381Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6931c8d515c954337bd8595e"
+  },
+  "airline_id": {
+    "$oid": "d83aa0756732d975dffbc109"
+  },
+  "flight_id": {
+    "$oid": "69304c163d9acf5879d6f69e"
+  },
+  "user_id": null,
+  "seat": "E2",
+  "refund": false,
+  "status": "unpaid",
+  "ticket_class": "Phổ Thông",
+  "createdAt": {
+    "$date": "2025-12-04T17:45:57.662Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-04T17:45:57.662Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6931d16d15c954337bd85974"
+  },
+  "airline_id": {
+    "$oid": "d83aa0756732d975dffbc109"
+  },
+  "flight_id": {
+    "$oid": "69304c163d9acf5879d6f69e"
+  },
+  "user_id": null,
+  "seat": "E3",
+  "refund": false,
+  "status": "unpaid",
+  "ticket_class": "Phổ Thông",
+  "createdAt": {
+    "$date": "2025-12-04T18:22:37.697Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-04T18:22:37.697Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6931d35d15c954337bd8598c"
+  },
+  "airline_id": {
+    "$oid": "d83aa0756732d975dffbc109"
+  },
+  "flight_id": {
+    "$oid": "69304c163d9acf5879d6f69e"
+  },
+  "user_id": null,
+  "seat": "E2",
+  "refund": false,
+  "status": "unpaid",
+  "ticket_class": "Phổ Thông",
+  "createdAt": {
+    "$date": "2025-12-04T18:30:53.262Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-04T18:30:53.262Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69323d3915c954337bd8599a"
+  },
+  "airline_id": {
+    "$oid": "d83aa0756732d975dffbc109"
+  },
+  "flight_id": {
+    "$oid": "69304c163d9acf5879d6f69e"
+  },
+  "user_id": null,
+  "seat": "G6",
+  "refund": false,
+  "status": "unpaid",
+  "ticket_class": "Phổ Thông",
+  "createdAt": {
+    "$date": "2025-12-05T02:02:33.628Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-05T02:02:33.628Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69324909d89a25b9739a3885"
+  },
+  "airline_id": {
+    "$oid": "d83aa0756732d975dffbc109"
+  },
+  "flight_id": {
+    "$oid": "69304c163d9acf5879d6f69e"
+  },
+  "user_id": null,
+  "seat": "C5",
+  "refund": false,
+  "status": "unpaid",
+  "ticket_class": "Thương Gia",
+  "createdAt": {
+    "$date": "2025-12-05T02:52:57.812Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-05T02:52:57.812Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69324a852ce8bc7368d6d7f8"
+  },
+  "airline_id": {
+    "$oid": "51908cc42f9fa364220cb649"
+  },
+  "flight_id": {
+    "$oid": "69304bf63d9acf5879d6f694"
+  },
+  "user_id": null,
+  "seat": "B5",
+  "refund": false,
+  "status": "unpaid",
+  "ticket_class": "Thương Gia",
+  "createdAt": {
+    "$date": "2025-12-05T02:59:17.387Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-05T02:59:17.387Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69324d510cd1b6b9c28e6d2f"
+  },
+  "airline_id": {
+    "$oid": "d83aa0756732d975dffbc109"
+  },
+  "flight_id": {
+    "$oid": "69304c163d9acf5879d6f69e"
+  },
+  "user_id": null,
+  "seat": "D4",
+  "refund": false,
+  "status": "unpaid",
+  "ticket_class": "Thương Gia",
+  "createdAt": {
+    "$date": "2025-12-05T03:11:13.465Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-05T03:11:13.465Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69324e2fe190570351c6597d"
+  },
+  "airline_id": {
+    "$oid": "51908cc42f9fa364220cb649"
+  },
+  "flight_id": {
+    "$oid": "69304bf63d9acf5879d6f694"
+  },
+  "user_id": null,
+  "seat": "E3",
+  "refund": false,
+  "status": "unpaid",
+  "ticket_class": "Phổ Thông",
+  "createdAt": {
+    "$date": "2025-12-05T03:14:55.275Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-05T03:14:55.275Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69324eb2ed5af02114afa975"
+  },
+  "airline_id": {
+    "$oid": "51908cc42f9fa364220cb649"
+  },
+  "flight_id": {
+    "$oid": "69304bf63d9acf5879d6f694"
+  },
+  "user_id": null,
+  "seat": "E2",
+  "refund": false,
+  "status": "unpaid",
+  "ticket_class": "Phổ Thông",
+  "createdAt": {
+    "$date": "2025-12-05T03:17:06.820Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-05T03:17:06.820Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69325b30726fdd82974aff2e"
+  },
+  "airline_id": {
+    "$oid": "51908cc42f9fa364220cb649"
+  },
+  "flight_id": {
+    "$oid": "69304bf63d9acf5879d6f694"
+  },
+  "user_id": {
+    "$oid": "692856b11683030b1a773f2d"
+  },
+  "seat": "G2",
+  "refund": false,
+  "status": "unpaid",
+  "ticket_class": "Phổ Thông",
+  "createdAt": {
+    "$date": "2025-12-05T04:10:24.434Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-05T04:10:24.434Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69325c6774e3fa94686caa18"
+  },
+  "airline_id": {
+    "$oid": "51908cc42f9fa364220cb649"
+  },
+  "flight_id": {
+    "$oid": "69304bf63d9acf5879d6f694"
+  },
+  "user_id": {
+    "$oid": "692856b11683030b1a773f2d"
+  },
+  "seat": "E3",
+  "refund": false,
+  "status": "unpaid",
+  "ticket_class": "Phổ Thông",
+  "createdAt": {
+    "$date": "2025-12-05T04:15:35.794Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-05T04:15:35.794Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69325f069e090e76f2d8e3d8"
+  },
+  "airline_id": {
+    "$oid": "d83aa0756732d975dffbc109"
+  },
+  "flight_id": {
+    "$oid": "69304c163d9acf5879d6f69e"
+  },
+  "user_id": {
+    "$oid": "692856b11683030b1a773f2d"
+  },
+  "seat": "F4",
+  "refund": false,
+  "status": "unpaid",
+  "ticket_class": "Phổ Thông",
+  "createdAt": {
+    "$date": "2025-12-05T04:26:46.472Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-05T04:26:46.472Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "693260db8f458850ba36a212"
+  },
+  "airline_id": {
+    "$oid": "51908cc42f9fa364220cb649"
+  },
+  "flight_id": {
+    "$oid": "69304bf63d9acf5879d6f694"
+  },
+  "user_id": {
+    "$oid": "692856b11683030b1a773f2d"
+  },
+  "seat": "F4",
+  "refund": false,
+  "status": "unpaid",
+  "ticket_class": "Phổ Thông",
+  "createdAt": {
+    "$date": "2025-12-05T04:34:35.019Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-05T04:34:35.019Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "693265220d384ef2b32b0bf6"
+  },
+  "airline_id": {
+    "$oid": "d83aa0756732d975dffbc109"
+  },
+  "flight_id": {
+    "$oid": "69304c163d9acf5879d6f69e"
+  },
+  "user_id": {
+    "$oid": "692856b11683030b1a773f2d"
+  },
+  "seat": "H6",
+  "refund": false,
+  "status": "unpaid",
+  "ticket_class": "Phổ Thông",
+  "createdAt": {
+    "$date": "2025-12-05T04:52:50.921Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-05T04:52:50.921Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "693266e85491ccac41c731bc"
+  },
+  "airline_id": {
+    "$oid": "51908cc42f9fa364220cb649"
+  },
+  "flight_id": {
+    "$oid": "69304bf63d9acf5879d6f694"
+  },
+  "user_id": {
+    "$oid": "692856b11683030b1a773f2d"
+  },
+  "seat": "J6",
+  "refund": false,
+  "status": "unpaid",
+  "ticket_class": "Phổ Thông",
+  "createdAt": {
+    "$date": "2025-12-05T05:00:24.457Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-05T05:00:24.457Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6932d8f8442dbfe67d7fc666"
+  },
+  "airline_id": {
+    "$oid": "d83aa0756732d975dffbc109"
+  },
+  "flight_id": {
+    "$oid": "69304c163d9acf5879d6f69e"
+  },
+  "user_id": {
+    "$oid": "692856b11683030b1a773f2d"
+  },
+  "seat": "E6",
+  "refund": false,
+  "status": "unpaid",
+  "ticket_class": "Phổ Thông",
+  "createdAt": {
+    "$date": "2025-12-05T13:07:04.545Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-05T13:07:04.545Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6932dc82442dbfe67d7fc673"
+  },
+  "airline_id": {
+    "$oid": "d83aa0756732d975dffbc109"
+  },
+  "flight_id": {
+    "$oid": "69304c163d9acf5879d6f69e"
+  },
+  "user_id": {
+    "$oid": "692856b11683030b1a773f2d"
+  },
+  "seat": "E3",
+  "refund": false,
+  "status": "unpaid",
+  "ticket_class": "Phổ Thông",
+  "createdAt": {
+    "$date": "2025-12-05T13:22:10.303Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-05T13:22:10.303Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6932dcc2442dbfe67d7fc679"
+  },
+  "airline_id": {
+    "$oid": "d83aa0756732d975dffbc109"
+  },
+  "flight_id": {
+    "$oid": "69304c163d9acf5879d6f69e"
+  },
+  "user_id": {
+    "$oid": "692856b11683030b1a773f2d"
+  },
+  "seat": "E3",
+  "refund": false,
+  "status": "paid",
+  "ticket_class": "Phổ Thông",
+  "createdAt": {
+    "$date": "2025-12-05T13:23:14.130Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-05T13:23:39.004Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6932e0649687554b1925ddde"
+  },
+  "airline_id": {
+    "$oid": "51908cc42f9fa364220cb649"
+  },
+  "flight_id": {
+    "$oid": "69304bf63d9acf5879d6f694"
+  },
+  "user_id": {
+    "$oid": "692856b11683030b1a773f2d"
+  },
+  "seat": "E5",
+  "refund": false,
+  "status": "unpaid",
+  "ticket_class": "Phổ Thông",
+  "createdAt": {
+    "$date": "2025-12-05T13:38:44.489Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-05T13:38:44.489Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6932f16bf71f3e8a3c85d937"
+  },
+  "airline_id": {
+    "$oid": "51908cc42f9fa364220cb649"
+  },
+  "flight_id": {
+    "$oid": "69304bf63d9acf5879d6f694"
+  },
+  "user_id": {
+    "$oid": "692856b11683030b1a773f2d"
+  },
+  "seat": "E3",
+  "refund": false,
+  "status": "unpaid",
+  "ticket_class": "Phổ Thông",
+  "createdAt": {
+    "$date": "2025-12-05T14:51:23.211Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-05T14:51:23.211Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6932f187f71f3e8a3c85d93f"
+  },
+  "airline_id": {
+    "$oid": "51908cc42f9fa364220cb649"
+  },
+  "flight_id": {
+    "$oid": "69304bf63d9acf5879d6f694"
+  },
+  "user_id": {
+    "$oid": "692856b11683030b1a773f2d"
+  },
+  "seat": "E6",
+  "refund": false,
+  "status": "unpaid",
+  "ticket_class": "Phổ Thông",
+  "createdAt": {
+    "$date": "2025-12-05T14:51:51.084Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-05T14:51:51.084Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6932f3cf6de3c02f885057fe"
+  },
+  "airline_id": {
+    "$oid": "51908cc42f9fa364220cb649"
+  },
+  "flight_id": {
+    "$oid": "69304bf63d9acf5879d6f694"
+  },
+  "user_id": null,
+  "seat": "E6",
+  "refund": false,
+  "status": "unpaid",
+  "ticket_class": "Phổ Thông",
+  "createdAt": {
+    "$date": "2025-12-05T15:01:35.255Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-05T15:01:35.255Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6932f4186de3c02f8850580a"
+  },
+  "airline_id": {
+    "$oid": "d83aa0756732d975dffbc109"
+  },
+  "flight_id": {
+    "$oid": "69304c163d9acf5879d6f69e"
+  },
+  "user_id": {
+    "$oid": "692856b11683030b1a773f2d"
+  },
+  "seat": "F6",
+  "refund": false,
+  "status": "unpaid",
+  "ticket_class": "Phổ Thông",
+  "createdAt": {
+    "$date": "2025-12-05T15:02:48.714Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-05T15:02:48.714Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6932f4c0d978bab2a51006e4"
+  },
+  "airline_id": {
+    "$oid": "51908cc42f9fa364220cb649"
+  },
+  "flight_id": {
+    "$oid": "69304bf63d9acf5879d6f694"
+  },
+  "user_id": {
+    "$oid": "692856b11683030b1a773f2d"
+  },
+  "seat": "E5",
+  "refund": false,
+  "status": "unpaid",
+  "ticket_class": "Phổ Thông",
+  "createdAt": {
+    "$date": "2025-12-05T15:05:36.266Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-05T15:05:36.266Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6932f53a10b12f56cccd90e8"
+  },
+  "airline_id": {
+    "$oid": "51908cc42f9fa364220cb649"
+  },
+  "flight_id": {
+    "$oid": "69304bf63d9acf5879d6f694"
+  },
+  "user_id": null,
+  "seat": "E5",
+  "refund": false,
+  "status": "unpaid",
+  "ticket_class": "Phổ Thông",
+  "createdAt": {
+    "$date": "2025-12-05T15:07:38.791Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-05T15:07:38.791Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6932f57510b12f56cccd90f8"
+  },
+  "airline_id": {
+    "$oid": "51908cc42f9fa364220cb649"
+  },
+  "flight_id": {
+    "$oid": "69304bf63d9acf5879d6f694"
+  },
+  "user_id": {
+    "$oid": "692856b11683030b1a773f2d"
+  },
+  "seat": "H5",
+  "refund": false,
+  "status": "unpaid",
+  "ticket_class": "Phổ Thông",
+  "createdAt": {
+    "$date": "2025-12-05T15:08:37.602Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-05T15:08:37.602Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6932f86336e7539afc0a644d"
+  },
+  "airline_id": {
+    "$oid": "d83aa0756732d975dffbc109"
+  },
+  "flight_id": {
+    "$oid": "69304c163d9acf5879d6f69e"
+  },
+  "user_id": {
+    "$oid": "692856b11683030b1a773f2d"
+  },
+  "seat": "G6",
+  "refund": false,
+  "status": "unpaid",
+  "ticket_class": "Phổ Thông",
+  "createdAt": {
+    "$date": "2025-12-05T15:21:07.452Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-05T15:21:07.452Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6932f8f7b47ba2871d235152"
+  },
+  "airline_id": {
+    "$oid": "d83aa0756732d975dffbc109"
+  },
+  "flight_id": {
+    "$oid": "69304c163d9acf5879d6f69e"
+  },
+  "user_id": {
+    "$oid": "692856b11683030b1a773f2d"
+  },
+  "seat": "E4",
+  "refund": false,
+  "status": "unpaid",
+  "ticket_class": "Phổ Thông",
+  "createdAt": {
+    "$date": "2025-12-05T15:23:35.987Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-05T15:23:35.987Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "693301ac7ccaafd570dada03"
+  },
+  "airline_id": {
+    "$oid": "51908cc42f9fa364220cb649"
+  },
+  "flight_id": {
+    "$oid": "69304bf63d9acf5879d6f694"
+  },
+  "user_id": {
+    "$oid": "692856b11683030b1a773f2d"
+  },
+  "seat": "G1",
+  "refund": false,
+  "status": "unpaid",
+  "ticket_class": "Phổ Thông",
+  "createdAt": {
+    "$date": "2025-12-05T16:00:44.705Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-05T16:00:44.705Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "693301f7bb5ae23b99271ee2"
+  },
+  "airline_id": {
+    "$oid": "51908cc42f9fa364220cb649"
+  },
+  "flight_id": {
+    "$oid": "69304bf63d9acf5879d6f694"
+  },
+  "user_id": {
+    "$oid": "692856b11683030b1a773f2d"
+  },
+  "seat": "G4",
+  "refund": false,
+  "status": "unpaid",
+  "ticket_class": "Phổ Thông",
+  "createdAt": {
+    "$date": "2025-12-05T16:01:59.586Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-05T16:01:59.586Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6933023169496c85fab8d4ed"
+  },
+  "airline_id": {
+    "$oid": "d83aa0756732d975dffbc109"
+  },
+  "flight_id": {
+    "$oid": "69304c163d9acf5879d6f69e"
+  },
+  "user_id": {
+    "$oid": "692856b11683030b1a773f2d"
+  },
+  "seat": "G6",
+  "refund": false,
+  "status": "unpaid",
+  "ticket_class": "Phổ Thông",
+  "createdAt": {
+    "$date": "2025-12-05T16:02:57.251Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-05T16:02:57.251Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "693302abd1be065f08ed9e69"
+  },
+  "airline_id": {
+    "$oid": "d83aa0756732d975dffbc109"
+  },
+  "flight_id": {
+    "$oid": "69304c163d9acf5879d6f69e"
+  },
+  "user_id": {
+    "$oid": "692856b11683030b1a773f2d"
+  },
+  "seat": "I5",
+  "refund": false,
+  "status": "unpaid",
+  "ticket_class": "Phổ Thông",
+  "createdAt": {
+    "$date": "2025-12-05T16:04:59.484Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-05T16:04:59.484Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6933032302eebb7759b2f64a"
+  },
+  "airline_id": {
+    "$oid": "d83aa0756732d975dffbc109"
+  },
+  "flight_id": {
+    "$oid": "69304c163d9acf5879d6f69e"
+  },
+  "user_id": {
+    "$oid": "692856b11683030b1a773f2d"
+  },
+  "seat": "I2",
+  "refund": false,
+  "status": "unpaid",
+  "ticket_class": "Phổ Thông",
+  "createdAt": {
+    "$date": "2025-12-05T16:06:59.891Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-05T16:06:59.891Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6933059afb233c1ba15f6360"
+  },
+  "airline_id": {
+    "$oid": "d83aa0756732d975dffbc109"
+  },
+  "flight_id": {
+    "$oid": "69304c163d9acf5879d6f69e"
+  },
+  "user_id": {
+    "$oid": "692856b11683030b1a773f2d"
+  },
+  "seat": "J4",
+  "refund": false,
+  "status": "unpaid",
+  "ticket_class": "Phổ Thông",
+  "createdAt": {
+    "$date": "2025-12-05T16:17:30.620Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-05T16:17:30.620Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6933067a1588f2e1ff6f78ac"
+  },
+  "airline_id": {
+    "$oid": "51908cc42f9fa364220cb649"
+  },
+  "flight_id": {
+    "$oid": "69304bf63d9acf5879d6f694"
+  },
+  "user_id": {
+    "$oid": "692856b11683030b1a773f2d"
+  },
+  "seat": "J5",
+  "refund": false,
+  "status": "unpaid",
+  "ticket_class": "Phổ Thông",
+  "createdAt": {
+    "$date": "2025-12-05T16:21:14.764Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-05T16:21:14.764Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69330e0a833584d7d95b4681"
+  },
+  "airline_id": {
+    "$oid": "d83aa0756732d975dffbc109"
+  },
+  "flight_id": {
+    "$oid": "69304c163d9acf5879d6f69e"
+  },
+  "user_id": {
+    "$oid": "692856b11683030b1a773f2d"
+  },
+  "seat": "J4",
+  "refund": false,
+  "status": "paid",
+  "ticket_class": "Phổ Thông",
+  "createdAt": {
+    "$date": "2025-12-05T16:53:30.643Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-06T14:54:53.182Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69330f27601d92c05b914d47"
+  },
+  "airline_id": {
+    "$oid": "51908cc42f9fa364220cb649"
+  },
+  "flight_id": {
+    "$oid": "69304bf63d9acf5879d6f694"
+  },
+  "user_id": {
+    "$oid": "692856b11683030b1a773f2d"
+  },
+  "seat": "E2",
+  "refund": false,
+  "status": "unpaid",
+  "ticket_class": "Phổ Thông",
+  "createdAt": {
+    "$date": "2025-12-05T16:58:15.938Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-05T16:58:15.938Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6933ef940af27b12f7d86a61"
+  },
+  "airline_id": {
+    "$oid": "582857409a28e0e18829e880"
+  },
+  "flight_id": {
+    "$oid": "6933ef340af27b12f7d86a48"
+  },
+  "user_id": {
+    "$oid": "692856b11683030b1a773f2d"
+  },
+  "seat": "E5",
+  "refund": false,
+  "status": "paid",
+  "ticket_class": "Phổ Thông",
+  "createdAt": {
+    "$date": "2025-12-06T08:55:48.800Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-06T12:22:19.856Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6933f1899f0b04580052d477"
+  },
+  "airline_id": {
+    "$oid": "9f094d248b12325fa7743f29"
+  },
+  "flight_id": {
+    "$oid": "6933ef180af27b12f7d86a3e"
+  },
+  "user_id": {
+    "$oid": "692856b11683030b1a773f2d"
+  },
+  "seat": "E5",
+  "refund": false,
+  "status": "unpaid",
+  "ticket_class": "Phổ Thông",
+  "createdAt": {
+    "$date": "2025-12-06T09:04:09.916Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-06T09:04:09.916Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6933f6f0b0744884ff125a2b"
+  },
+  "airline_id": {
+    "$oid": "582857409a28e0e18829e880"
+  },
+  "flight_id": {
+    "$oid": "6933ef340af27b12f7d86a48"
+  },
+  "user_id": {
+    "$oid": "692856b11683030b1a773f2d"
+  },
+  "seat": "E1",
+  "refund": false,
+  "status": "unpaid",
+  "ticket_class": "Phổ Thông",
+  "createdAt": {
+    "$date": "2025-12-06T09:27:12.862Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-06T09:27:12.862Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6933f7857fb52ed64e36dfba"
+  },
+  "airline_id": {
+    "$oid": "9f094d248b12325fa7743f29"
+  },
+  "flight_id": {
+    "$oid": "6933ef180af27b12f7d86a3e"
+  },
+  "user_id": {
+    "$oid": "692856b11683030b1a773f2d"
+  },
+  "seat": "G5",
+  "refund": false,
+  "status": "paid",
+  "ticket_class": "Phổ Thông",
+  "createdAt": {
+    "$date": "2025-12-06T09:29:41.997Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-06T13:45:31.476Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69341b52d6c1f9d0e59177f2"
+  },
+  "airline_id": {
+    "$oid": "582857409a28e0e18829e880"
+  },
+  "flight_id": {
+    "$oid": "6933ef340af27b12f7d86a48"
+  },
+  "user_id": {
+    "$oid": "692856b11683030b1a773f2d"
+  },
+  "seat": "G6",
+  "refund": false,
+  "status": "paid",
+  "ticket_class": "Phổ Thông",
+  "createdAt": {
+    "$date": "2025-12-06T12:02:26.549Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-06T12:46:12.341Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "693421d8d46f87f5d0fec9b8"
+  },
+  "airline_id": {
+    "$oid": "582857409a28e0e18829e880"
+  },
+  "flight_id": {
+    "$oid": "6933ef340af27b12f7d86a48"
+  },
+  "user_id": {
+    "$oid": "692856b11683030b1a773f2d"
+  },
+  "seat": "J1",
+  "refund": false,
+  "status": "paid",
+  "ticket_class": "Phổ Thông",
+  "createdAt": {
+    "$date": "2025-12-06T12:30:16.676Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-06T12:30:39.877Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6934240c1bda5bd4dc7b7731"
+  },
+  "airline_id": {
+    "$oid": "582857409a28e0e18829e880"
+  },
+  "flight_id": {
+    "$oid": "6933ef340af27b12f7d86a48"
+  },
+  "user_id": {
+    "$oid": "692856b11683030b1a773f2d"
+  },
+  "seat": "J3",
+  "refund": false,
+  "status": "paid",
+  "ticket_class": "Phổ Thông",
+  "createdAt": {
+    "$date": "2025-12-06T12:39:40.794Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-06T13:10:14.941Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "693435627ba9876fd4edec4b"
+  },
+  "airline_id": {
+    "$oid": "9f094d248b12325fa7743f29"
+  },
+  "flight_id": {
+    "$oid": "6933ef180af27b12f7d86a3e"
+  },
+  "user_id": {
+    "$oid": "693435387ba9876fd4edec38"
+  },
+  "seat": "F6",
+  "refund": false,
+  "status": "paid",
+  "ticket_class": "Phổ Thông",
+  "createdAt": {
+    "$date": "2025-12-06T13:53:38.685Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-06T13:53:56.470Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "693437c17ba9876fd4edec8b"
+  },
+  "airline_id": {
+    "$oid": "51908cc42f9fa364220cb649"
+  },
+  "flight_id": {
+    "$oid": "69304bf63d9acf5879d6f694"
+  },
+  "user_id": {
+    "$oid": "693435387ba9876fd4edec38"
+  },
+  "seat": "F6",
+  "refund": false,
+  "status": "paid",
+  "ticket_class": "Phổ Thông",
+  "createdAt": {
+    "$date": "2025-12-06T14:03:45.444Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-06T14:03:53.889Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "693442fbb90e0a42db0706fe"
+  },
+  "airline_id": {
+    "$oid": "582857409a28e0e18829e880"
+  },
+  "flight_id": {
+    "$oid": "6933ef340af27b12f7d86a48"
+  },
+  "user_id": {
+    "$oid": "693442cab90e0a42db0706e7"
+  },
+  "seat": "F5",
+  "refund": false,
+  "status": "paid",
+  "ticket_class": "Phổ Thông",
+  "createdAt": {
+    "$date": "2025-12-06T14:51:39.808Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-06T14:51:49.391Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69344382b90e0a42db070751"
+  },
+  "airline_id": {
+    "$oid": "582857409a28e0e18829e880"
+  },
+  "flight_id": {
+    "$oid": "6933ef340af27b12f7d86a48"
+  },
+  "user_id": {
+    "$oid": "693442cab90e0a42db0706e7"
+  },
+  "seat": "H5",
+  "refund": false,
+  "status": "paid",
+  "ticket_class": "Phổ Thông",
+  "createdAt": {
+    "$date": "2025-12-06T14:53:54.462Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-06T14:54:03.657Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69352d360fcea0df42773767"
+  },
+  "airline_id": {
+    "$oid": "9f094d248b12325fa7743f29"
+  },
+  "flight_id": {
+    "$oid": "6933ef180af27b12f7d86a3e"
+  },
+  "user_id": {
+    "$oid": "69352d030fcea0df42773755"
+  },
+  "seat": "H4",
+  "refund": false,
+  "status": "paid",
+  "ticket_class": "Phổ Thông",
+  "createdAt": {
+    "$date": "2025-12-07T07:31:02.287Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-07T07:31:15.394Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69354362515f8180505f2e8d"
+  },
+  "airline_id": {
+    "$oid": "9f094d248b12325fa7743f29"
+  },
+  "flight_id": {
+    "$oid": "6933ef180af27b12f7d86a3e"
+  },
+  "user_id": {
+    "$oid": "6935310e2d2dedb6d4c66afa"
+  },
+  "seat": "A3",
+  "refund": false,
+  "status": "paid",
+  "ticket_class": "Thương Gia",
+  "createdAt": {
+    "$date": "2025-12-07T09:05:38.305Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-07T09:05:44.812Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6957e1de91308c93d8c4c9b9"
+  },
+  "airline_id": {
+    "$oid": "9f094d248b12325fa7743f29"
+  },
+  "flight_id": {
+    "$oid": "6957e1cb91308c93d8c4c9a9"
+  },
+  "user_id": {
+    "$oid": "6957e17791308c93d8c4c992"
+  },
+  "seat": "E1",
+  "refund": false,
+  "status": "paid",
+  "ticket_class": "Phổ Thông",
+  "createdAt": {
+    "$date": "2026-01-02T15:18:54.755Z"
+  },
+  "updatedAt": {
+    "$date": "2026-01-02T15:19:09.558Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6957e24e91308c93d8c4ca0c"
+  },
+  "airline_id": {
+    "$oid": "9f094d248b12325fa7743f29"
+  },
+  "flight_id": {
+    "$oid": "6957e1cb91308c93d8c4c9a9"
+  },
+  "user_id": {
+    "$oid": "6957e17791308c93d8c4c992"
+  },
+  "seat": "E4",
+  "refund": false,
+  "status": "paid",
+  "ticket_class": "Phổ Thông",
+  "createdAt": {
+    "$date": "2026-01-02T15:20:46.126Z"
+  },
+  "updatedAt": {
+    "$date": "2026-01-02T15:21:28.365Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6957e2bc91308c93d8c4caa3"
+  },
+  "airline_id": {
+    "$oid": "9f094d248b12325fa7743f29"
+  },
+  "flight_id": {
+    "$oid": "6957e1cb91308c93d8c4c9a9"
+  },
+  "user_id": {
+    "$oid": "6935310e2d2dedb6d4c66afa"
+  },
+  "seat": "E5",
+  "refund": false,
+  "status": "paid",
+  "ticket_class": "Phổ Thông",
+  "createdAt": {
+    "$date": "2026-01-02T15:22:36.881Z"
+  },
+  "updatedAt": {
+    "$date": "2026-01-02T15:22:46.104Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "695a91937e0211e3dadae35d"
+  },
+  "airline_id": {
+    "$oid": "9f094d248b12325fa7743f29"
+  },
+  "flight_id": {
+    "$oid": "6957e1cb91308c93d8c4c9a9"
+  },
+  "user_id": {
+    "$oid": "693435387ba9876fd4edec38"
+  },
+  "seat": "F5",
+  "refund": false,
+  "status": "unpaid",
+  "ticket_class": "Phổ Thông",
+  "createdAt": {
+    "$date": "2026-01-04T16:13:07.942Z"
+  },
+  "updatedAt": {
+    "$date": "2026-01-04T16:13:07.942Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "695a93a336b577dd2cd72243"
+  },
+  "airline_id": {
+    "$oid": "9f094d248b12325fa7743f29"
+  },
+  "flight_id": {
+    "$oid": "6957e1cb91308c93d8c4c9a9"
+  },
+  "user_id": {
+    "$oid": "693435387ba9876fd4edec38"
+  },
+  "seat": "F1",
+  "refund": false,
+  "status": "unpaid",
+  "ticket_class": "Phổ Thông",
+  "createdAt": {
+    "$date": "2026-01-04T16:21:55.090Z"
+  },
+  "updatedAt": {
+    "$date": "2026-01-04T16:21:55.090Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "695b3be125deca6b86e7a885"
+  },
+  "airline_id": {
+    "$oid": "9f094d248b12325fa7743f29"
+  },
+  "flight_id": {
+    "$oid": "6957e1cb91308c93d8c4c9a9"
+  },
+  "user_id": {
+    "$oid": "6957e17791308c93d8c4c992"
+  },
+  "seat": "G3",
+  "refund": false,
+  "status": "paid",
+  "ticket_class": "Phổ Thông",
+  "createdAt": {
+    "$date": "2026-01-05T04:19:45.233Z"
+  },
+  "updatedAt": {
+    "$date": "2026-01-05T04:20:05.640Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "695cdb22db3ce24e71a2b5d1"
+  },
+  "airline_id": {
+    "$oid": "9f094d248b12325fa7743f29"
+  },
+  "flight_id": {
+    "$oid": "6957e1cb91308c93d8c4c9a9"
+  },
+  "user_id": {
+    "$oid": "6957e17791308c93d8c4c992"
+  },
+  "seat": "J2",
+  "refund": false,
+  "status": "paid",
+  "ticket_class": "Phổ Thông",
+  "createdAt": {
+    "$date": "2026-01-06T09:51:30.684Z"
+  },
+  "updatedAt": {
+    "$date": "2026-01-06T09:51:55.893Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "695cf99e28a52b21fb76fa8f"
+  },
+  "airline_id": {
+    "$oid": "9f094d248b12325fa7743f29"
+  },
+  "flight_id": {
+    "$oid": "6957e1cb91308c93d8c4c9a9"
+  },
+  "user_id": {
+    "$oid": "6957e17791308c93d8c4c992"
+  },
+  "seat": "E2",
+  "refund": false,
+  "status": "unpaid",
+  "ticket_class": "Phổ Thông",
+  "createdAt": {
+    "$date": "2026-01-06T12:01:34.957Z"
+  },
+  "updatedAt": {
+    "$date": "2026-01-06T12:01:34.957Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "695cfa5b28a52b21fb76fc08"
+  },
+  "airline_id": {
+    "$oid": "9f094d248b12325fa7743f29"
+  },
+  "flight_id": {
+    "$oid": "6957e1cb91308c93d8c4c9a9"
+  },
+  "user_id": {
+    "$oid": "6957e17791308c93d8c4c992"
+  },
+  "seat": "E2",
+  "refund": false,
+  "status": "paid",
+  "ticket_class": "Phổ Thông",
+  "createdAt": {
+    "$date": "2026-01-06T12:04:43.484Z"
+  },
+  "updatedAt": {
+    "$date": "2026-01-06T12:06:28.073Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "695d0100236e2d52fc429bb5"
+  },
+  "airline_id": {
+    "$oid": "9f094d248b12325fa7743f29"
+  },
+  "flight_id": {
+    "$oid": "6957e1cb91308c93d8c4c9a9"
+  },
+  "user_id": {
+    "$oid": "6957e17791308c93d8c4c992"
+  },
+  "seat": "E3",
+  "refund": false,
+  "status": "paid",
+  "ticket_class": "Phổ Thông",
+  "createdAt": {
+    "$date": "2026-01-06T12:33:04.053Z"
+  },
+  "updatedAt": {
+    "$date": "2026-01-06T12:34:10.343Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "695d0598da67c59ada8f5689"
+  },
+  "airline_id": {
+    "$oid": "9f094d248b12325fa7743f29"
+  },
+  "flight_id": {
+    "$oid": "6957e1cb91308c93d8c4c9a9"
+  },
+  "user_id": {
+    "$oid": "6935310e2d2dedb6d4c66afa"
+  },
+  "seat": "F4",
+  "refund": false,
+  "status": "pending",
+  "ticket_class": "Phổ Thông",
+  "createdAt": {
+    "$date": "2026-01-06T12:52:40.863Z"
+  },
+  "updatedAt": {
+    "$date": "2026-01-06T12:52:44.005Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "695d49f5c11b8272f6c08a09"
+  },
+  "airline_id": {
+    "$oid": "51908cc42f9fa364220cb649"
+  },
+  "flight_id": {
+    "$oid": "695d290fb77b731570a039fd"
+  },
+  "user_id": {
+    "$oid": "6957e17791308c93d8c4c992"
+  },
+  "seat": "E1",
+  "refund": false,
+  "status": "pending",
+  "ticket_class": "Phổ Thông",
+  "createdAt": {
+    "$date": "2026-01-06T17:44:21.392Z"
+  },
+  "updatedAt": {
+    "$date": "2026-01-06T17:44:44.668Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "695d4b33c11b8272f6c08ac5"
+  },
+  "airline_id": {
+    "$oid": "51908cc42f9fa364220cb649"
+  },
+  "flight_id": {
+    "$oid": "695d290fb77b731570a039fd"
+  },
+  "user_id": {
+    "$oid": "6957e17791308c93d8c4c992"
+  },
+  "seat": "A1",
+  "refund": false,
+  "status": "paid",
+  "ticket_class": "Thương Gia",
+  "createdAt": {
+    "$date": "2026-01-06T17:49:39.176Z"
+  },
+  "updatedAt": {
+    "$date": "2026-01-06T17:49:51.694Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "696f3adc63614740be5cb659"
+  },
+  "airline_id": {
+    "$oid": "51908cc42f9fa364220cb649"
+  },
+  "flight_id": {
+    "$oid": "696f311263614740be5cb615"
+  },
+  "user_id": {
+    "$oid": "69352d030fcea0df42773755"
+  },
+  "seat": "I6",
+  "refund": false,
+  "status": "paid",
+  "ticket_class": "Phổ Thông",
+  "createdAt": {
+    "$date": "2026-01-20T08:20:44.966Z"
+  },
+  "updatedAt": {
+    "$date": "2026-01-20T08:22:26.222Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "696f3b8c63614740be5cb6a4"
+  },
+  "airline_id": {
+    "$oid": "51908cc42f9fa364220cb649"
+  },
+  "flight_id": {
+    "$oid": "696f311263614740be5cb615"
+  },
+  "user_id": {
+    "$oid": "6935310e2d2dedb6d4c66afa"
+  },
+  "seat": "I1",
+  "refund": false,
+  "status": "paid",
+  "ticket_class": "Phổ Thông",
+  "createdAt": {
+    "$date": "2026-01-20T08:23:40.103Z"
+  },
+  "updatedAt": {
+    "$date": "2026-01-20T08:23:59.389Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "698195a3625ddf0dec09f984"
+  },
+  "airline_id": {
+    "$oid": "51908cc42f9fa364220cb649"
+  },
+  "flight_id": {
+    "$oid": "696f311263614740be5cb615"
+  },
+  "user_id": {
+    "$oid": "6935310e2d2dedb6d4c66afa"
+  },
+  "seat": "G3",
+  "refund": false,
+  "status": "pending",
+  "ticket_class": "Phổ Thông",
+  "createdAt": {
+    "$date": "2026-02-03T06:28:51.296Z"
+  },
+  "updatedAt": {
+    "$date": "2026-02-03T06:28:53.304Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "698195ef625ddf0dec09f993"
+  },
+  "airline_id": {
+    "$oid": "51908cc42f9fa364220cb649"
+  },
+  "flight_id": {
+    "$oid": "696f311263614740be5cb615"
+  },
+  "user_id": {
+    "$oid": "6935310e2d2dedb6d4c66afa"
+  },
+  "seat": "F4",
+  "refund": false,
+  "status": "pending",
+  "ticket_class": "Phổ Thông",
+  "createdAt": {
+    "$date": "2026-02-03T06:30:07.678Z"
+  },
+  "updatedAt": {
+    "$date": "2026-02-03T06:30:09.940Z"
+  },
+  "__v": 0
+}]

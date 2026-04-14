@@ -1,0 +1,750 @@
+[{
+  "_id": {
+    "$oid": "691494041e40d16eb504aea6"
+  },
+  "airline_id": {
+    "$oid": "51908cc42f9fa364220cb649"
+  },
+  "departure_airport_id": {
+    "$oid": "260373add95d75ddc8845dc8"
+  },
+  "arrival_airport_id": {
+    "$oid": "61be2efbca6664e6ae8194d1"
+  },
+  "departure_datetime": {
+    "$date": "2025-11-12T14:04:00.000Z"
+  },
+  "arrival_datetime": {
+    "$date": "2025-11-13T14:04:00.000Z"
+  },
+  "economy_price": 3000000,
+  "business_price": 4000000,
+  "createdAt": {
+    "$date": "2025-11-12T14:04:52.554Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-12T14:05:25.878Z"
+  },
+  "flight_id": 4,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6918b4364e14095c53dabb1d"
+  },
+  "airline_id": {
+    "$oid": "51908cc42f9fa364220cb649"
+  },
+  "departure_airport_id": {
+    "$oid": "260373add95d75ddc8845dc8"
+  },
+  "arrival_airport_id": {
+    "$oid": "90f4c42746bc707266a49529"
+  },
+  "departure_datetime": {
+    "$date": "2025-11-15T17:11:00.000Z"
+  },
+  "arrival_datetime": {
+    "$date": "2025-11-16T17:11:00.000Z"
+  },
+  "economy_price": 3000000,
+  "business_price": 4000000,
+  "createdAt": {
+    "$date": "2025-11-15T17:11:18.882Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-15T17:11:18.882Z"
+  },
+  "flight_id": 5,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6921786d2dacb0b0a04447ed"
+  },
+  "airline_id": {
+    "$oid": "51908cc42f9fa364220cb649"
+  },
+  "departure_airport_id": {
+    "$oid": "260373add95d75ddc8845dc8"
+  },
+  "arrival_airport_id": {
+    "$oid": "90f4c42746bc707266a49529"
+  },
+  "departure_datetime": {
+    "$date": "2025-11-22T08:46:00.000Z"
+  },
+  "arrival_datetime": {
+    "$date": "2025-11-23T08:46:00.000Z"
+  },
+  "economy_price": 3000000,
+  "business_price": 4000000,
+  "createdAt": {
+    "$date": "2025-11-22T08:46:37.853Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-22T08:46:37.853Z"
+  },
+  "flight_id": 6,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69304bf63d9acf5879d6f694"
+  },
+  "airline_id": {
+    "$oid": "51908cc42f9fa364220cb649"
+  },
+  "departure_airport_id": {
+    "$oid": "260373add95d75ddc8845dc8"
+  },
+  "arrival_airport_id": {
+    "$oid": "61be2efbca6664e6ae8194d1"
+  },
+  "departure_datetime": {
+    "$date": "2025-12-03T14:40:00.000Z"
+  },
+  "arrival_datetime": {
+    "$date": "2025-12-04T14:40:00.000Z"
+  },
+  "economy_price": 2000000,
+  "business_price": 4000000,
+  "createdAt": {
+    "$date": "2025-12-03T14:40:54.345Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-05T15:08:37.606Z"
+  },
+  "flight_id": 7,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69304c163d9acf5879d6f69e"
+  },
+  "airline_id": {
+    "$oid": "d83aa0756732d975dffbc109"
+  },
+  "departure_airport_id": {
+    "$oid": "260373add95d75ddc8845dc8"
+  },
+  "arrival_airport_id": {
+    "$oid": "61be2efbca6664e6ae8194d1"
+  },
+  "departure_datetime": {
+    "$date": "2025-12-03T14:41:00.000Z"
+  },
+  "arrival_datetime": {
+    "$date": "2025-12-04T14:41:00.000Z"
+  },
+  "economy_price": 3000000,
+  "business_price": 4000000,
+  "createdAt": {
+    "$date": "2025-12-03T14:41:26.310Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-03T14:41:26.310Z"
+  },
+  "flight_id": 8,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6933ef180af27b12f7d86a3e"
+  },
+  "airline_id": {
+    "$oid": "9f094d248b12325fa7743f29"
+  },
+  "departure_airport_id": {
+    "$oid": "7fcff268b37f42677a1fa366"
+  },
+  "arrival_airport_id": {
+    "$oid": "7aafc2283a9ce258cd7ae232"
+  },
+  "departure_datetime": {
+    "$date": "2025-12-06T08:53:00.000Z"
+  },
+  "arrival_datetime": {
+    "$date": "2025-12-08T08:53:00.000Z"
+  },
+  "economy_price": 1000000,
+  "business_price": 1700000,
+  "createdAt": {
+    "$date": "2025-12-06T08:53:44.580Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-06T08:53:44.580Z"
+  },
+  "flight_id": 9,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6933ef340af27b12f7d86a48"
+  },
+  "airline_id": {
+    "$oid": "582857409a28e0e18829e880"
+  },
+  "departure_airport_id": {
+    "$oid": "7fcff268b37f42677a1fa366"
+  },
+  "arrival_airport_id": {
+    "$oid": "7aafc2283a9ce258cd7ae232"
+  },
+  "departure_datetime": {
+    "$date": "2025-12-06T08:53:00.000Z"
+  },
+  "arrival_datetime": {
+    "$date": "2025-12-08T08:53:00.000Z"
+  },
+  "economy_price": 2000000,
+  "business_price": 2400000,
+  "createdAt": {
+    "$date": "2025-12-06T08:54:12.622Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-06T08:54:12.622Z"
+  },
+  "flight_id": 10,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6957e1cb91308c93d8c4c9a9"
+  },
+  "airline_id": {
+    "$oid": "9f094d248b12325fa7743f29"
+  },
+  "departure_airport_id": {
+    "$oid": "260373add95d75ddc8845dc8"
+  },
+  "arrival_airport_id": {
+    "$oid": "90f4c42746bc707266a49529"
+  },
+  "departure_datetime": {
+    "$date": "2026-01-02T15:18:00.000Z"
+  },
+  "arrival_datetime": {
+    "$date": "2026-01-02T06:21:00.000Z"
+  },
+  "economy_price": 2000000,
+  "business_price": 4000000,
+  "createdAt": {
+    "$date": "2026-01-02T15:18:35.839Z"
+  },
+  "updatedAt": {
+    "$date": "2026-01-02T15:18:35.839Z"
+  },
+  "flight_id": 11,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "695d290fb77b731570a039fd"
+  },
+  "airline_id": {
+    "$oid": "51908cc42f9fa364220cb649"
+  },
+  "departure_airport_id": {
+    "$oid": "260373add95d75ddc8845dc8"
+  },
+  "arrival_airport_id": {
+    "$oid": "90f4c42746bc707266a49529"
+  },
+  "departure_datetime": {
+    "$date": "2026-01-07T15:23:00.000Z"
+  },
+  "arrival_datetime": {
+    "$date": "2026-01-07T05:23:00.000Z"
+  },
+  "economy_price": 3000000,
+  "business_price": 4500000,
+  "createdAt": {
+    "$date": "2026-01-06T15:23:59.033Z"
+  },
+  "updatedAt": {
+    "$date": "2026-01-06T15:23:59.033Z"
+  },
+  "flight_id": 12,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "695d2931b77b731570a03a07"
+  },
+  "airline_id": {
+    "$oid": "51908cc42f9fa364220cb649"
+  },
+  "departure_airport_id": {
+    "$oid": "90f4c42746bc707266a49529"
+  },
+  "arrival_airport_id": {
+    "$oid": "7fcff268b37f42677a1fa366"
+  },
+  "departure_datetime": {
+    "$date": "2026-01-07T15:24:00.000Z"
+  },
+  "arrival_datetime": {
+    "$date": "2026-01-07T05:24:00.000Z"
+  },
+  "economy_price": 2000000,
+  "business_price": 4000000,
+  "createdAt": {
+    "$date": "2026-01-06T15:24:33.715Z"
+  },
+  "updatedAt": {
+    "$date": "2026-01-06T15:24:33.715Z"
+  },
+  "flight_id": 13,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "695d294fb77b731570a03a11"
+  },
+  "airline_id": {
+    "$oid": "51908cc42f9fa364220cb649"
+  },
+  "departure_airport_id": {
+    "$oid": "90f4c42746bc707266a49529"
+  },
+  "arrival_airport_id": {
+    "$oid": "7fcff268b37f42677a1fa366"
+  },
+  "departure_datetime": {
+    "$date": "2026-01-07T15:24:00.000Z"
+  },
+  "arrival_datetime": {
+    "$date": "2026-01-07T05:24:00.000Z"
+  },
+  "economy_price": 3000000,
+  "business_price": 4500000,
+  "createdAt": {
+    "$date": "2026-01-06T15:25:03.442Z"
+  },
+  "updatedAt": {
+    "$date": "2026-01-06T15:25:03.442Z"
+  },
+  "flight_id": 14,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "695d296ab77b731570a03a1b"
+  },
+  "airline_id": {
+    "$oid": "51908cc42f9fa364220cb649"
+  },
+  "departure_airport_id": {
+    "$oid": "7fcff268b37f42677a1fa366"
+  },
+  "arrival_airport_id": {
+    "$oid": "61be2efbca6664e6ae8194d1"
+  },
+  "departure_datetime": {
+    "$date": "2026-01-07T15:25:00.000Z"
+  },
+  "arrival_datetime": {
+    "$date": "2026-01-07T07:04:00.000Z"
+  },
+  "economy_price": 3000000,
+  "business_price": 4000000,
+  "createdAt": {
+    "$date": "2026-01-06T15:25:30.017Z"
+  },
+  "updatedAt": {
+    "$date": "2026-01-06T15:25:30.017Z"
+  },
+  "flight_id": 15,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "695d2980b77b731570a03a25"
+  },
+  "airline_id": {
+    "$oid": "51908cc42f9fa364220cb649"
+  },
+  "departure_airport_id": {
+    "$oid": "61be2efbca6664e6ae8194d1"
+  },
+  "arrival_airport_id": {
+    "$oid": "7aafc2283a9ce258cd7ae232"
+  },
+  "departure_datetime": {
+    "$date": "2026-01-07T15:25:00.000Z"
+  },
+  "arrival_datetime": {
+    "$date": "2026-01-07T15:25:00.000Z"
+  },
+  "economy_price": 3000000,
+  "business_price": 4000000,
+  "createdAt": {
+    "$date": "2026-01-06T15:25:52.634Z"
+  },
+  "updatedAt": {
+    "$date": "2026-01-06T15:25:52.634Z"
+  },
+  "flight_id": 16,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "695d29bbb77b731570a03a2f"
+  },
+  "airline_id": {
+    "$oid": "51908cc42f9fa364220cb649"
+  },
+  "departure_airport_id": {
+    "$oid": "260373add95d75ddc8845dc8"
+  },
+  "arrival_airport_id": {
+    "$oid": "90f4c42746bc707266a49529"
+  },
+  "departure_datetime": {
+    "$date": "2026-01-07T07:45:00.000Z"
+  },
+  "arrival_datetime": {
+    "$date": "2026-01-07T09:30:00.000Z"
+  },
+  "economy_price": 2000000,
+  "business_price": 4300000,
+  "createdAt": {
+    "$date": "2026-01-06T15:26:51.371Z"
+  },
+  "updatedAt": {
+    "$date": "2026-01-06T15:26:51.371Z"
+  },
+  "flight_id": 17,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "695d2a6fbe3712d17865a532"
+  },
+  "airline_id": {
+    "$oid": "51908cc42f9fa364220cb649"
+  },
+  "departure_airport_id": {
+    "$oid": "90f4c42746bc707266a49529"
+  },
+  "arrival_airport_id": {
+    "$oid": "90f4c42746bc707266a49529"
+  },
+  "departure_datetime": {
+    "$date": "2026-01-07T08:29:00.000Z"
+  },
+  "arrival_datetime": {
+    "$date": "2026-01-07T10:29:00.000Z"
+  },
+  "economy_price": 3000000,
+  "business_price": 4300000,
+  "createdAt": {
+    "$date": "2026-01-06T15:29:51.395Z"
+  },
+  "updatedAt": {
+    "$date": "2026-01-06T15:29:51.395Z"
+  },
+  "flight_id": 18,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "695d2a85be3712d17865a53c"
+  },
+  "airline_id": {
+    "$oid": "d83aa0756732d975dffbc109"
+  },
+  "departure_airport_id": {
+    "$oid": "260373add95d75ddc8845dc8"
+  },
+  "arrival_airport_id": {
+    "$oid": "90f4c42746bc707266a49529"
+  },
+  "departure_datetime": {
+    "$date": "2026-01-07T15:30:00.000Z"
+  },
+  "arrival_datetime": {
+    "$date": "2026-01-07T05:30:00.000Z"
+  },
+  "economy_price": 3000000,
+  "business_price": 4000000,
+  "createdAt": {
+    "$date": "2026-01-06T15:30:13.250Z"
+  },
+  "updatedAt": {
+    "$date": "2026-01-06T15:30:13.250Z"
+  },
+  "flight_id": 19,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "695d2aa5be3712d17865a546"
+  },
+  "airline_id": {
+    "$oid": "582857409a28e0e18829e880"
+  },
+  "departure_airport_id": {
+    "$oid": "260373add95d75ddc8845dc8"
+  },
+  "arrival_airport_id": {
+    "$oid": "90f4c42746bc707266a49529"
+  },
+  "departure_datetime": {
+    "$date": "2026-01-07T16:30:00.000Z"
+  },
+  "arrival_datetime": {
+    "$date": "2026-01-07T06:30:00.000Z"
+  },
+  "economy_price": 2000000,
+  "business_price": 4000000,
+  "createdAt": {
+    "$date": "2026-01-06T15:30:45.449Z"
+  },
+  "updatedAt": {
+    "$date": "2026-01-06T15:30:45.449Z"
+  },
+  "flight_id": 20,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "695d2ac1be3712d17865a550"
+  },
+  "airline_id": {
+    "$oid": "9f094d248b12325fa7743f29"
+  },
+  "departure_airport_id": {
+    "$oid": "260373add95d75ddc8845dc8"
+  },
+  "arrival_airport_id": {
+    "$oid": "90f4c42746bc707266a49529"
+  },
+  "departure_datetime": {
+    "$date": "2026-01-07T15:30:00.000Z"
+  },
+  "arrival_datetime": {
+    "$date": "2026-01-07T07:44:00.000Z"
+  },
+  "economy_price": 3000000,
+  "business_price": 4000000,
+  "createdAt": {
+    "$date": "2026-01-06T15:31:13.657Z"
+  },
+  "updatedAt": {
+    "$date": "2026-01-06T15:31:13.657Z"
+  },
+  "flight_id": 21,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "695d2ae3be3712d17865a55a"
+  },
+  "airline_id": {
+    "$oid": "10ae183c37e61e4ebf7b84a3"
+  },
+  "departure_airport_id": {
+    "$oid": "260373add95d75ddc8845dc8"
+  },
+  "arrival_airport_id": {
+    "$oid": "90f4c42746bc707266a49529"
+  },
+  "departure_datetime": {
+    "$date": "2026-01-07T15:31:00.000Z"
+  },
+  "arrival_datetime": {
+    "$date": "2026-01-07T07:44:00.000Z"
+  },
+  "economy_price": 3000000,
+  "business_price": 2400000,
+  "createdAt": {
+    "$date": "2026-01-06T15:31:47.170Z"
+  },
+  "updatedAt": {
+    "$date": "2026-01-06T15:31:47.170Z"
+  },
+  "flight_id": 22,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "695d2afbbe3712d17865a564"
+  },
+  "airline_id": {
+    "$oid": "d83aa0756732d975dffbc109"
+  },
+  "departure_airport_id": {
+    "$oid": "90f4c42746bc707266a49529"
+  },
+  "arrival_airport_id": {
+    "$oid": "7fcff268b37f42677a1fa366"
+  },
+  "departure_datetime": {
+    "$date": "2026-01-07T15:31:00.000Z"
+  },
+  "arrival_datetime": {
+    "$date": "2026-01-07T16:32:00.000Z"
+  },
+  "economy_price": 3000000,
+  "business_price": 4000000,
+  "createdAt": {
+    "$date": "2026-01-06T15:32:11.690Z"
+  },
+  "updatedAt": {
+    "$date": "2026-01-06T15:32:11.690Z"
+  },
+  "flight_id": 23,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "695d2b1cbe3712d17865a56e"
+  },
+  "airline_id": {
+    "$oid": "9f094d248b12325fa7743f29"
+  },
+  "departure_airport_id": {
+    "$oid": "90f4c42746bc707266a49529"
+  },
+  "arrival_airport_id": {
+    "$oid": "7fcff268b37f42677a1fa366"
+  },
+  "departure_datetime": {
+    "$date": "2026-01-07T15:32:00.000Z"
+  },
+  "arrival_datetime": {
+    "$date": "2026-01-07T15:32:00.000Z"
+  },
+  "economy_price": 2000000,
+  "business_price": 4300000,
+  "createdAt": {
+    "$date": "2026-01-06T15:32:44.810Z"
+  },
+  "updatedAt": {
+    "$date": "2026-01-06T15:32:44.810Z"
+  },
+  "flight_id": 24,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "695d2b3cbe3712d17865a578"
+  },
+  "airline_id": {
+    "$oid": "10ae183c37e61e4ebf7b84a3"
+  },
+  "departure_airport_id": {
+    "$oid": "90f4c42746bc707266a49529"
+  },
+  "arrival_airport_id": {
+    "$oid": "7fcff268b37f42677a1fa366"
+  },
+  "departure_datetime": {
+    "$date": "2026-01-07T15:32:00.000Z"
+  },
+  "arrival_datetime": {
+    "$date": "2026-01-07T05:35:00.000Z"
+  },
+  "economy_price": 2000000,
+  "business_price": 3500000,
+  "createdAt": {
+    "$date": "2026-01-06T15:33:16.273Z"
+  },
+  "updatedAt": {
+    "$date": "2026-01-06T15:33:16.273Z"
+  },
+  "flight_id": 25,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "695d4bbec11b8272f6c08b16"
+  },
+  "airline_id": {
+    "$oid": "51908cc42f9fa364220cb649"
+  },
+  "departure_airport_id": {
+    "$oid": "260373add95d75ddc8845dc8"
+  },
+  "arrival_airport_id": {
+    "$oid": "260373add95d75ddc8845dc8"
+  },
+  "departure_datetime": {
+    "$date": "2026-01-07T17:51:00.000Z"
+  },
+  "arrival_datetime": {
+    "$date": "2026-01-07T17:51:00.000Z"
+  },
+  "economy_price": 3000000,
+  "business_price": 4000000,
+  "createdAt": {
+    "$date": "2026-01-06T17:51:58.272Z"
+  },
+  "updatedAt": {
+    "$date": "2026-01-06T17:51:58.272Z"
+  },
+  "flight_id": 26,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "695d4bd6c11b8272f6c08b20"
+  },
+  "airline_id": {
+    "$oid": "d83aa0756732d975dffbc109"
+  },
+  "departure_airport_id": {
+    "$oid": "260373add95d75ddc8845dc8"
+  },
+  "arrival_airport_id": {
+    "$oid": "90f4c42746bc707266a49529"
+  },
+  "departure_datetime": {
+    "$date": "2026-01-07T17:52:00.000Z"
+  },
+  "arrival_datetime": {
+    "$date": "2026-01-07T20:52:00.000Z"
+  },
+  "economy_price": 2000000,
+  "business_price": 4500000,
+  "createdAt": {
+    "$date": "2026-01-06T17:52:22.944Z"
+  },
+  "updatedAt": {
+    "$date": "2026-01-06T17:52:22.944Z"
+  },
+  "flight_id": 27,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "696f311263614740be5cb615"
+  },
+  "airline_id": {
+    "$oid": "51908cc42f9fa364220cb649"
+  },
+  "departure_airport_id": {
+    "$oid": "260373add95d75ddc8845dc8"
+  },
+  "arrival_airport_id": {
+    "$oid": "90f4c42746bc707266a49529"
+  },
+  "departure_datetime": {
+    "$date": "2026-01-20T07:38:00.000Z"
+  },
+  "arrival_datetime": {
+    "$date": "2026-01-20T13:38:00.000Z"
+  },
+  "economy_price": 1000000,
+  "business_price": 4000000,
+  "createdAt": {
+    "$date": "2026-01-20T07:38:58.750Z"
+  },
+  "updatedAt": {
+    "$date": "2026-01-20T07:38:58.750Z"
+  },
+  "flight_id": 28,
+  "__v": 0
+}]

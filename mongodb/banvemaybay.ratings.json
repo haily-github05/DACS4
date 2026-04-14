@@ -1,0 +1,45 @@
+[{
+  "_id": {
+    "$oid": "69354caf9b6a0635b36f85c2"
+  },
+  "userEmail": "nhuy040705@gmail.com",
+  "rating": 5,
+  "message": "ok",
+  "createdAt": {
+    "$date": "2025-12-07T09:45:19.827Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-07T09:45:19.827Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "695cda64db3ce24e71a2b5b8"
+  },
+  "userEmail": "yhtn.23itb@vku.udn.vn",
+  "rating": 5,
+  "message": "dịch vụ tốt",
+  "createdAt": {
+    "$date": "2026-01-06T09:48:20.094Z"
+  },
+  "updatedAt": {
+    "$date": "2026-01-06T09:48:20.094Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "695d4b73c11b8272f6c08b0b"
+  },
+  "userEmail": "yhtn.23itb@vku.udn.vn",
+  "rating": 3,
+  "message": "ok",
+  "createdAt": {
+    "$date": "2026-01-06T17:50:43.507Z"
+  },
+  "updatedAt": {
+    "$date": "2026-01-06T17:50:43.507Z"
+  },
+  "__v": 0
+}]

@@ -1,0 +1,136 @@
+[{
+  "_id": {
+    "$oid": "693435387ba9876fd4edec38"
+  },
+  "email": "hienttt2.23el@vku.udn.vn",
+  "last_name": "Hiền",
+  "first_name": "Thu ",
+  "password": "$2b$10$UkUsYax7WRBvGXJPIVSHYeIA7R1/atByN.VwJMXM5iLAZ2WlOl9hu",
+  "phonenumber": "0329466605",
+  "address": "",
+  "dob": {
+    "$date": "2014-06-20T00:00:00.000Z"
+  },
+  "verified": true,
+  "createdAt": {
+    "$date": "2025-12-06T13:52:56.769Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-06T13:53:11.627Z"
+  },
+  "user_id": 6,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "693442cab90e0a42db0706e7"
+  },
+  "email": "phuochung10112005@gmail.com",
+  "last_name": "Phan",
+  "first_name": "Hung",
+  "password": "$2b$10$9HtHJxUqHBM3SpVwB0coxuCuF1HHAfZI94THTs9F8hTONDVEQWIjC",
+  "phonenumber": "0123123123",
+  "address": "",
+  "dob": {
+    "$date": "2005-11-10T00:00:00.000Z"
+  },
+  "verified": true,
+  "createdAt": {
+    "$date": "2025-12-06T14:50:50.039Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-06T14:53:01.041Z"
+  },
+  "user_id": 7,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69352d030fcea0df42773755"
+  },
+  "email": "hothihailybry@gmail.com",
+  "last_name": "Ly",
+  "first_name": "Hai",
+  "password": "$2b$10$Jn0vg9kSDon2T1Dy8RrDIunDcH836DFlYSUUMSad8i7zjAJK1ecui",
+  "phonenumber": "0865529572",
+  "address": "",
+  "dob": {
+    "$date": "2004-11-11T00:00:00.000Z"
+  },
+  "verified": true,
+  "createdAt": {
+    "$date": "2025-12-07T07:30:11.154Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-07T07:30:18.341Z"
+  },
+  "user_id": 8,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6935310e2d2dedb6d4c66afa"
+  },
+  "email": "nhuy040705@gmail.com",
+  "last_name": "NhY",
+  "first_name": "Hồ Trương ",
+  "password": "$2b$10$s1kNNkNenEbtwZ83PNrQCenGIg2jG40qq7zT0aauQfhUWNzaxtDcu",
+  "phonenumber": "0329466605",
+  "address": "",
+  "dob": null,
+  "verified": true,
+  "createdAt": {
+    "$date": "2025-12-07T07:47:26.265Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-07T09:44:32.291Z"
+  },
+  "user_id": 9,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6957e17791308c93d8c4c992"
+  },
+  "email": "yhtn.23itb@vku.udn.vn",
+  "last_name": "Ly",
+  "first_name": "Thu ",
+  "password": "$2b$10$pXXhMvXxHbyRJXpw6j83H.0.uO8K0hdEWQDexMvW0MTdWeRt3rfYy",
+  "phonenumber": "0329466605",
+  "address": "",
+  "dob": {
+    "$date": "2025-12-29T00:00:00.000Z"
+  },
+  "verified": true,
+  "createdAt": {
+    "$date": "2026-01-02T15:17:11.852Z"
+  },
+  "updatedAt": {
+    "$date": "2026-01-06T17:51:05.189Z"
+  },
+  "user_id": 10,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69819615625ddf0dec09f9c6"
+  },
+  "email": "lyho@gmail.com",
+  "last_name": "Ho",
+  "first_name": "Ly",
+  "password": "$2b$10$c2h/pqFhOSwPLcxVAgf7Q.c/Riyn1GXAuOjEHWCs5yy9Fu8zU5AJ6",
+  "phonenumber": "0123456789",
+  "address": "",
+  "dob": {
+    "$date": "2002-02-20T00:00:00.000Z"
+  },
+  "verified": false,
+  "createdAt": {
+    "$date": "2026-02-03T06:30:45.937Z"
+  },
+  "updatedAt": {
+    "$date": "2026-02-03T06:30:45.937Z"
+  },
+  "user_id": 11,
+  "__v": 0
+}]

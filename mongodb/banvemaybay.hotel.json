@@ -1,0 +1,474 @@
+[{
+  "_id": {
+    "$oid": "69265ac2f6b8f41b67854b25"
+  },
+  "name": "Khách sạn Rex Sài Gòn",
+  "city": "HoChiMinh",
+  "address": "141 Nguyễn Huệ, Quận 1",
+  "description": "Khách sạn 5 sao mang tính lịch sử, tọa lạc tại trung tâm.",
+  "rating": 5,
+  "score": 8.9,
+  "reviews": 1500,
+  "price": 75.5,
+  "imageURL": "/img/airlines/HCM/ksan_rex.jpeg",
+  "amenities": [
+    "Hồ bơi",
+    "Spa",
+    "Bar Rooftop"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69265ac2f6b8f41b67854b26"
+  },
+  "name": "Khách sạn Caravelle Saigon",
+  "city": "HoChiMinh",
+  "address": "19-23 Lam Son Square, Quận 1",
+  "description": "Khách sạn Caravelle Saigon là khách sạn đạt tiêu chuẩn quốc tế 5 sao hàng đầu tọa lạc ngay tại trung tâm tài chính, thương mại và giải trí sầm uất.",
+  "rating": 4.9,
+  "score": 8.7,
+  "reviews": 1300,
+  "price": 300000,
+  "imageURL": "/img/airlines/HCM/ksan_caeavelle.jpeg",
+  "amenities": [
+    "Executive Lounge",
+    "Fitness",
+    "Nhà hàng"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69265ac2f6b8f41b67854b27"
+  },
+  "name": "Chợ Bến Thành",
+  "city": "HoChiMinh",
+  "address": "Nằm bên cạnh quảng trường Quách Thị Trang và công viên 23 Tháng 9, thuộc địa bàn quận 1, thành phố Hồ Chí Minh.",
+  "description": "Chợ có 4 ô cửa và 4 tháp cổng có gắn đồng hồ nhìn ra 4 con đường chính của trung tâm quận 1",
+  "rating": 4,
+  "score": 9,
+  "reviews": 2000,
+  "price": 1,
+  "imageURL": "/img/airlines/HCM/cho_ben_thanh.jpeg",
+  "amenities": [
+    "Executive Lounge",
+    "Fitness",
+    "Nhà hàng"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69270b94f6b8f41b67854b2d"
+  },
+  "name": "Meliá Vinpearl Hue",
+  "city": "Hue",
+  "address": "50A Hùng Vương, Thành phố Huế, Việt Nam",
+  "description": "Khách sạn Meliá Vinpearl Huế đạt tiêu chuẩn quốc tế, thiết kế sang trọng, tiện nghi đầy đủ, view thành phố tuyệt đẹp. Dịch vụ chuyên nghiệp, nhà hàng phong phú và phòng ốc hiện đại.",
+  "rating": 4.8,
+  "score": 9.2,
+  "reviews": 1268,
+  "price": 220,
+  "imageURL": "/img/airlines/HCM/vinpearl_hue.jpg",
+  "amenities": [
+    "Wifi miễn phí",
+    "Hồ bơi",
+    "Nhà hàng",
+    "Trung tâm thể dục",
+    "Dịch vụ 24/7"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69270babf6b8f41b67854b2f"
+  },
+  "name": "TTC Imperial Hotel",
+  "city": "Hue",
+  "address": "08 Hùng Vương, Thành phố Huế, Việt Nam",
+  "description": "TTC Imperial Hotel là khách sạn sang trọng với vị trí trung tâm, tiện ích hiện đại và dịch vụ xuất sắc. Phòng rộng, sạch sẽ và đội ngũ nhân viên thân thiện.",
+  "rating": 4.6,
+  "score": 8.9,
+  "reviews": 2365,
+  "price": 180,
+  "imageURL": "/img/airlines/HCM/imperial_hue.jpg",
+  "amenities": [
+    "Wifi miễn phí",
+    "Spa",
+    "Nhà hàng",
+    "Bữa sáng miễn phí",
+    "Lễ tân 24h"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69271b8bb804f0ba4c9d1c86"
+  },
+  "name": "Silk Path Grand Hue Hotel",
+  "city": "Hue",
+  "address": "02 Lê Lợi, Vĩnh Ninh, Huế",
+  "description": "Khách sạn sang trọng mang phong cách Tây hiện đại và nét văn hóa Đông Dương tinh tế.",
+  "rating": 4.8,
+  "score": 9,
+  "reviews": 258,
+  "price": 210,
+  "imageURL": "/img/airlines/HCM/silkpath_grand_hue.jpg",
+  "amenities": [
+    "WiFi miễn phí",
+    "Hồ bơi",
+    "Nhà hàng cao cấp",
+    "Dịch vụ phòng 24/7",
+    "Spa thư giãn"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69271bdab804f0ba4c9d1c88"
+  },
+  "name": "Banyan Tree Lang Co",
+  "city": "Hue",
+  "address": "Lăng Cô, Thừa Thiên Huế",
+  "description": "Khu nghỉ dưỡng cao cấp bên biển Lăng Cô với villa hướng biển và dịch vụ 5 sao.",
+  "rating": 4.9,
+  "score": 9.3,
+  "reviews": 3366,
+  "price": 420,
+  "imageURL": "/img/airlines/HCM/banyan_tree_langco.jpg",
+  "amenities": [
+    "Bãi biển riêng",
+    "Villa hồ bơi",
+    "Nhà hàng 5 sao",
+    "Dịch vụ spa",
+    "Xe đưa đón"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69271c50b804f0ba4c9d1c8a"
+  },
+  "name": "Anhill Boutique",
+  "city": "Hue",
+  "address": "Thủy Xuân, Thành phố Huế",
+  "description": "Boutique hotel với không gian yên bình, tiện nghi hiện đại và phong cảnh hữu tình.",
+  "rating": 5,
+  "score": 9.4,
+  "reviews": 252,
+  "price": 185,
+  "imageURL": "/img/airlines/HCM/anhill_boutique.jpg",
+  "amenities": [
+    "Hồ bơi",
+    "Khuôn viên xanh",
+    "Dịch vụ giặt ủi",
+    "Xe đưa đón",
+    "Trung tâm thể dục"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69271c9db804f0ba4c9d1c8c"
+  },
+  "name": "Pilgrimage Village Boutique Resort & Spa",
+  "city": "Hue",
+  "address": "130 Minh Mạng, Thủy Xuân, Huế",
+  "description": "Khu nghỉ dưỡng phong cách làng quê yên bình với dịch vụ chuyên nghiệp và thiên nhiên tươi đẹp.",
+  "rating": 4.7,
+  "score": 9,
+  "reviews": 3732,
+  "price": 199,
+  "imageURL": "/img/airlines/HCM/pilgrimage_village.jpg",
+  "amenities": [
+    "Spa",
+    "Hồ bơi",
+    "Khu vườn xanh",
+    "Dịch vụ xe đưa đón",
+    "Nhà hàng đặc sản"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6927229ab804f0ba4c9d1c8e"
+  },
+  "name": "Khách sạn LOTTE Sài Gòn",
+  "city": "HoChiMinh",
+  "address": "2A-4A Tôn Đức Thắng, Quận 1, TP.HCM",
+  "description": "Khách sạn 5 sao sang trọng, có nhà hàng, hồ bơi và hướng sông tuyệt đẹp.",
+  "rating": 4.6,
+  "score": 9,
+  "reviews": 5900,
+  "price": 4011595,
+  "imageURL": "/img/airlines/HCM/lotte_saigon.jpeg",
+  "amenities": [
+    "Hồ bơi ngoài trời",
+    "Nhà hàng",
+    "Quầy bar",
+    "Gym",
+    "Dịch vụ phòng 24/7"
+  ]
+},
+{
+  "_id": {
+    "$oid": "692722a4b804f0ba4c9d1c90"
+  },
+  "name": "The Reverie Saigon",
+  "city": "HoChiMinh",
+  "address": "22-36 Nguyễn Huệ, Quận 1, TP.HCM",
+  "description": "Khách sạn siêu sang với thiết kế đẳng cấp, dịch vụ chuyên nghiệp và hệ thống nhà hàng 5 sao.",
+  "rating": 4.6,
+  "score": 9.3,
+  "reviews": 1800,
+  "price": 7632454,
+  "imageURL": "/img/airlines/HCM/reverie_saigon.jpeg",
+  "amenities": [
+    "Hồ bơi",
+    "Spa cao cấp",
+    "5 nhà hàng",
+    "Phòng gym hiện đại",
+    "Dịch vụ đưa đón"
+  ]
+},
+{
+  "_id": {
+    "$oid": "692722c3b804f0ba4c9d1c92"
+  },
+  "name": "Khách sạn Bay Hồ Chí",
+  "city": "HoChiMinh",
+  "address": "Victoria Court, Quận 1, TP.HCM",
+  "description": "Khách sạn 4 sao có view hồ bơi trên sân thượng, phòng rộng và đẹp.",
+  "rating": 4.1,
+  "score": 8.3,
+  "reviews": 2000,
+  "price": 1408885,
+  "imageURL": "/img/airlines/HCM/bay_hcm.jpeg",
+  "amenities": [
+    "Hồ bơi sân thượng",
+    "Nhà hàng",
+    "Quầy bar",
+    "WiFi miễn phí",
+    "Dịch vụ phòng"
+  ]
+},
+{
+  "_id": {
+    "$oid": "692729001fc872483f226dac"
+  },
+  "name": "GM Premium Hotel",
+  "city": "HaNoi",
+  "address": "123 Hoan Kiem, Ha Noi",
+  "description": "Khách sạn cao cấp phù hợp cho gia đình, công tác và nghỉ dưỡng.",
+  "rating": 5,
+  "score": 9.6,
+  "reviews": 1906,
+  "price": 2552358,
+  "imageURL": "/img/airlines/HCM/hotel_gm_premium.jpg",
+  "amenities": [
+    "Bể bơi",
+    "Nhà hàng",
+    "Bao gồm bữa sáng"
+  ]
+},
+{
+  "_id": {
+    "$oid": "692729c91fc872483f226daf"
+  },
+  "name": "La Sinfonia del Rey Hotel & Spa",
+  "city": "HaNoi",
+  "address": "33 Hang Dau, Hoan Kiem, Ha Noi",
+  "description": "Khách sạn sang trọng với view phố cổ và dịch vụ spa chất lượng cao.",
+  "rating": 5,
+  "score": 9.7,
+  "reviews": 3381,
+  "price": 2114211,
+  "imageURL": "/img/airlines/HCM/la_sinfonia.jpg",
+  "amenities": [
+    "Spa",
+    "Nhà hàng",
+    "View phố cổ"
+  ]
+},
+{
+  "_id": {
+    "$oid": "692729d51fc872483f226db1"
+  },
+  "name": "Tirant Hotel",
+  "city": "HaNoi",
+  "address": "38 Gia Ngu, Hoan Kiem, Ha Noi",
+  "description": "Khách sạn ở vị trí trung tâm, gần hồ Gươm thuận tiện đi lại.",
+  "rating": 5,
+  "score": 9.5,
+  "reviews": 2295,
+  "price": 1565417,
+  "imageURL": "/img/airlines/HCM/tirant_hotel.jpg",
+  "amenities": [
+    "Bể bơi",
+    "Trung tâm thành phố",
+    "Bao gồm bữa sáng"
+  ]
+},
+{
+  "_id": {
+    "$oid": "692729e31fc872483f226db3"
+  },
+  "name": "Hanoi Allure Hotel",
+  "city": "HaNoi",
+  "address": "52 Dao Duy Tu, Hoan Kiem, Ha Noi",
+  "description": "Khách sạn cổ điển, sang trọng nằm giữa trung tâm phố cổ Hà Nội.",
+  "rating": 5,
+  "score": 9.8,
+  "reviews": 981,
+  "price": 1819722,
+  "imageURL": "/img/airlines/HCM/hanoi_allure.jpg",
+  "amenities": [
+    "Bao gồm bữa sáng",
+    "Vị trí trung tâm",
+    "Nội thất cổ điển"
+  ]
+},
+{
+  "_id": {
+    "$oid": "692729ed1fc872483f226db5"
+  },
+  "name": "Hanoi Boutique Hotel & Spa",
+  "city": "HaNoi",
+  "address": "7 Hang Dau, Hoan Kiem, Ha Noi",
+  "description": "Khách sạn nhỏ xinh, sang trọng và yên tĩnh giữa phố cổ.",
+  "rating": 4.9,
+  "score": 9.4,
+  "reviews": 830,
+  "price": 1424245,
+  "imageURL": "/img/airlines/HCM/hanoi_boutique.jpg",
+  "amenities": [
+    "Spa",
+    "Bữa sáng",
+    "Không gian yên tĩnh"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69272be31fc872483f226db7"
+  },
+  "name": "JM Marvel Hotel & Spa",
+  "city": "HaNoi",
+  "address": "16 Hang Da, Hoan Kiem, Ha Noi",
+  "description": "Khách sạn thời thượng, lãng mạn và có view ngắm cảnh thành phố tuyệt đẹp.",
+  "rating": 5,
+  "score": 9.7,
+  "reviews": 3186,
+  "price": 1822408,
+  "imageURL": "/img/airlines/HCM/jm_marvel.jpg",
+  "amenities": [
+    "Bao gồm bữa sáng",
+    "Spa",
+    "Ngắm cảnh thành phố"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69272cdf1fc872483f226dba"
+  },
+  "name": "Danang Marriott Resort & Spa",
+  "city": "DaNang",
+  "address": "07 Trường Sa, Ngũ Hành Sơn, Đà Nẵng",
+  "description": "Khu nghỉ dưỡng 5 sao, ngắm cảnh vịnh, yên tĩnh.",
+  "rating": 4.7,
+  "score": 9.4,
+  "reviews": 2121,
+  "price": 3750000,
+  "imageURL": "/img/airlines/HCM/danang_marriott.jpg",
+  "amenities": [
+    "Trọn gói",
+    "Ngắm cảnh đẹp",
+    "Bao gồm bữa sáng"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69272d2d1fc872483f226dbc"
+  },
+  "name": "Awaken Danang Hotel",
+  "city": "DaNang",
+  "address": "Sơn Trà, Đà Nẵng",
+  "description": "Khách sạn sang trọng, gần biển, phù hợp nghỉ dưỡng và công tác.",
+  "rating": 4.9,
+  "score": 9.8,
+  "reviews": 844,
+  "price": 1051676,
+  "imageURL": "/img/airlines/HCM/awaken_danang.jpg",
+  "amenities": [
+    "Bao gồm bữa sáng",
+    "Ngắm cảnh biển",
+    "Sang trọng"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69272d3b1fc872483f226dbe"
+  },
+  "name": "TMS Hotel Da Nang Beach",
+  "city": "DaNang",
+  "address": "292 Võ Nguyên Giáp, Ngũ Hành Sơn, Đà Nẵng",
+  "description": "Khách sạn cao cấp, tầm nhìn đẹp, phù hợp nghỉ dưỡng & công tác.",
+  "rating": 4.9,
+  "score": 9.8,
+  "reviews": 1559,
+  "price": 1653639,
+  "imageURL": "/img/airlines/HCM/tms_danang.jpg",
+  "amenities": [
+    "Tầm nhìn đẹp",
+    "Ngắm cảnh biển",
+    "Bao gồm bữa sáng"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69272d4c1fc872483f226dc0"
+  },
+  "name": "Melia Danang Beach Resort",
+  "city": "DaNang",
+  "address": "19 Trường Sa, Ngũ Hành Sơn, Đà Nẵng",
+  "description": "Khu nghỉ dưỡng sang trọng, yên tĩnh, tầm nhìn biển tuyệt đẹp.",
+  "rating": 4.6,
+  "score": 9.2,
+  "reviews": 2141,
+  "price": 2320474,
+  "imageURL": "/img/airlines/HCM/melia_danang.jpg",
+  "amenities": [
+    "Yên tĩnh",
+    "Hiện đại",
+    "Bao gồm bữa sáng"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69272d591fc872483f226dc2"
+  },
+  "name": "DLG Hotel Danang",
+  "city": "DaNang",
+  "address": "258 Võ Nguyên Giáp, Sơn Trà, Đà Nẵng",
+  "description": "Khách sạn ven biển, tầm nhìn đẹp, vị trí trung tâm.",
+  "rating": 4.9,
+  "score": 9.7,
+  "reviews": 2000,
+  "price": 1284082,
+  "imageURL": "/img/airlines/HCM/dlg_danang.jpg",
+  "amenities": [
+    "Ngắm cảnh biển",
+    "Bao gồm bữa sáng",
+    "Tầm nhìn đẹp"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69272d641fc872483f226dc4"
+  },
+  "name": "Melia Vinpearl Danang Riverfront",
+  "city": "DaNang",
+  "address": "341 Trần Hưng Đạo, Sơn Trà, Đà Nẵng",
+  "description": "Khách sạn sang trọng, phù hợp gia đình và cặp đôi.",
+  "rating": 4.9,
+  "score": 9.7,
+  "reviews": 3175,
+  "price": 1386093,
+  "imageURL": "/img/airlines/HCM/vinpearl_danang_riverfront.jpg",
+  "amenities": [
+    "Gia đình",
+    "Lãng mạn",
+    "Bao gồm bữa sáng"
+  ]
+}]

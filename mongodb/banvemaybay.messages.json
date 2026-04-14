@@ -1,0 +1,1906 @@
+[{
+  "_id": {
+    "$oid": "695927730ef44b247e637b71"
+  },
+  "user_id": {
+    "$oid": "6957e17791308c93d8c4c992"
+  },
+  "sender": "user",
+  "content": "cdddd",
+  "timestamp": {
+    "$date": "2026-01-03T14:28:03.548Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "695928500ef44b247e637b73"
+  },
+  "user_id": {
+    "$oid": "6957e17791308c93d8c4c992"
+  },
+  "sender": "admin",
+  "content": "chào quý khách",
+  "timestamp": {
+    "$date": "2026-01-03T14:31:44.237Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69592a880ef44b247e637b78"
+  },
+  "user_id": {
+    "$oid": "6957e17791308c93d8c4c992"
+  },
+  "sender": "user",
+  "content": "tôi cần hỗ trợ",
+  "timestamp": {
+    "$date": "2026-01-03T14:41:12.583Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69592ac30ef44b247e637b7c"
+  },
+  "user_id": {
+    "$oid": "6957e17791308c93d8c4c992"
+  },
+  "sender": "user",
+  "content": "tôi cần hỗ trợ",
+  "timestamp": {
+    "$date": "2026-01-03T14:42:11.651Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69592ade0ef44b247e637b7e"
+  },
+  "user_id": {
+    "$oid": "6957e17791308c93d8c4c992"
+  },
+  "sender": "admin",
+  "content": "hãy cho chúng tôi biết vấn đề mà bạn đang gặp phải",
+  "timestamp": {
+    "$date": "2026-01-03T14:42:38.868Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69592c4ee6d7e1cc2fdc9bd6"
+  },
+  "user_id": {
+    "$oid": "6935310e2d2dedb6d4c66afa"
+  },
+  "sender": "user",
+  "content": "cần hỗ trợ",
+  "timestamp": {
+    "$date": "2026-01-03T14:48:46.721Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69592f563c08d606b30c7103"
+  },
+  "user_id": {
+    "$oid": "6935310e2d2dedb6d4c66afa"
+  },
+  "sender": "user",
+  "content": "xin chào ạ",
+  "timestamp": {
+    "$date": "2026-01-03T15:01:42.129Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69592f743c08d606b30c7105"
+  },
+  "user_id": {
+    "$oid": "6935310e2d2dedb6d4c66afa"
+  },
+  "sender": "admin",
+  "content": "bạn cần gì ạ",
+  "timestamp": {
+    "$date": "2026-01-03T15:02:12.973Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69592f8a3c08d606b30c7107"
+  },
+  "user_id": {
+    "$oid": "6935310e2d2dedb6d4c66afa"
+  },
+  "sender": "user",
+  "content": "tài khoản của tôi gặp trục trặc",
+  "timestamp": {
+    "$date": "2026-01-03T15:02:34.408Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69592fb03c08d606b30c7109"
+  },
+  "user_id": {
+    "$oid": "6935310e2d2dedb6d4c66afa"
+  },
+  "sender": "admin",
+  "content": "bạn có thể mô tả cụ thể vấn đề không ạ? điều này giúp chúng tôi có thể xử lý nhanh chóng hơn",
+  "timestamp": {
+    "$date": "2026-01-03T15:03:12.595Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6959306c463409783e648813"
+  },
+  "user_id": {
+    "$oid": "6935310e2d2dedb6d4c66afa"
+  },
+  "sender": "user",
+  "content": "quên mật khẩu ạ",
+  "timestamp": {
+    "$date": "2026-01-03T15:06:20.560Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6959308b463409783e648815"
+  },
+  "user_id": {
+    "$oid": "6935310e2d2dedb6d4c66afa"
+  },
+  "sender": "admin",
+  "content": "đợi chúng tôi xử lý giúp bạn nhé",
+  "timestamp": {
+    "$date": "2026-01-03T15:06:51.003Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "695930c8419df16cd8a1d71f"
+  },
+  "user_id": {
+    "$oid": "6935310e2d2dedb6d4c66afa"
+  },
+  "sender": "user",
+  "content": "nn",
+  "timestamp": {
+    "$date": "2026-01-03T15:07:52.457Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "695930eac76e0aaff23755cb"
+  },
+  "user_id": {
+    "$oid": "6935310e2d2dedb6d4c66afa"
+  },
+  "sender": "user",
+  "content": "112233",
+  "timestamp": {
+    "$date": "2026-01-03T15:08:26.224Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6959317ce800f63efb747635"
+  },
+  "user_id": {
+    "$oid": "6935310e2d2dedb6d4c66afa"
+  },
+  "sender": "user",
+  "content": "1111111",
+  "timestamp": {
+    "$date": "2026-01-03T15:10:52.569Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69593203dcc0d5f8c6ddb59c"
+  },
+  "user_id": {
+    "$oid": "6935310e2d2dedb6d4c66afa"
+  },
+  "sender": "user",
+  "content": "11111",
+  "timestamp": {
+    "$date": "2026-01-03T15:13:07.025Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69593205dcc0d5f8c6ddb59e"
+  },
+  "user_id": {
+    "$oid": "6935310e2d2dedb6d4c66afa"
+  },
+  "sender": "user",
+  "content": "1111333",
+  "timestamp": {
+    "$date": "2026-01-03T15:13:09.912Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6959320ddcc0d5f8c6ddb5a0"
+  },
+  "user_id": {
+    "$oid": "6935310e2d2dedb6d4c66afa"
+  },
+  "sender": "admin",
+  "content": "3331233",
+  "timestamp": {
+    "$date": "2026-01-03T15:13:17.818Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69593343dcc0d5f8c6ddb5a4"
+  },
+  "user_id": {
+    "$oid": "6935310e2d2dedb6d4c66afa"
+  },
+  "sender": "user",
+  "content": "nnnn",
+  "timestamp": {
+    "$date": "2026-01-03T15:18:27.209Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69593394dcc0d5f8c6ddb5ac"
+  },
+  "user_id": {
+    "$oid": "6935310e2d2dedb6d4c66afa"
+  },
+  "sender": "user",
+  "content": "dd",
+  "timestamp": {
+    "$date": "2026-01-03T15:19:48.072Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69593399dcc0d5f8c6ddb5ae"
+  },
+  "user_id": {
+    "$oid": "6935310e2d2dedb6d4c66afa"
+  },
+  "sender": "admin",
+  "content": "dddddd",
+  "timestamp": {
+    "$date": "2026-01-03T15:19:53.711Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "695933a1dcc0d5f8c6ddb5b0"
+  },
+  "user_id": {
+    "$oid": "6935310e2d2dedb6d4c66afa"
+  },
+  "sender": "admin",
+  "content": "44444444",
+  "timestamp": {
+    "$date": "2026-01-03T15:20:01.447Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69593426c116e261deb03e7d"
+  },
+  "user_id": {
+    "$oid": "6935310e2d2dedb6d4c66afa"
+  },
+  "sender": "user",
+  "content": "222222",
+  "timestamp": {
+    "$date": "2026-01-03T15:22:14.511Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69593879ffd69102fbb3e4ad"
+  },
+  "user_id": {
+    "$oid": "6935310e2d2dedb6d4c66afa"
+  },
+  "sender": "user",
+  "content": "s",
+  "timestamp": {
+    "$date": "2026-01-03T15:40:41.320Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69593889ffd69102fbb3e4b0"
+  },
+  "user_id": {
+    "$oid": "6935310e2d2dedb6d4c66afa"
+  },
+  "sender": "user",
+  "content": "ddd",
+  "timestamp": {
+    "$date": "2026-01-03T15:40:57.753Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "695938f4ffd69102fbb3e4b2"
+  },
+  "user_id": {
+    "$oid": "6935310e2d2dedb6d4c66afa"
+  },
+  "sender": "user",
+  "content": "dddd",
+  "timestamp": {
+    "$date": "2026-01-03T15:42:44.735Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6959391cffd69102fbb3e4b4"
+  },
+  "user_id": {
+    "$oid": "6935310e2d2dedb6d4c66afa"
+  },
+  "sender": "user",
+  "content": "2222222",
+  "timestamp": {
+    "$date": "2026-01-03T15:43:24.072Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69593a5da7e8bb6bb5e6f282"
+  },
+  "user_id": {
+    "$oid": "6935310e2d2dedb6d4c66afa"
+  },
+  "sender": "user",
+  "content": "sos",
+  "timestamp": {
+    "$date": "2026-01-03T15:48:45.785Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69593a73a7e8bb6bb5e6f28b"
+  },
+  "user_id": {
+    "$oid": "6957e17791308c93d8c4c992"
+  },
+  "sender": "user",
+  "content": "11111",
+  "timestamp": {
+    "$date": "2026-01-03T15:49:07.535Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69593ae88fd186dabc04d801"
+  },
+  "user_id": {
+    "$oid": "6957e17791308c93d8c4c992"
+  },
+  "sender": "user",
+  "content": "eee",
+  "timestamp": {
+    "$date": "2026-01-03T15:51:04.008Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69593af08fd186dabc04d804"
+  },
+  "user_id": {
+    "$oid": "6957e17791308c93d8c4c992"
+  },
+  "sender": "user",
+  "content": "xin chào",
+  "timestamp": {
+    "$date": "2026-01-03T15:51:12.344Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69593af68fd186dabc04d807"
+  },
+  "user_id": {
+    "$oid": "6957e17791308c93d8c4c992"
+  },
+  "sender": "admin",
+  "content": "vâng ạ",
+  "timestamp": {
+    "$date": "2026-01-03T15:51:18.879Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69593afd8fd186dabc04d809"
+  },
+  "user_id": {
+    "$oid": "6957e17791308c93d8c4c992"
+  },
+  "sender": "admin",
+  "content": "ddddd",
+  "timestamp": {
+    "$date": "2026-01-03T15:51:25.095Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69593b9f29cbc9c01a0151c5"
+  },
+  "user_id": {
+    "$oid": "6957e17791308c93d8c4c992"
+  },
+  "sender": "user",
+  "content": "1223",
+  "timestamp": {
+    "$date": "2026-01-03T15:54:07.728Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69593baf29cbc9c01a0151c9"
+  },
+  "user_id": {
+    "$oid": "6957e17791308c93d8c4c992"
+  },
+  "sender": "user",
+  "content": "3333",
+  "timestamp": {
+    "$date": "2026-01-03T15:54:23.679Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69593c0982ac4abf39c52a1b"
+  },
+  "user_id": {
+    "$oid": "6957e17791308c93d8c4c992"
+  },
+  "sender": "user",
+  "content": "wwww",
+  "timestamp": {
+    "$date": "2026-01-03T15:55:53.519Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69593c1282ac4abf39c52a1d"
+  },
+  "user_id": {
+    "$oid": "6957e17791308c93d8c4c992"
+  },
+  "sender": "admin",
+  "content": "123as",
+  "timestamp": {
+    "$date": "2026-01-03T15:56:02.982Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69593e1936832060b6270d24"
+  },
+  "user_id": {
+    "$oid": "6957e17791308c93d8c4c992"
+  },
+  "sender": "user",
+  "content": "123",
+  "timestamp": {
+    "$date": "2026-01-03T16:04:41.902Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69593e3336832060b6270d2b"
+  },
+  "user_id": {
+    "$oid": "6957e17791308c93d8c4c992"
+  },
+  "sender": "user",
+  "content": "shop ơi",
+  "timestamp": {
+    "$date": "2026-01-03T16:05:07.200Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69593ef836832060b6270d31"
+  },
+  "user_id": {
+    "$oid": "6957e17791308c93d8c4c992"
+  },
+  "sender": "user",
+  "content": "11111",
+  "timestamp": {
+    "$date": "2026-01-03T16:08:24.799Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69593efb36832060b6270d34"
+  },
+  "user_id": {
+    "$oid": "6957e17791308c93d8c4c992"
+  },
+  "sender": "user",
+  "content": "dddd",
+  "timestamp": {
+    "$date": "2026-01-03T16:08:27.247Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69593efc36832060b6270d37"
+  },
+  "user_id": {
+    "$oid": "6957e17791308c93d8c4c992"
+  },
+  "sender": "user",
+  "content": "ddd",
+  "timestamp": {
+    "$date": "2026-01-03T16:08:28.783Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "695940f023aae5889bea6a37"
+  },
+  "user_id": {
+    "$oid": "6957e17791308c93d8c4c992"
+  },
+  "sender": "user",
+  "content": "cc",
+  "timestamp": {
+    "$date": "2026-01-03T16:16:48.500Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "695940f223aae5889bea6a3a"
+  },
+  "user_id": {
+    "$oid": "6957e17791308c93d8c4c992"
+  },
+  "sender": "user",
+  "content": "cccc",
+  "timestamp": {
+    "$date": "2026-01-03T16:16:50.455Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "695940f423aae5889bea6a3d"
+  },
+  "user_id": {
+    "$oid": "6957e17791308c93d8c4c992"
+  },
+  "sender": "user",
+  "content": "cccccc",
+  "timestamp": {
+    "$date": "2026-01-03T16:16:52.951Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6959430623aae5889bea6a48"
+  },
+  "user_id": {
+    "$oid": "6957e17791308c93d8c4c992"
+  },
+  "sender": "user",
+  "content": "eee",
+  "timestamp": {
+    "$date": "2026-01-03T16:25:42.666Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "695a6cc9608608f5023ada3d"
+  },
+  "user_id": {
+    "$oid": "6935310e2d2dedb6d4c66afa"
+  },
+  "sender": "user",
+  "content": "cảm ơn ạ",
+  "timestamp": {
+    "$date": "2026-01-04T13:36:09.518Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "695a6ed321911b5b0ca26081"
+  },
+  "user_id": {
+    "$oid": "6935310e2d2dedb6d4c66afa"
+  },
+  "sender": "user",
+  "content": "shop piw",
+  "timestamp": {
+    "$date": "2026-01-04T13:44:51.132Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "695a6ed821911b5b0ca26084"
+  },
+  "user_id": {
+    "$oid": "6935310e2d2dedb6d4c66afa"
+  },
+  "sender": "user",
+  "content": "đ",
+  "timestamp": {
+    "$date": "2026-01-04T13:44:56.585Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "695a70694ffd0c352de1dbdd"
+  },
+  "user_id": {
+    "$oid": "6957e17791308c93d8c4c992"
+  },
+  "sender": "admin",
+  "content": "vâng ạ",
+  "timestamp": {
+    "$date": "2026-01-04T13:51:37.702Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "695a70b84ffd0c352de1dbdf"
+  },
+  "user_id": {
+    "$oid": "6957e17791308c93d8c4c992"
+  },
+  "sender": "admin",
+  "content": "bạn cần mình hỗ trợ gì ạ",
+  "timestamp": {
+    "$date": "2026-01-04T13:52:56.258Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "695a70cf4ffd0c352de1dbe2"
+  },
+  "user_id": {
+    "$oid": "6935310e2d2dedb6d4c66afa"
+  },
+  "sender": "admin",
+  "content": "cảm ơn khách hàng đã tin tưởng và sử dụng dịch vụ",
+  "timestamp": {
+    "$date": "2026-01-04T13:53:19.871Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "695a70dd4ffd0c352de1dbe6"
+  },
+  "user_id": {
+    "$oid": "6935310e2d2dedb6d4c66afa"
+  },
+  "sender": "user",
+  "content": "vâng ạ",
+  "timestamp": {
+    "$date": "2026-01-04T13:53:33.584Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "695a71314ffd0c352de1dbef"
+  },
+  "user_id": {
+    "$oid": "6935310e2d2dedb6d4c66afa"
+  },
+  "sender": "admin",
+  "content": "thank you",
+  "timestamp": {
+    "$date": "2026-01-04T13:54:57.757Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "695a723e9e678daae727e1bf"
+  },
+  "user_id": {
+    "$oid": "6935310e2d2dedb6d4c66afa"
+  },
+  "sender": "admin",
+  "content": "chúng tôi đang xử lý, khách hàng vui lòng chờ đợi trong ít phút",
+  "timestamp": {
+    "$date": "2026-01-04T13:59:26.676Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "695a724f9e678daae727e1c2"
+  },
+  "user_id": {
+    "$oid": "6935310e2d2dedb6d4c66afa"
+  },
+  "sender": "user",
+  "content": "vâng ạ",
+  "timestamp": {
+    "$date": "2026-01-04T13:59:43.776Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "695a749b7e0211e3dadae32d"
+  },
+  "user_id": {
+    "$oid": "6935310e2d2dedb6d4c66afa"
+  },
+  "sender": "user",
+  "content": "cảm ơn shop",
+  "timestamp": {
+    "$date": "2026-01-04T14:09:31.004Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "695a74d57e0211e3dadae335"
+  },
+  "user_id": {
+    "$oid": "6957e17791308c93d8c4c992"
+  },
+  "sender": "user",
+  "content": "chào shop ạ",
+  "timestamp": {
+    "$date": "2026-01-04T14:10:29.216Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "695a74ef7e0211e3dadae339"
+  },
+  "user_id": {
+    "$oid": "6957e17791308c93d8c4c992"
+  },
+  "sender": "admin",
+  "content": "bạn cần chúng tôi hỗ trợ vấn đề gì vậy ạ, hãy mô tả cụ thể",
+  "timestamp": {
+    "$date": "2026-01-04T14:10:55.165Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "695a91067e0211e3dadae341"
+  },
+  "user_id": {
+    "$oid": "693435387ba9876fd4edec38"
+  },
+  "sender": "user",
+  "content": "mình cần tư vấn chuyến bay",
+  "timestamp": {
+    "$date": "2026-01-04T16:10:46.369Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "695a91387e0211e3dadae34a"
+  },
+  "user_id": {
+    "$oid": "693435387ba9876fd4edec38"
+  },
+  "sender": "admin",
+  "content": "bạn hãy nói rõ về địa điểm muốn đến và nhu cầu chuyến đi chúng tôi sẽ tư vấn hiệu quả hơn ja",
+  "timestamp": {
+    "$date": "2026-01-04T16:11:36.705Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "695a91537e0211e3dadae34f"
+  },
+  "user_id": {
+    "$oid": "693435387ba9876fd4edec38"
+  },
+  "sender": "user",
+  "content": "tôi muốn đi từ huế đến hà nội, chuyến ban đêm",
+  "timestamp": {
+    "$date": "2026-01-04T16:12:03.455Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "695b3bce25deca6b86e7a87b"
+  },
+  "user_id": {
+    "$oid": "6957e17791308c93d8c4c992"
+  },
+  "sender": "user",
+  "content": "vâng ạ",
+  "timestamp": {
+    "$date": "2026-01-05T04:19:26.863Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "695cd8864667df3d05fcc61f"
+  },
+  "user_id": {
+    "$oid": "6957e17791308c93d8c4c992"
+  },
+  "sender": "user",
+  "content": "mình cần hỗ trợ",
+  "timestamp": {
+    "$date": "2026-01-06T09:40:22.812Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "695cd8914667df3d05fcc623"
+  },
+  "user_id": {
+    "$oid": "6957e17791308c93d8c4c992"
+  },
+  "sender": "admin",
+  "content": "Xin lỗi, hiện tại tôi đang bận. Nhân viên hỗ trợ sẽ phản hồi bạn ngay!",
+  "timestamp": {
+    "$date": "2026-01-06T09:40:33.297Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "695cda06db3ce24e71a2b59e"
+  },
+  "user_id": {
+    "$oid": "6957e17791308c93d8c4c992"
+  },
+  "sender": "user",
+  "content": "hhhhh",
+  "timestamp": {
+    "$date": "2026-01-06T09:46:46.984Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "695cda11db3ce24e71a2b5a4"
+  },
+  "user_id": {
+    "$oid": "6957e17791308c93d8c4c992"
+  },
+  "sender": "admin",
+  "content": "Xin lỗi, hiện tại tôi đang bận. Nhân viên hỗ trợ sẽ phản hồi bạn ngay!",
+  "timestamp": {
+    "$date": "2026-01-06T09:46:57.413Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "695cda13db3ce24e71a2b5a6"
+  },
+  "user_id": {
+    "$oid": "693435387ba9876fd4edec38"
+  },
+  "sender": "admin",
+  "content": "ok",
+  "timestamp": {
+    "$date": "2026-01-06T09:46:59.275Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "695cda16db3ce24e71a2b5a9"
+  },
+  "user_id": {
+    "$oid": "6935310e2d2dedb6d4c66afa"
+  },
+  "sender": "admin",
+  "content": "ok",
+  "timestamp": {
+    "$date": "2026-01-06T09:47:02.845Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "695cda1edb3ce24e71a2b5ac"
+  },
+  "user_id": {
+    "$oid": "6957e17791308c93d8c4c992"
+  },
+  "sender": "user",
+  "content": "hhhhh",
+  "timestamp": {
+    "$date": "2026-01-06T09:47:10.696Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "695cda28db3ce24e71a2b5b0"
+  },
+  "user_id": {
+    "$oid": "6957e17791308c93d8c4c992"
+  },
+  "sender": "admin",
+  "content": "Xin lỗi, hiện tại tôi đang bận. Nhân viên hỗ trợ sẽ phản hồi bạn ngay!",
+  "timestamp": {
+    "$date": "2026-01-06T09:47:20.991Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "695ce3e35f1d24f86e2fb137"
+  },
+  "user_id": {
+    "$oid": "6957e17791308c93d8c4c992"
+  },
+  "sender": "user",
+  "content": "luat-phong-chong-tham-nhung-2018.doc",
+  "fileUrl": null,
+  "fileType": null,
+  "timestamp": {
+    "$date": "2026-01-06T10:28:51.135Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "695ce3ee5f1d24f86e2fb13b"
+  },
+  "user_id": {
+    "$oid": "6957e17791308c93d8c4c992"
+  },
+  "sender": "admin",
+  "content": "Xin lỗi, hiện tại tôi đang bận. Nhân viên hỗ trợ sẽ phản hồi bạn ngay!",
+  "fileUrl": null,
+  "fileType": null,
+  "timestamp": {
+    "$date": "2026-01-06T10:29:02.272Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "695ce41e5f1d24f86e2fb145"
+  },
+  "user_id": {
+    "$oid": "6957e17791308c93d8c4c992"
+  },
+  "sender": "admin",
+  "content": "BLHS 2017.doc",
+  "fileUrl": null,
+  "fileType": null,
+  "timestamp": {
+    "$date": "2026-01-06T10:29:50.032Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "695ce5e226820e0e71bffadf"
+  },
+  "user_id": {
+    "$oid": "6957e17791308c93d8c4c992"
+  },
+  "sender": "admin",
+  "content": "luat-phong-chong-tham-nhung-2018.doc",
+  "fileUrl": null,
+  "fileType": null,
+  "timestamp": {
+    "$date": "2026-01-06T10:37:22.492Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "695ce6c726820e0e71bffae2"
+  },
+  "user_id": {
+    "$oid": "6957e17791308c93d8c4c992"
+  },
+  "sender": "user",
+  "content": "BLHS 2017.doc",
+  "fileUrl": null,
+  "fileType": null,
+  "timestamp": {
+    "$date": "2026-01-06T10:41:11.775Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "695ce6ca26820e0e71bffae4"
+  },
+  "user_id": {
+    "$oid": "6957e17791308c93d8c4c992"
+  },
+  "sender": "admin",
+  "content": "Cảm ơn bạn đã gửi tệp tin. Tôi đã nhận được và sẽ chuyển cho nhân viên kiểm tra ngay!",
+  "fileUrl": null,
+  "fileType": null,
+  "timestamp": {
+    "$date": "2026-01-06T10:41:14.788Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "695ce92926820e0e71bffb07"
+  },
+  "user_id": {
+    "$oid": "6957e17791308c93d8c4c992"
+  },
+  "sender": "user",
+  "content": "tôi cần hỗ trợ gấp",
+  "fileUrl": null,
+  "fileType": null,
+  "timestamp": {
+    "$date": "2026-01-06T10:51:21.307Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "695ce94c26820e0e71bffb12"
+  },
+  "user_id": {
+    "$oid": "6957e17791308c93d8c4c992"
+  },
+  "sender": "user",
+  "content": "n",
+  "fileUrl": null,
+  "fileType": null,
+  "timestamp": {
+    "$date": "2026-01-06T10:51:56.166Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "695cea369dcba80f4828e62f"
+  },
+  "user_id": {
+    "$oid": "6957e17791308c93d8c4c992"
+  },
+  "sender": "user",
+  "content": "fff",
+  "timestamp": {
+    "$date": "2026-01-06T10:55:50.731Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "695cea429dcba80f4828e633"
+  },
+  "user_id": {
+    "$oid": "6957e17791308c93d8c4c992"
+  },
+  "sender": "admin",
+  "content": "Xin lỗi, hiện tại tôi đang bận. Nhân viên hỗ trợ sẽ phản hồi bạn ngay!",
+  "timestamp": {
+    "$date": "2026-01-06T10:56:02.456Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "695cea4a9dcba80f4828e635"
+  },
+  "user_id": {
+    "$oid": "6957e17791308c93d8c4c992"
+  },
+  "sender": "user",
+  "content": "tôi cần hỗ trợ gấp",
+  "timestamp": {
+    "$date": "2026-01-06T10:56:10.159Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "695cea559dcba80f4828e639"
+  },
+  "user_id": {
+    "$oid": "6957e17791308c93d8c4c992"
+  },
+  "sender": "admin",
+  "content": "Xin lỗi, hiện tại tôi đang bận. Nhân viên hỗ trợ sẽ phản hồi bạn ngay!",
+  "timestamp": {
+    "$date": "2026-01-06T10:56:21.236Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "695ceb829dcba80f4828e65e"
+  },
+  "user_id": {
+    "$oid": "6957e17791308c93d8c4c992"
+  },
+  "sender": "user",
+  "content": "Bảo hiểm",
+  "timestamp": {
+    "$date": "2026-01-06T11:01:22.569Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "695ceb849dcba80f4828e661"
+  },
+  "user_id": {
+    "$oid": "6957e17791308c93d8c4c992"
+  },
+  "sender": "user",
+  "content": "Hàng miễn thuế",
+  "timestamp": {
+    "$date": "2026-01-06T11:01:24.999Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "695ceb869dcba80f4828e664"
+  },
+  "user_id": {
+    "$oid": "6957e17791308c93d8c4c992"
+  },
+  "sender": "user",
+  "content": "Ưu tiên làm thủ tục nhanh",
+  "timestamp": {
+    "$date": "2026-01-06T11:01:26.718Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "695ceb889dcba80f4828e667"
+  },
+  "user_id": {
+    "$oid": "6957e17791308c93d8c4c992"
+  },
+  "sender": "user",
+  "content": "Mua hành lý, suất ăn, chọn chỗ",
+  "timestamp": {
+    "$date": "2026-01-06T11:01:28.670Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "695ceb8a9dcba80f4828e66a"
+  },
+  "user_id": {
+    "$oid": "6957e17791308c93d8c4c992"
+  },
+  "sender": "user",
+  "content": "Đặt chuyến bay",
+  "timestamp": {
+    "$date": "2026-01-06T11:01:30.239Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "695ceb8d9dcba80f4828e66e"
+  },
+  "user_id": {
+    "$oid": "6957e17791308c93d8c4c992"
+  },
+  "sender": "admin",
+  "content": "Xin lỗi, hiện tại tôi đang bận. Nhân viên hỗ trợ sẽ phản hồi bạn ngay!",
+  "timestamp": {
+    "$date": "2026-01-06T11:01:33.730Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "695ceb8f9dcba80f4828e671"
+  },
+  "user_id": {
+    "$oid": "6957e17791308c93d8c4c992"
+  },
+  "sender": "admin",
+  "content": "Xin lỗi, hiện tại tôi đang bận. Nhân viên hỗ trợ sẽ phản hồi bạn ngay!",
+  "timestamp": {
+    "$date": "2026-01-06T11:01:35.303Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "695ceb919dcba80f4828e674"
+  },
+  "user_id": {
+    "$oid": "6957e17791308c93d8c4c992"
+  },
+  "sender": "admin",
+  "content": "Xin lỗi, hiện tại tôi đang bận. Nhân viên hỗ trợ sẽ phản hồi bạn ngay!",
+  "timestamp": {
+    "$date": "2026-01-06T11:01:37.080Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "695ceb939dcba80f4828e679"
+  },
+  "user_id": {
+    "$oid": "6957e17791308c93d8c4c992"
+  },
+  "sender": "admin",
+  "content": "Xin lỗi, hiện tại tôi đang bận. Nhân viên hỗ trợ sẽ phản hồi bạn ngay!",
+  "timestamp": {
+    "$date": "2026-01-06T11:01:39.035Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "695ceb949dcba80f4828e67c"
+  },
+  "user_id": {
+    "$oid": "6957e17791308c93d8c4c992"
+  },
+  "sender": "admin",
+  "content": "Xin lỗi, hiện tại tôi đang bận. Nhân viên hỗ trợ sẽ phản hồi bạn ngay!",
+  "timestamp": {
+    "$date": "2026-01-06T11:01:40.601Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "695ceda1ec1e55b3cd267625"
+  },
+  "user_id": {
+    "$oid": "6957e17791308c93d8c4c992"
+  },
+  "sender": "user",
+  "content": "ddd",
+  "timestamp": {
+    "$date": "2026-01-06T11:10:25.348Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "695cedaaec1e55b3cd267631"
+  },
+  "user_id": {
+    "$oid": "6957e17791308c93d8c4c992"
+  },
+  "sender": "admin",
+  "content": "2222",
+  "timestamp": {
+    "$date": "2026-01-06T11:10:34.222Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "695cedabec1e55b3cd267634"
+  },
+  "user_id": {
+    "$oid": "6957e17791308c93d8c4c992"
+  },
+  "sender": "admin",
+  "content": "Xin lỗi, hiện tại tôi đang bận. Nhân viên hỗ trợ sẽ phản hồi bạn ngay!",
+  "timestamp": {
+    "$date": "2026-01-06T11:10:35.729Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "695cedadec1e55b3cd267636"
+  },
+  "user_id": {
+    "$oid": "6957e17791308c93d8c4c992"
+  },
+  "sender": "user",
+  "content": "222222",
+  "timestamp": {
+    "$date": "2026-01-06T11:10:37.591Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "695cedb7ec1e55b3cd267639"
+  },
+  "user_id": {
+    "$oid": "6957e17791308c93d8c4c992"
+  },
+  "sender": "admin",
+  "content": "ee",
+  "timestamp": {
+    "$date": "2026-01-06T11:10:47.494Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "695cedb7ec1e55b3cd26763c"
+  },
+  "user_id": {
+    "$oid": "6957e17791308c93d8c4c992"
+  },
+  "sender": "admin",
+  "content": "Xin lỗi, hiện tại tôi đang bận. Nhân viên hỗ trợ sẽ phản hồi bạn ngay!",
+  "timestamp": {
+    "$date": "2026-01-06T11:10:47.842Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "695cedceec1e55b3cd267644"
+  },
+  "user_id": {
+    "$oid": "6957e17791308c93d8c4c992"
+  },
+  "sender": "admin",
+  "content": "vâng ạ bạn muốn chúng mình hỗ trợ vấn đề gì",
+  "timestamp": {
+    "$date": "2026-01-06T11:11:10.142Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "695cef8f28a52b21fb76fa3f"
+  },
+  "user_id": {
+    "$oid": "6957e17791308c93d8c4c992"
+  },
+  "sender": "user",
+  "content": "2222",
+  "timestamp": {
+    "$date": "2026-01-06T11:18:39.826Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "695cef9428a52b21fb76fa42"
+  },
+  "user_id": {
+    "$oid": "6957e17791308c93d8c4c992"
+  },
+  "sender": "admin",
+  "content": "vâng a;",
+  "timestamp": {
+    "$date": "2026-01-06T11:18:44.966Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "695cefa328a52b21fb76fa44"
+  },
+  "user_id": {
+    "$oid": "6957e17791308c93d8c4c992"
+  },
+  "sender": "user",
+  "content": "tôi muốn xem chuyến bay trong ngày",
+  "timestamp": {
+    "$date": "2026-01-06T11:18:59.735Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "695cefae28a52b21fb76fa48"
+  },
+  "user_id": {
+    "$oid": "6957e17791308c93d8c4c992"
+  },
+  "sender": "admin",
+  "content": "Xin lỗi, hiện tại tôi đang bận. Nhân viên hỗ trợ sẽ phản hồi bạn ngay!",
+  "timestamp": {
+    "$date": "2026-01-06T11:19:10.915Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "695d1e99f678b6dd9f271e93"
+  },
+  "user_id": {
+    "$oid": "6957e17791308c93d8c4c992"
+  },
+  "sender": "user",
+  "content": "v",
+  "timestamp": {
+    "$date": "2026-01-06T14:39:21.983Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "695d1ea5f678b6dd9f271e98"
+  },
+  "user_id": {
+    "$oid": "6957e17791308c93d8c4c992"
+  },
+  "sender": "admin",
+  "content": "Xin lỗi, hiện tại tôi đang bận. Nhân viên hỗ trợ sẽ phản hồi bạn ngay!",
+  "timestamp": {
+    "$date": "2026-01-06T14:39:33.143Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "695d1ec9f678b6dd9f271ea1"
+  },
+  "user_id": {
+    "$oid": "6935310e2d2dedb6d4c66afa"
+  },
+  "sender": "user",
+  "content": "shop ơi",
+  "timestamp": {
+    "$date": "2026-01-06T14:40:09.312Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "695d1ed3f678b6dd9f271ea5"
+  },
+  "user_id": {
+    "$oid": "6935310e2d2dedb6d4c66afa"
+  },
+  "sender": "admin",
+  "content": "Xin lỗi, hiện tại tôi đang bận. Nhân viên hỗ trợ sẽ phản hồi bạn ngay!",
+  "timestamp": {
+    "$date": "2026-01-06T14:40:19.538Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "695d1eeaf678b6dd9f271eab"
+  },
+  "user_id": {
+    "$oid": "693435387ba9876fd4edec38"
+  },
+  "sender": "user",
+  "content": "cảm ơn ạ",
+  "timestamp": {
+    "$date": "2026-01-06T14:40:42.702Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "695d1ef4f678b6dd9f271eb4"
+  },
+  "user_id": {
+    "$oid": "693435387ba9876fd4edec38"
+  },
+  "sender": "admin",
+  "content": "Xin lỗi, hiện tại tôi đang bận. Nhân viên hỗ trợ sẽ phản hồi bạn ngay!",
+  "timestamp": {
+    "$date": "2026-01-06T14:40:52.872Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "695d26dcc34aca7d705c2c66"
+  },
+  "user_id": {
+    "$oid": "693435387ba9876fd4edec38"
+  },
+  "sender": "user",
+  "content": "v ạ",
+  "timestamp": {
+    "$date": "2026-01-06T15:14:36.520Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "695d26e7c34aca7d705c2c6a"
+  },
+  "user_id": {
+    "$oid": "693435387ba9876fd4edec38"
+  },
+  "sender": "admin",
+  "content": "Xin lỗi, hiện tại tôi đang bận. Nhân viên hỗ trợ sẽ phản hồi bạn ngay!",
+  "timestamp": {
+    "$date": "2026-01-06T15:14:47.508Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "695d2702c34aca7d705c2c70"
+  },
+  "user_id": {
+    "$oid": "6957e17791308c93d8c4c992"
+  },
+  "sender": "user",
+  "content": "1 2 2 4",
+  "timestamp": {
+    "$date": "2026-01-06T15:15:14.550Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "695d2708c34aca7d705c2c74"
+  },
+  "user_id": {
+    "$oid": "6957e17791308c93d8c4c992"
+  },
+  "sender": "admin",
+  "content": "đ",
+  "timestamp": {
+    "$date": "2026-01-06T15:15:20.864Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "695d281aa5c368e3ac1ec6b5"
+  },
+  "user_id": {
+    "$oid": "6957e17791308c93d8c4c992"
+  },
+  "sender": "user",
+  "content": "12 12",
+  "timestamp": {
+    "$date": "2026-01-06T15:19:54.321Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "695d2824a5c368e3ac1ec6bb"
+  },
+  "user_id": {
+    "$oid": "6957e17791308c93d8c4c992"
+  },
+  "sender": "admin",
+  "content": "Xin lỗi, hiện tại tôi đang bận. Nhân viên hỗ trợ sẽ phản hồi bạn ngay!",
+  "timestamp": {
+    "$date": "2026-01-06T15:20:04.612Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "695d2824a5c368e3ac1ec6bd"
+  },
+  "user_id": {
+    "$oid": "6957e17791308c93d8c4c992"
+  },
+  "sender": "admin",
+  "content": "đ",
+  "timestamp": {
+    "$date": "2026-01-06T15:20:04.845Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "695d4a42c11b8272f6c08a96"
+  },
+  "user_id": {
+    "$oid": "6957e17791308c93d8c4c992"
+  },
+  "sender": "user",
+  "content": "Tra cứu vé",
+  "timestamp": {
+    "$date": "2026-01-06T17:45:38.547Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "695d4a4dc11b8272f6c08a9a"
+  },
+  "user_id": {
+    "$oid": "6957e17791308c93d8c4c992"
+  },
+  "sender": "admin",
+  "content": "Xin lỗi, hiện tại tôi đang bận. Nhân viên hỗ trợ sẽ phản hồi bạn ngay!",
+  "timestamp": {
+    "$date": "2026-01-06T17:45:49.550Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "695d4a6bc11b8272f6c08aa6"
+  },
+  "user_id": {
+    "$oid": "6957e17791308c93d8c4c992"
+  },
+  "sender": "admin",
+  "content": "nn",
+  "timestamp": {
+    "$date": "2026-01-06T17:46:19.058Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "695d4a71c11b8272f6c08aa9"
+  },
+  "user_id": {
+    "$oid": "693435387ba9876fd4edec38"
+  },
+  "sender": "admin",
+  "content": "ll",
+  "timestamp": {
+    "$date": "2026-01-06T17:46:25.999Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "695d4a78c11b8272f6c08aac"
+  },
+  "user_id": {
+    "$oid": "6935310e2d2dedb6d4c66afa"
+  },
+  "sender": "admin",
+  "content": "oo",
+  "timestamp": {
+    "$date": "2026-01-06T17:46:32.407Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "695d4a80c11b8272f6c08aaf"
+  },
+  "user_id": {
+    "$oid": "6957e17791308c93d8c4c992"
+  },
+  "sender": "user",
+  "content": "mm",
+  "timestamp": {
+    "$date": "2026-01-06T17:46:40.381Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "695d4a86c11b8272f6c08ab2"
+  },
+  "user_id": {
+    "$oid": "6957e17791308c93d8c4c992"
+  },
+  "sender": "admin",
+  "content": "nn",
+  "timestamp": {
+    "$date": "2026-01-06T17:46:46.523Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "695e047a6d7222db96ed81f3"
+  },
+  "user_id": {
+    "$oid": "6957e17791308c93d8c4c992"
+  },
+  "sender": "user",
+  "content": "nnnnn",
+  "timestamp": {
+    "$date": "2026-01-07T07:00:10.750Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "695e04876d7222db96ed81ff"
+  },
+  "user_id": {
+    "$oid": "6957e17791308c93d8c4c992"
+  },
+  "sender": "admin",
+  "content": "Xin lỗi, hiện tại tôi đang bận. Nhân viên hỗ trợ sẽ phản hồi bạn ngay!",
+  "timestamp": {
+    "$date": "2026-01-07T07:00:23.393Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "695e04896d7222db96ed8201"
+  },
+  "user_id": {
+    "$oid": "6957e17791308c93d8c4c992"
+  },
+  "sender": "admin",
+  "content": "ssss",
+  "timestamp": {
+    "$date": "2026-01-07T07:00:25.098Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "695e049f6d7222db96ed8207"
+  },
+  "user_id": {
+    "$oid": "6935310e2d2dedb6d4c66afa"
+  },
+  "sender": "user",
+  "content": "nnnn",
+  "timestamp": {
+    "$date": "2026-01-07T07:00:47.063Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "695e04a96d7222db96ed820b"
+  },
+  "user_id": {
+    "$oid": "6935310e2d2dedb6d4c66afa"
+  },
+  "sender": "admin",
+  "content": "Xin lỗi, hiện tại tôi đang bận. Nhân viên hỗ trợ sẽ phản hồi bạn ngay!",
+  "timestamp": {
+    "$date": "2026-01-07T07:00:57.834Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "695e04c66d7222db96ed8212"
+  },
+  "user_id": {
+    "$oid": "693435387ba9876fd4edec38"
+  },
+  "sender": "user",
+  "content": "xin chao",
+  "timestamp": {
+    "$date": "2026-01-07T07:01:26.456Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "695e04cf6d7222db96ed8215"
+  },
+  "user_id": {
+    "$oid": "693435387ba9876fd4edec38"
+  },
+  "sender": "admin",
+  "content": "sss",
+  "timestamp": {
+    "$date": "2026-01-07T07:01:35.523Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "695e05856d7222db96ed8220"
+  },
+  "user_id": {
+    "$oid": "69352d030fcea0df42773755"
+  },
+  "sender": "user",
+  "content": "xin chào",
+  "timestamp": {
+    "$date": "2026-01-07T07:04:37.720Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "695e05906d7222db96ed822c"
+  },
+  "user_id": {
+    "$oid": "69352d030fcea0df42773755"
+  },
+  "sender": "admin",
+  "content": "Xin lỗi, hiện tại tôi đang bận. Nhân viên hỗ trợ sẽ phản hồi bạn ngay!",
+  "timestamp": {
+    "$date": "2026-01-07T07:04:48.392Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "695e070c6d7222db96ed8250"
+  },
+  "user_id": {
+    "$oid": "6957e17791308c93d8c4c992"
+  },
+  "sender": "user",
+  "content": "nhu y",
+  "timestamp": {
+    "$date": "2026-01-07T07:11:08.307Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "695e07166d7222db96ed8254"
+  },
+  "user_id": {
+    "$oid": "6957e17791308c93d8c4c992"
+  },
+  "sender": "admin",
+  "content": "Xin lỗi, hiện tại tôi đang bận. Nhân viên hỗ trợ sẽ phản hồi bạn ngay!",
+  "timestamp": {
+    "$date": "2026-01-07T07:11:18.955Z"
+  },
+  "__v": 0
+}]
